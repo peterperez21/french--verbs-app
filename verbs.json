@@ -1,0 +1,6009 @@
+{
+  "metadata": {
+    "last_uid_assigned": 102,
+    "total_verbs_in_file": 102,
+    "tiers_included": ["tier_1_essential", "tier_2_high_frequency"]
+  },
+  "tiers": {
+    "tier_1_essential": {
+      "label": "Essential 10 (Auxiliary/Modal)",
+      "verbs": {
+        "Aller": {
+          "id": 1,
+          "group": "irreg",
+          "present": {
+            "je": "vais",
+            "tu": "vas",
+            "il": "va",
+            "elle": "va",
+            "nous": "allons",
+            "vous": "allez",
+            "ils": "vont",
+            "elles": "vont"
+          },
+          "imparfait": {
+            "je": "allais",
+            "tu": "allais",
+            "il": "allait",
+            "elle": "allait",
+            "nous": "allions",
+            "vous": "alliez",
+            "ils": "allaient",
+            "elles": "allaient"
+          },
+          "passe_compose": {
+            "je": "suis allé",
+            "tu": "es allé",
+            "il": "est allé",
+            "elle": "est allée",
+            "nous": "sommes allés",
+            "vous": "êtes allés",
+            "ils": "sont allés",
+            "elles": "sont allées"
+          },
+          "conditionnel": {
+            "je": "irais",
+            "tu": "irais",
+            "il": "irait",
+            "elle": "irait",
+            "nous": "irions",
+            "vous": "iriez",
+            "ils": "iraient",
+            "elles": "iraient"
+          },
+          "futur_proche": {
+            "je": "vais aller",
+            "tu": "vas aller",
+            "il": "va aller",
+            "elle": "va aller",
+            "nous": "allons aller",
+            "vous": "allez aller",
+            "ils": "vont aller",
+            "elles": "vont aller"
+          }
+        },
+        "Avoir": {
+          "id": 2,
+          "group": "irreg",
+          "present": {
+            "je": "ai",
+            "tu": "as",
+            "il": "a",
+            "elle": "a",
+            "nous": "avons",
+            "vous": "avez",
+            "ils": "ont",
+            "elles": "ont"
+          },
+          "imparfait": {
+            "je": "avais",
+            "tu": "avais",
+            "il": "avait",
+            "elle": "avait",
+            "nous": "avions",
+            "vous": "aviez",
+            "ils": "avaient",
+            "elles": "avaient"
+          },
+          "passe_compose": {
+            "je": "ai eu",
+            "tu": "as eu",
+            "il": "a eu",
+            "elle": "a eu",
+            "nous": "avons eu",
+            "vous": "avez eu",
+            "ils": "ont eu",
+            "elles": "ont eu"
+          },
+          "conditionnel": {
+            "je": "aurais",
+            "tu": "aurais",
+            "il": "aurait",
+            "elle": "aurait",
+            "nous": "aurions",
+            "vous": "auriez",
+            "ils": "auraient",
+            "elles": "auraient"
+          },
+          "futur_proche": {
+            "je": "vais avoir",
+            "tu": "vas avoir",
+            "il": "va avoir",
+            "elle": "va avoir",
+            "nous": "allons avoir",
+            "vous": "allez avoir",
+            "ils": "vont avoir",
+            "elles": "vont avoir"
+          }
+        },
+        "Devoir": {
+          "id": 3,
+          "group": "irreg",
+          "present": {
+            "je": "dois",
+            "tu": "dois",
+            "il": "doit",
+            "elle": "doit",
+            "nous": "devons",
+            "vous": "devez",
+            "ils": "doivent",
+            "elles": "doivent"
+          },
+          "imparfait": {
+            "je": "devais",
+            "tu": "devais",
+            "il": "devait",
+            "elle": "devait",
+            "nous": "devions",
+            "vous": "deviez",
+            "ils": "devaient",
+            "elles": "devaient"
+          },
+          "passe_compose": {
+            "je": "ai dû",
+            "tu": "as dû",
+            "il": "a dû",
+            "elle": "a dû",
+            "nous": "avons dû",
+            "vous": "avez dû",
+            "ils": "ont dû",
+            "elles": "ont dû"
+          },
+          "conditionnel": {
+            "je": "devrais",
+            "tu": "devrais",
+            "il": "devrait",
+            "elle": "devrait",
+            "nous": "devrions",
+            "vous": "devriez",
+            "ils": "devraient",
+            "elles": "devraient"
+          },
+          "futur_proche": {
+            "je": "vais devoir",
+            "tu": "vas devoir",
+            "il": "va devoir",
+            "elle": "va devoir",
+            "nous": "allons devoir",
+            "vous": "allez devoir",
+            "ils": "vont devoir",
+            "elles": "vont devoir"
+          }
+        },
+        "Dire": {
+          "id": 4,
+          "group": "irreg",
+          "present": {
+            "je": "dis",
+            "tu": "dis",
+            "il": "dit",
+            "elle": "dit",
+            "nous": "disons",
+            "vous": "dites",
+            "ils": "disent",
+            "elles": "disent"
+          },
+          "imparfait": {
+            "je": "disais",
+            "tu": "disais",
+            "il": "disait",
+            "elle": "disait",
+            "nous": "disions",
+            "vous": "disiez",
+            "ils": "disaient",
+            "elles": "disaient"
+          },
+          "passe_compose": {
+            "je": "ai dit",
+            "tu": "as dit",
+            "il": "a dit",
+            "elle": "a dit",
+            "nous": "avons dit",
+            "vous": "avez dit",
+            "ils": "ont dit",
+            "elles": "ont dit"
+          },
+          "conditionnel": {
+            "je": "dirais",
+            "tu": "dirais",
+            "il": "dirait",
+            "elle": "dirait",
+            "nous": "dirions",
+            "vous": "diriez",
+            "ils": "diraient",
+            "elles": "diraient"
+          },
+          "futur_proche": {
+            "je": "vais dire",
+            "tu": "vas dire",
+            "il": "va dire",
+            "elle": "va dire",
+            "nous": "allons dire",
+            "vous": "allez dire",
+            "ils": "vont dire",
+            "elles": "vont dire"
+          }
+        },
+        "Être": {
+          "id": 5,
+          "group": "irreg",
+          "present": {
+            "je": "suis",
+            "tu": "es",
+            "il": "est",
+            "elle": "est",
+            "nous": "sommes",
+            "vous": "êtes",
+            "ils": "sont",
+            "elles": "sont"
+          },
+          "imparfait": {
+            "je": "étais",
+            "tu": "étais",
+            "il": "était",
+            "elle": "était",
+            "nous": "étions",
+            "vous": "étiez",
+            "ils": "étaient",
+            "elles": "étaient"
+          },
+          "passe_compose": {
+            "je": "ai été",
+            "tu": "as été",
+            "il": "a été",
+            "elle": "a été",
+            "nous": "avons été",
+            "vous": "avez été",
+            "ils": "ont été",
+            "elles": "ont été"
+          },
+          "conditionnel": {
+            "je": "serais",
+            "tu": "serais",
+            "il": "serait",
+            "elle": "serait",
+            "nous": "serions",
+            "vous": "seriez",
+            "ils": "seraient",
+            "elles": "seraient"
+          },
+          "futur_proche": {
+            "je": "vais être",
+            "tu": "vas être",
+            "il": "va être",
+            "elle": "va être",
+            "nous": "allons être",
+            "vous": "allez être",
+            "ils": "vont être",
+            "elles": "vont être"
+          }
+        },
+        "Faire": {
+          "id": 6,
+          "group": "irreg",
+          "present": {
+            "je": "fais",
+            "tu": "fais",
+            "il": "fait",
+            "elle": "fait",
+            "nous": "faisons",
+            "vous": "faites",
+            "ils": "font",
+            "elles": "font"
+          },
+          "imparfait": {
+            "je": "faisais",
+            "tu": "faisais",
+            "il": "faisait",
+            "elle": "faisait",
+            "nous": "faisions",
+            "vous": "faisiez",
+            "ils": "faisaient",
+            "elles": "faisaient"
+          },
+          "passe_compose": {
+            "je": "ai fait",
+            "tu": "as fait",
+            "il": "a fait",
+            "elle": "a fait",
+            "nous": "avons fait",
+            "vous": "avez fait",
+            "ils": "ont fait",
+            "elles": "ont fait"
+          },
+          "conditionnel": {
+            "je": "ferais",
+            "tu": "ferais",
+            "il": "ferait",
+            "elle": "ferait",
+            "nous": "ferions",
+            "vous": "feriez",
+            "ils": "feraient",
+            "elles": "feraient"
+          },
+          "futur_proche": {
+            "je": "vais faire",
+            "tu": "vas faire",
+            "il": "va faire",
+            "elle": "va faire",
+            "nous": "allons faire",
+            "vous": "allez faire",
+            "ils": "vont faire",
+            "elles": "vont faire"
+          }
+        },
+        "Pouvoir": {
+          "id": 7,
+          "group": "irreg",
+          "present": {
+            "je": "peux",
+            "tu": "peux",
+            "il": "peut",
+            "elle": "peut",
+            "nous": "pouvons",
+            "vous": "pouvez",
+            "ils": "peuvent",
+            "elles": "peuvent"
+          },
+          "imparfait": {
+            "je": "pouvais",
+            "tu": "pouvais",
+            "il": "pouvait",
+            "elle": "pouvait",
+            "nous": "pouvions",
+            "vous": "pouviez",
+            "ils": "pouvaient",
+            "elles": "pouvaient"
+          },
+          "passe_compose": {
+            "je": "ai pu",
+            "tu": "as pu",
+            "il": "a pu",
+            "elle": "a pu",
+            "nous": "avons pu",
+            "vous": "avez pu",
+            "ils": "ont pu",
+            "elles": "ont pu"
+          },
+          "conditionnel": {
+            "je": "pourrais",
+            "tu": "pourrais",
+            "il": "pourrait",
+            "elle": "pourrait",
+            "nous": "pourrions",
+            "vous": "pourriez",
+            "ils": "pourraient",
+            "elles": "pourraient"
+          },
+          "futur_proche": {
+            "je": "vais pouvoir",
+            "tu": "vas pouvoir",
+            "il": "va pouvoir",
+            "elle": "va pouvoir",
+            "nous": "allons pouvoir",
+            "vous": "allez pouvoir",
+            "ils": "vont pouvoir",
+            "elles": "vont pouvoir"
+          }
+        },
+        "Savoir": {
+          "id": 8,
+          "group": "irreg",
+          "present": {
+            "je": "sais",
+            "tu": "sais",
+            "il": "sait",
+            "elle": "sait",
+            "nous": "savons",
+            "vous": "savez",
+            "ils": "savent",
+            "elles": "savent"
+          },
+          "imparfait": {
+            "je": "savais",
+            "tu": "savais",
+            "il": "savait",
+            "elle": "savait",
+            "nous": "savions",
+            "vous": "saviez",
+            "ils": "savaient",
+            "elles": "savaient"
+          },
+          "passe_compose": {
+            "je": "ai su",
+            "tu": "as su",
+            "il": "a su",
+            "elle": "a su",
+            "nous": "avons su",
+            "vous": "avez su",
+            "ils": "ont su",
+            "elles": "ont su"
+          },
+          "conditionnel": {
+            "je": "saurais",
+            "tu": "saurais",
+            "il": "saurait",
+            "elle": "saurait",
+            "nous": "saurions",
+            "vous": "sauriez",
+            "ils": "sauraient",
+            "elles": "sauraient"
+          },
+          "futur_proche": {
+            "je": "vais savoir",
+            "tu": "vas savoir",
+            "il": "va savoir",
+            "elle": "va savoir",
+            "nous": "allons savoir",
+            "vous": "allez savoir",
+            "ils": "vont savoir",
+            "elles": "vont savoir"
+          }
+        },
+        "Venir": {
+          "id": 9,
+          "group": "irreg",
+          "present": {
+            "je": "viens",
+            "tu": "viens",
+            "il": "vient",
+            "elle": "vient",
+            "nous": "venons",
+            "vous": "venez",
+            "ils": "viennent",
+            "elles": "viennent"
+          },
+          "imparfait": {
+            "je": "venais",
+            "tu": "venais",
+            "il": "venait",
+            "elle": "venait",
+            "nous": "venions",
+            "vous": "veniez",
+            "ils": "venaient",
+            "elles": "venaient"
+          },
+          "passe_compose": {
+            "je": "suis venu",
+            "tu": "es venu",
+            "il": "est venu",
+            "elle": "est venue",
+            "nous": "sommes venus",
+            "vous": "êtes venus",
+            "ils": "sont venus",
+            "elles": "sont venues"
+          },
+          "conditionnel": {
+            "je": "viendrais",
+            "tu": "viendrais",
+            "il": "viendrait",
+            "elle": "viendrait",
+            "nous": "viendrions",
+            "vous": "viendriez",
+            "ils": "viendraient",
+            "elles": "viendraient"
+          },
+          "futur_proche": {
+            "je": "vais venir",
+            "tu": "vas venir",
+            "il": "va venir",
+            "elle": "va venir",
+            "nous": "allons venir",
+            "vous": "allez venir",
+            "ils": "vont venir",
+            "elles": "vont venir"
+          }
+        },
+        "Vouloir": {
+          "id": 10,
+          "group": "irreg",
+          "present": {
+            "je": "veux",
+            "tu": "veux",
+            "il": "veut",
+            "elle": "veut",
+            "nous": "voulons",
+            "vous": "voulez",
+            "ils": "veulent",
+            "elles": "veulent"
+          },
+          "imparfait": {
+            "je": "voulais",
+            "tu": "voulais",
+            "il": "voulait",
+            "elle": "voulait",
+            "nous": "voulions",
+            "vous": "vouliez",
+            "ils": "voulaient",
+            "elles": "voulaient"
+          },
+          "passe_compose": {
+            "je": "ai voulu",
+            "tu": "as voulu",
+            "il": "a voulu",
+            "elle": "a voulu",
+            "nous": "avons voulu",
+            "vous": "avez voulu",
+            "ils": "ont voulu",
+            "elles": "ont voulu"
+          },
+          "conditionnel": {
+            "je": "voudrais",
+            "tu": "voudrais",
+            "il": "voudrait",
+            "elle": "voudrait",
+            "nous": "voudrions",
+            "vous": "voudriez",
+            "ils": "voudraient",
+            "elles": "voudraient"
+          },
+          "futur_proche": {
+            "je": "vais vouloir",
+            "tu": "vas vouloir",
+            "il": "va vouloir",
+            "elle": "va vouloir",
+            "nous": "allons vouloir",
+            "vous": "allez vouloir",
+            "ils": "vont vouloir",
+            "elles": "vont vouloir"
+          }
+        }
+      }
+    },
+    "tier_2_high_frequency": {
+      "label": "Top 100 High-Frequency",
+      "verbs": {
+        "Acheter": {
+          "id": 11,
+          "group": "er",
+          "present": {
+            "je": "achète",
+            "tu": "achètes",
+            "il": "achète",
+            "elle": "achète",
+            "nous": "achetons",
+            "vous": "achetez",
+            "ils": "achètent",
+            "elles": "achètent"
+          },
+          "imparfait": {
+            "je": "achetais",
+            "tu": "achetais",
+            "il": "achetait",
+            "elle": "achetait",
+            "nous": "achetions",
+            "vous": "achetiez",
+            "ils": "achetaient",
+            "elles": "achetaient"
+          },
+          "passe_compose": {
+            "je": "ai acheté",
+            "tu": "as acheté",
+            "il": "a acheté",
+            "elle": "a acheté",
+            "nous": "avons acheté",
+            "vous": "avez acheté",
+            "ils": "ont acheté",
+            "elles": "ont acheté"
+          },
+          "conditionnel": {
+            "je": "achèterais",
+            "tu": "achèterais",
+            "il": "achèterait",
+            "elle": "achèterait",
+            "nous": "achèterions",
+            "vous": "achèteriez",
+            "ils": "achèteraient",
+            "elles": "achèteraient"
+          },
+          "futur_proche": {
+            "je": "vais acheter",
+            "tu": "vas acheter",
+            "il": "va acheter",
+            "elle": "va acheter",
+            "nous": "allons acheter",
+            "vous": "allez acheter",
+            "ils": "vont acheter",
+            "elles": "vont acheter"
+          }
+        },
+        "Aider": {
+          "id": 12,
+          "group": "er",
+          "present": {
+            "je": "aide",
+            "tu": "aides",
+            "il": "aide",
+            "elle": "aide",
+            "nous": "aidons",
+            "vous": "aidez",
+            "ils": "aident",
+            "elles": "aident"
+          },
+          "imparfait": {
+            "je": "aidais",
+            "tu": "aidais",
+            "il": "aidait",
+            "elle": "aidait",
+            "nous": "aidions",
+            "vous": "aidiez",
+            "ils": "aidaient",
+            "elles": "aidaient"
+          },
+          "passe_compose": {
+            "je": "ai aidé",
+            "tu": "as aidé",
+            "il": "a aidé",
+            "elle": "a aidé",
+            "nous": "avons aidé",
+            "vous": "avez aidé",
+            "ils": "ont aidé",
+            "elles": "ont aidé"
+          },
+          "conditionnel": {
+            "je": "aiderais",
+            "tu": "aiderais",
+            "il": "aiderait",
+            "elle": "aiderait",
+            "nous": "aiderions",
+            "vous": "aideriez",
+            "ils": "aideraient",
+            "elles": "aideraient"
+          },
+          "futur_proche": {
+            "je": "vais aider",
+            "tu": "vas aider",
+            "il": "va aider",
+            "elle": "va aider",
+            "nous": "allons aider",
+            "vous": "allez aider",
+            "ils": "vont aider",
+            "elles": "vont aider"
+          }
+        },
+        "Amener": {
+          "id": 13,
+          "group": "er",
+          "present": {
+            "je": "amène",
+            "tu": "amènes",
+            "il": "amène",
+            "elle": "amène",
+            "nous": "amenons",
+            "vous": "amenez",
+            "ils": "amènent",
+            "elles": "amènent"
+          },
+          "imparfait": {
+            "je": "amenais",
+            "tu": "amenais",
+            "il": "amenait",
+            "elle": "amenait",
+            "nous": "amenions",
+            "vous": "ameniez",
+            "ils": "amenaient",
+            "elles": "amenaient"
+          },
+          "passe_compose": {
+            "je": "ai amené",
+            "tu": "as amené",
+            "il": "a amené",
+            "elle": "a amené",
+            "nous": "avons amené",
+            "vous": "avez amené",
+            "ils": "ont amené",
+            "elles": "ont amené"
+          },
+          "conditionnel": {
+            "je": "amènerais",
+            "tu": "amènerais",
+            "il": "amènerait",
+            "elle": "amènerait",
+            "nous": "amènerions",
+            "vous": "amèneriez",
+            "ils": "amèneraient",
+            "elles": "amèneraient"
+          },
+          "futur_proche": {
+            "je": "vais amener",
+            "tu": "vas amener",
+            "il": "va amener",
+            "elle": "va amener",
+            "nous": "allons amener",
+            "vous": "allez amener",
+            "ils": "vont amener",
+            "elles": "vont amener"
+          }
+        },
+        "Apporter": {
+          "id": 14,
+          "group": "er",
+          "present": {
+            "je": "apporte",
+            "tu": "apportes",
+            "il": "apporte",
+            "elle": "apporte",
+            "nous": "apportons",
+            "vous": "apportez",
+            "ils": "apportent",
+            "elles": "apportent"
+          },
+          "imparfait": {
+            "je": "apportais",
+            "tu": "apportais",
+            "il": "apportait",
+            "elle": "apportait",
+            "nous": "apportions",
+            "vous": "apportiez",
+            "ils": "apportaient",
+            "elles": "apportaient"
+          },
+          "passe_compose": {
+            "je": "ai apporté",
+            "tu": "as apporté",
+            "il": "a apporté",
+            "elle": "a apporté",
+            "nous": "avons apporté",
+            "vous": "avez apporté",
+            "ils": "ont apporté",
+            "elles": "ont apporté"
+          },
+          "conditionnel": {
+            "je": "apporterais",
+            "tu": "apporterais",
+            "il": "apporterait",
+            "elle": "apporterait",
+            "nous": "apporterions",
+            "vous": "apporteriez",
+            "ils": "apporteraient",
+            "elles": "apporteraient"
+          },
+          "futur_proche": {
+            "je": "vais apporter",
+            "tu": "vas apporter",
+            "il": "va apporter",
+            "elle": "va apporter",
+            "nous": "allons apporter",
+            "vous": "allez apporter",
+            "ils": "vont apporter",
+            "elles": "vont apporter"
+          }
+        },
+        "Apprendre": {
+          "id": 15,
+          "group": "irreg",
+          "present": {
+            "je": "apprends",
+            "tu": "apprends",
+            "il": "apprend",
+            "elle": "apprend",
+            "nous": "apprenons",
+            "vous": "apprenez",
+            "ils": "apprennent",
+            "elles": "apprennent"
+          },
+          "imparfait": {
+            "je": "apprenais",
+            "tu": "apprenais",
+            "il": "apprenait",
+            "elle": "apprenait",
+            "nous": "apprenions",
+            "vous": "appreniez",
+            "ils": "apprenaient",
+            "elles": "apprenaient"
+          },
+          "passe_compose": {
+            "je": "ai appris",
+            "tu": "as appris",
+            "il": "a appris",
+            "elle": "a appris",
+            "nous": "avons appris",
+            "vous": "avez appris",
+            "ils": "ont appris",
+            "elles": "ont appris"
+          },
+          "conditionnel": {
+            "je": "apprendrais",
+            "tu": "apprendrais",
+            "il": "apprendrait",
+            "elle": "apprendrait",
+            "nous": "apprendrions",
+            "vous": "apprendriez",
+            "ils": "apprendraient",
+            "elles": "apprendraient"
+          },
+          "futur_proche": {
+            "je": "vais apprendre",
+            "tu": "vas apprendre",
+            "il": "va apprendre",
+            "elle": "va apprendre",
+            "nous": "allons apprendre",
+            "vous": "allez apprendre",
+            "ils": "vont apprendre",
+            "elles": "vont apprendre"
+          }
+        },
+        "Arriver": {
+          "id": 16,
+          "group": "er",
+          "present": {
+            "je": "arrive",
+            "tu": "arrives",
+            "il": "arrive",
+            "elle": "arrive",
+            "nous": "arrivons",
+            "vous": "arrivez",
+            "ils": "arrivent",
+            "elles": "arrivent"
+          },
+          "imparfait": {
+            "je": "arrivais",
+            "tu": "arrivais",
+            "il": "arrivait",
+            "elle": "arrivait",
+            "nous": "arrivions",
+            "vous": "arriviez",
+            "ils": "arrivaient",
+            "elles": "arrivaient"
+          },
+          "passe_compose": {
+            "je": "suis arrivé",
+            "tu": "es arrivé",
+            "il": "est arrivé",
+            "elle": "est arrivée",
+            "nous": "sommes arrivés",
+            "vous": "êtes arrivés",
+            "ils": "sont arrivés",
+            "elles": "sont arrivées"
+          },
+          "conditionnel": {
+            "je": "arriverais",
+            "tu": "arriverais",
+            "il": "arriverait",
+            "elle": "arriverait",
+            "nous": "arriverions",
+            "vous": "arriveriez",
+            "ils": "arriveraient",
+            "elles": "arriveraient"
+          },
+          "futur_proche": {
+            "je": "vais arriver",
+            "tu": "vas arriver",
+            "il": "va arriver",
+            "elle": "va arriver",
+            "nous": "allons arriver",
+            "vous": "allez arriver",
+            "ils": "vont arriver",
+            "elles": "vont arriver"
+          }
+        },
+        "Attendre": {
+          "id": 17,
+          "group": "re",
+          "present": {
+            "je": "attends",
+            "tu": "attends",
+            "il": "attend",
+            "elle": "attend",
+            "nous": "attendons",
+            "vous": "attendez",
+            "ils": "attendent",
+            "elles": "attendent"
+          },
+          "imparfait": {
+            "je": "attendais",
+            "tu": "attendais",
+            "il": "attendait",
+            "elle": "attendait",
+            "nous": "attendions",
+            "vous": "attendiez",
+            "ils": "attendaient",
+            "elles": "attendaient"
+          },
+          "passe_compose": {
+            "je": "ai attendu",
+            "tu": "as attendu",
+            "il": "a attendu",
+            "elle": "a attendu",
+            "nous": "avons attendu",
+            "vous": "avez attendu",
+            "ils": "ont attendu",
+            "elles": "ont attendu"
+          },
+          "conditionnel": {
+            "je": "attendrais",
+            "tu": "attendrais",
+            "il": "attendrait",
+            "elle": "attendrait",
+            "nous": "attendrions",
+            "vous": "attendriez",
+            "ils": "attendraient",
+            "elles": "attendraient"
+          },
+          "futur_proche": {
+            "je": "vais attendre",
+            "tu": "vas attendre",
+            "il": "va attendre",
+            "elle": "va attendre",
+            "nous": "allons attendre",
+            "vous": "allez attendre",
+            "ils": "vont attendre",
+            "elles": "vont attendre"
+          }
+        },
+        "Bavarder": {
+          "id": 18,
+          "group": "er",
+          "present": {
+            "je": "bavarde",
+            "tu": "bavardes",
+            "il": "bavarde",
+            "elle": "bavarde",
+            "nous": "bavardons",
+            "vous": "bavardez",
+            "ils": "bavardent",
+            "elles": "bavardent"
+          },
+          "imparfait": {
+            "je": "bavardais",
+            "tu": "bavardais",
+            "il": "bavardait",
+            "elle": "bavardait",
+            "nous": "bavardions",
+            "vous": "bavardiez",
+            "ils": "bavardaient",
+            "elles": "bavardaient"
+          },
+          "passe_compose": {
+            "je": "ai bavardé",
+            "tu": "as bavardé",
+            "il": "a bavardé",
+            "elle": "a bavardé",
+            "nous": "avons bavardé",
+            "vous": "avez bavardé",
+            "ils": "ont bavardé",
+            "elles": "ont bavardé"
+          },
+          "conditionnel": {
+            "je": "bavarderais",
+            "tu": "bavarderais",
+            "il": "bavarderait",
+            "elle": "bavarderait",
+            "nous": "bavarderions",
+            "vous": "bavarderiez",
+            "ils": "bavarderaient",
+            "elles": "bavarderaient"
+          },
+          "futur_proche": {
+            "je": "vais bavarder",
+            "tu": "vas bavarder",
+            "il": "va bavarder",
+            "elle": "va bavarder",
+            "nous": "allons bavarder",
+            "vous": "allez bavarder",
+            "ils": "vont bavarder",
+            "elles": "vont bavarder"
+          }
+        },
+        "Boire": {
+          "id": 19,
+          "group": "irreg",
+          "present": {
+            "je": "bois",
+            "tu": "bois",
+            "il": "boit",
+            "elle": "boit",
+            "nous": "buvons",
+            "vous": "buvez",
+            "ils": "boivent",
+            "elles": "boivent"
+          },
+          "imparfait": {
+            "je": "buvais",
+            "tu": "buvais",
+            "il": "buvait",
+            "elle": "buvait",
+            "nous": "buvions",
+            "vous": "buviez",
+            "ils": "buvaient",
+            "elles": "buvaient"
+          },
+          "passe_compose": {
+            "je": "ai bu",
+            "tu": "as bu",
+            "il": "a bu",
+            "elle": "a bu",
+            "nous": "avons bu",
+            "vous": "avez bu",
+            "ils": "ont bu",
+            "elles": "ont bu"
+          },
+          "conditionnel": {
+            "je": "boirais",
+            "tu": "boirais",
+            "il": "boirait",
+            "elle": "boirait",
+            "nous": "boirions",
+            "vous": "boiriez",
+            "ils": "boiraient",
+            "elles": "boiraient"
+          },
+          "futur_proche": {
+            "je": "vais boire",
+            "tu": "vas boire",
+            "il": "va boire",
+            "elle": "va boire",
+            "nous": "allons boire",
+            "vous": "allez boire",
+            "ils": "vont boire",
+            "elles": "vont boire"
+          }
+        },
+        "Changer": {
+          "id": 20,
+          "group": "er",
+          "present": {
+            "je": "change",
+            "tu": "changes",
+            "il": "change",
+            "elle": "change",
+            "nous": "changeons",
+            "vous": "changez",
+            "ils": "changent",
+            "elles": "changent"
+          },
+          "imparfait": {
+            "je": "changeais",
+            "tu": "changeais",
+            "il": "changeait",
+            "elle": "changeait",
+            "nous": "changions",
+            "vous": "changiez",
+            "ils": "changeaient",
+            "elles": "changeaient"
+          },
+          "passe_compose": {
+            "je": "ai changé",
+            "tu": "as changé",
+            "il": "a changé",
+            "elle": "a changé",
+            "nous": "avons changé",
+            "vous": "avez changé",
+            "ils": "ont changé",
+            "elles": "ont changé"
+          },
+          "conditionnel": {
+            "je": "changerais",
+            "tu": "changerais",
+            "il": "changerait",
+            "elle": "changerait",
+            "nous": "changerions",
+            "vous": "changeriez",
+            "ils": "changeraient",
+            "elles": "changeraient"
+          },
+          "futur_proche": {
+            "je": "vais changer",
+            "tu": "vas changer",
+            "il": "va changer",
+            "elle": "va changer",
+            "nous": "allons changer",
+            "vous": "allez changer",
+            "ils": "vont changer",
+            "elles": "vont changer"
+          }
+        },
+        "Chanter": {
+          "id": 21,
+          "group": "er",
+          "present": {
+            "je": "chante",
+            "tu": "chantes",
+            "il": "chante",
+            "elle": "chante",
+            "nous": "chantons",
+            "vous": "chantez",
+            "ils": "chantent",
+            "elles": "chantent"
+          },
+          "imparfait": {
+            "je": "chantais",
+            "tu": "chantais",
+            "il": "chantait",
+            "elle": "chantait",
+            "nous": "chantions",
+            "vous": "chantiez",
+            "ils": "chantaient",
+            "elles": "chantaient"
+          },
+          "passe_compose": {
+            "je": "ai chanté",
+            "tu": "as chanté",
+            "il": "a chanté",
+            "elle": "a chanté",
+            "nous": "avons chanté",
+            "vous": "avez chanté",
+            "ils": "ont chanté",
+            "elles": "ont chanté"
+          },
+          "conditionnel": {
+            "je": "chanterais",
+            "tu": "chanterais",
+            "il": "chanterait",
+            "elle": "chanterait",
+            "nous": "chanterions",
+            "vous": "chanteriez",
+            "ils": "chanteraient",
+            "elles": "chanteraient"
+          },
+          "futur_proche": {
+            "je": "vais chanter",
+            "tu": "vas chanter",
+            "il": "va chanter",
+            "elle": "va chanter",
+            "nous": "allons chanter",
+            "vous": "allez chanter",
+            "ils": "vont chanter",
+            "elles": "vont chanter"
+          }
+        },
+        "Chercher": {
+          "id": 22,
+          "group": "er",
+          "present": {
+            "je": "cherche",
+            "tu": "cherches",
+            "il": "cherche",
+            "elle": "cherche",
+            "nous": "cherchons",
+            "vous": "cherchez",
+            "ils": "cherchent",
+            "elles": "cherchent"
+          },
+          "imparfait": {
+            "je": "cherchais",
+            "tu": "cherchais",
+            "il": "cherchait",
+            "elle": "cherchait",
+            "nous": "cherchions",
+            "vous": "cherchiez",
+            "ils": "cherchaient",
+            "elles": "cherchaient"
+          },
+          "passe_compose": {
+            "je": "ai cherché",
+            "tu": "as cherché",
+            "il": "a cherché",
+            "elle": "a cherché",
+            "nous": "avons cherché",
+            "vous": "avez cherché",
+            "ils": "ont cherché",
+            "elles": "ont cherché"
+          },
+          "conditionnel": {
+            "je": "chercherais",
+            "tu": "chercherais",
+            "il": "chercherait",
+            "elle": "chercherait",
+            "nous": "chercherions",
+            "vous": "chercheriez",
+            "ils": "chercheraient",
+            "elles": "chercheraient"
+          },
+          "futur_proche": {
+            "je": "vais chercher",
+            "tu": "vas chercher",
+            "il": "va chercher",
+            "elle": "va chercher",
+            "nous": "allons chercher",
+            "vous": "allez chercher",
+            "ils": "vont chercher",
+            "elles": "vont chercher"
+          }
+        },
+        "Commander": {
+          "id": 23,
+          "group": "er",
+          "present": {
+            "je": "commande",
+            "tu": "commandes",
+            "il": "commande",
+            "elle": "commande",
+            "nous": "commandons",
+            "vous": "commandez",
+            "ils": "commandent",
+            "elles": "commandent"
+          },
+          "imparfait": {
+            "je": "commandais",
+            "tu": "commandais",
+            "il": "commandait",
+            "elle": "commandait",
+            "nous": "commandions",
+            "vous": "commandiez",
+            "ils": "commandaient",
+            "elles": "commandaient"
+          },
+          "passe_compose": {
+            "je": "ai commandé",
+            "tu": "as commandé",
+            "il": "a commandé",
+            "elle": "a commandé",
+            "nous": "avons commandé",
+            "vous": "avez commandé",
+            "ils": "ont commandé",
+            "elles": "ont commandé"
+          },
+          "conditionnel": {
+            "je": "commanderais",
+            "tu": "commanderais",
+            "il": "commanderait",
+            "elle": "commanderait",
+            "nous": "commanderions",
+            "vous": "commanderiez",
+            "ils": "commanderaient",
+            "elles": "commanderaient"
+          },
+          "futur_proche": {
+            "je": "vais commander",
+            "tu": "vas commander",
+            "il": "va commander",
+            "elle": "va commander",
+            "nous": "allons commander",
+            "vous": "allez commander",
+            "ils": "vont commander",
+            "elles": "vont commander"
+          }
+        },
+        "Commencer": {
+          "id": 24,
+          "group": "er",
+          "present": {
+            "je": "commence",
+            "tu": "commences",
+            "il": "commence",
+            "elle": "commence",
+            "nous": "commençons",
+            "vous": "commencez",
+            "ils": "commencent",
+            "elles": "commencent"
+          },
+          "imparfait": {
+            "je": "commençais",
+            "tu": "commençais",
+            "il": "commençait",
+            "elle": "commençait",
+            "nous": "commencions",
+            "vous": "commenciez",
+            "ils": "commençaient",
+            "elles": "commençaient"
+          },
+          "passe_compose": {
+            "je": "ai commencé",
+            "tu": "as commencé",
+            "il": "a commencé",
+            "elle": "a commencé",
+            "nous": "avons commencé",
+            "vous": "avez commencé",
+            "ils": "ont commencé",
+            "elles": "ont commencé"
+          },
+          "conditionnel": {
+            "je": "commencerais",
+            "tu": "commencerais",
+            "il": "commencerait",
+            "elle": "commencerait",
+            "nous": "commencerions",
+            "vous": "commenceriez",
+            "ils": "commenceraient",
+            "elles": "commenceraient"
+          },
+          "futur_proche": {
+            "je": "vais commencer",
+            "tu": "vas commencer",
+            "il": "va commencer",
+            "elle": "va commencer",
+            "nous": "allons commencer",
+            "vous": "allez commencer",
+            "ils": "vont commencer",
+            "elles": "vont commencer"
+          }
+        },
+        "Comprendre": {
+          "id": 25,
+          "group": "irreg",
+          "present": {
+            "je": "comprends",
+            "tu": "comprends",
+            "il": "comprend",
+            "elle": "comprend",
+            "nous": "comprenons",
+            "vous": "comprenez",
+            "ils": "comprennent",
+            "elles": "comprennent"
+          },
+          "imparfait": {
+            "je": "comprenais",
+            "tu": "comprenais",
+            "il": "comprenait",
+            "elle": "comprenait",
+            "nous": "comprenions",
+            "vous": "compreniez",
+            "ils": "comprenaient",
+            "elles": "comprenaient"
+          },
+          "passe_compose": {
+            "je": "ai compris",
+            "tu": "as compris",
+            "il": "a compris",
+            "elle": "a compris",
+            "nous": "avons compris",
+            "vous": "avez compris",
+            "ils": "ont compris",
+            "elles": "ont compris"
+          },
+          "conditionnel": {
+            "je": "comprendrais",
+            "tu": "comprendrais",
+            "il": "comprendrait",
+            "elle": "comprendrait",
+            "nous": "comprendrions",
+            "vous": "comprendriez",
+            "ils": "comprendraient",
+            "elles": "comprendraient"
+          },
+          "futur_proche": {
+            "je": "vais comprendre",
+            "tu": "vas comprendre",
+            "il": "va comprendre",
+            "elle": "va comprendre",
+            "nous": "allons comprendre",
+            "vous": "allez comprendre",
+            "ils": "vont comprendre",
+            "elles": "vont comprendre"
+          }
+        },
+        "Conduire": {
+          "id": 26,
+          "group": "irreg",
+          "present": {
+            "je": "conduis",
+            "tu": "conduis",
+            "il": "conduit",
+            "elle": "conduit",
+            "nous": "conduisons",
+            "vous": "conduisez",
+            "ils": "conduisent",
+            "elles": "conduisent"
+          },
+          "imparfait": {
+            "je": "conduisais",
+            "tu": "conduisais",
+            "il": "conduisait",
+            "elle": "conduisait",
+            "nous": "conduisions",
+            "vous": "conduisiez",
+            "ils": "conduisaient",
+            "elles": "conduisaient"
+          },
+          "passe_compose": {
+            "je": "ai conduit",
+            "tu": "as conduit",
+            "il": "a conduit",
+            "elle": "a conduit",
+            "nous": "avons conduit",
+            "vous": "avez conduit",
+            "ils": "ont conduit",
+            "elles": "ont conduit"
+          },
+          "conditionnel": {
+            "je": "conduirais",
+            "tu": "conduirais",
+            "il": "conduirait",
+            "elle": "conduirait",
+            "nous": "conduirions",
+            "vous": "conduiriez",
+            "ils": "conduiraient",
+            "elles": "conduiraient"
+          },
+          "futur_proche": {
+            "je": "vais conduire",
+            "tu": "vas conduire",
+            "il": "va conduire",
+            "elle": "va conduire",
+            "nous": "allons conduire",
+            "vous": "allez conduire",
+            "ils": "vont conduire",
+            "elles": "vont conduire"
+          }
+        },
+        "Connaître": {
+          "id": 27,
+          "group": "irreg",
+          "present": {
+            "je": "connais",
+            "tu": "connais",
+            "il": "connaît",
+            "elle": "connaît",
+            "nous": "connaissons",
+            "vous": "connaissez",
+            "ils": "connaissent",
+            "elles": "connaissent"
+          },
+          "imparfait": {
+            "je": "connaissais",
+            "tu": "connaissais",
+            "il": "connaissait",
+            "elle": "connaissait",
+            "nous": "connaissions",
+            "vous": "connaissiez",
+            "ils": "connaissaient",
+            "elles": "connaissaient"
+          },
+          "passe_compose": {
+            "je": "ai connu",
+            "tu": "as connu",
+            "il": "a connu",
+            "elle": "a connu",
+            "nous": "avons connu",
+            "vous": "avez connu",
+            "ils": "ont connu",
+            "elles": "ont connu"
+          },
+          "conditionnel": {
+            "je": "connaîtrais",
+            "tu": "connaîtrais",
+            "il": "connaîtrait",
+            "elle": "connaîtrait",
+            "nous": "connaîtrions",
+            "vous": "connaîtriez",
+            "ils": "connaîtraient",
+            "elles": "connaîtraient"
+          },
+          "futur_proche": {
+            "je": "vais connaître",
+            "tu": "vas connaître",
+            "il": "va connaître",
+            "elle": "va connaître",
+            "nous": "allons connaître",
+            "vous": "allez connaître",
+            "ils": "vont connaître",
+            "elles": "vont connaître"
+          }
+        },
+        "Courir": {
+          "id": 28,
+          "group": "irreg",
+          "present": {
+            "je": "cours",
+            "tu": "cours",
+            "il": "court",
+            "elle": "court",
+            "nous": "courons",
+            "vous": "courez",
+            "ils": "courent",
+            "elles": "courent"
+          },
+          "imparfait": {
+            "je": "courais",
+            "tu": "courais",
+            "il": "courait",
+            "elle": "courait",
+            "nous": "courions",
+            "vous": "couriez",
+            "ils": "couraient",
+            "elles": "couraient"
+          },
+          "passe_compose": {
+            "je": "ai couru",
+            "tu": "as couru",
+            "il": "a couru",
+            "elle": "a couru",
+            "nous": "avons couru",
+            "vous": "avez couru",
+            "ils": "ont couru",
+            "elles": "ont couru"
+          },
+          "conditionnel": {
+            "je": "courrais",
+            "tu": "courrais",
+            "il": "courrait",
+            "elle": "courrait",
+            "nous": "courrions",
+            "vous": "courriez",
+            "ils": "courraient",
+            "elles": "courraient"
+          },
+          "futur_proche": {
+            "je": "vais courir",
+            "tu": "vas courir",
+            "il": "va courir",
+            "elle": "va courir",
+            "nous": "allons courir",
+            "vous": "allez courir",
+            "ils": "vont courir",
+            "elles": "vont courir"
+          }
+        },
+        "Croire": {
+          "id": 29,
+          "group": "irreg",
+          "present": {
+            "je": "crois",
+            "tu": "crois",
+            "il": "croit",
+            "elle": "croit",
+            "nous": "croyons",
+            "vous": "croyez",
+            "ils": "croient",
+            "elles": "croient"
+          },
+          "imparfait": {
+            "je": "croyais",
+            "tu": "croyais",
+            "il": "croyait",
+            "elle": "croyait",
+            "nous": "croyions",
+            "vous": "croyiez",
+            "ils": "croyaient",
+            "elles": "croyaient"
+          },
+          "passe_compose": {
+            "je": "ai cru",
+            "tu": "as cru",
+            "il": "a cru",
+            "elle": "a cru",
+            "nous": "avons cru",
+            "vous": "avez cru",
+            "ils": "ont cru",
+            "elles": "ont cru"
+          },
+          "conditionnel": {
+            "je": "croirais",
+            "tu": "croirais",
+            "il": "croirait",
+            "elle": "croirait",
+            "nous": "croirions",
+            "vous": "croiriez",
+            "ils": "croiraient",
+            "elles": "croiraient"
+          },
+          "futur_proche": {
+            "je": "vais croire",
+            "tu": "vas croire",
+            "il": "va croire",
+            "elle": "va croire",
+            "nous": "allons croire",
+            "vous": "allez croire",
+            "ils": "vont croire",
+            "elles": "vont croire"
+          }
+        },
+        "Cuisiner": {
+          "id": 30,
+          "group": "er",
+          "present": {
+            "je": "cuisine",
+            "tu": "cuisines",
+            "il": "cuisine",
+            "elle": "cuisine",
+            "nous": "cuisinons",
+            "vous": "cuisinez",
+            "ils": "cuisinent",
+            "elles": "cuisinent"
+          },
+          "imparfait": {
+            "je": "cuisinais",
+            "tu": "cuisinais",
+            "il": "cuisinait",
+            "elle": "cuisinait",
+            "nous": "cuisinions",
+            "vous": "cuisiniez",
+            "ils": "cuisinaient",
+            "elles": "cuisinaient"
+          },
+          "passe_compose": {
+            "je": "ai cuisiné",
+            "tu": "as cuisiné",
+            "il": "a cuisiné",
+            "elle": "a cuisiné",
+            "nous": "avons cuisiné",
+            "vous": "avez cuisiné",
+            "ils": "ont cuisiné",
+            "elles": "ont cuisiné"
+          },
+          "conditionnel": {
+            "je": "cuisinerais",
+            "tu": "cuisinerais",
+            "il": "cuisinerait",
+            "elle": "cuisinerait",
+            "nous": "cuisinerions",
+            "vous": "cuisineriez",
+            "ils": "cuisineraient",
+            "elles": "cuisineraient"
+          },
+          "futur_proche": {
+            "je": "vais cuisiner",
+            "tu": "vas cuisiner",
+            "il": "va cuisiner",
+            "elle": "va cuisiner",
+            "nous": "allons cuisiner",
+            "vous": "allez cuisiner",
+            "ils": "vont cuisiner",
+            "elles": "vont cuisiner"
+          }
+        },
+        "Danser": {
+          "id": 31,
+          "group": "er",
+          "present": {
+            "je": "danse",
+            "tu": "danses",
+            "il": "danse",
+            "elle": "danse",
+            "nous": "dansons",
+            "vous": "dansez",
+            "ils": "dansent",
+            "elles": "dansent"
+          },
+          "imparfait": {
+            "je": "dansais",
+            "tu": "dansais",
+            "il": "dansait",
+            "elle": "dansait",
+            "nous": "dansions",
+            "vous": "dansiez",
+            "ils": "dansaient",
+            "elles": "dansaient"
+          },
+          "passe_compose": {
+            "je": "ai dansé",
+            "tu": "as dansé",
+            "il": "a dansé",
+            "elle": "a dansé",
+            "nous": "avons dansé",
+            "vous": "avez dansé",
+            "ils": "ont dansé",
+            "elles": "ont dansé"
+          },
+          "conditionnel": {
+            "je": "danserais",
+            "tu": "danserais",
+            "il": "danserait",
+            "elle": "danserait",
+            "nous": "danserions",
+            "vous": "danseriez",
+            "ils": "danseraient",
+            "elles": "danseraient"
+          },
+          "futur_proche": {
+            "je": "vais danser",
+            "tu": "vas danser",
+            "il": "va danser",
+            "elle": "va danser",
+            "nous": "allons danser",
+            "vous": "allez danser",
+            "ils": "vont danser",
+            "elles": "vont danser"
+          }
+        },
+        "Décider": {
+          "id": 32,
+          "group": "er",
+          "present": {
+            "je": "décide",
+            "tu": "décides",
+            "il": "décide",
+            "elle": "décide",
+            "nous": "décidons",
+            "vous": "décidez",
+            "ils": "décident",
+            "elles": "décident"
+          },
+          "imparfait": {
+            "je": "décidais",
+            "tu": "décidais",
+            "il": "décidait",
+            "elle": "décidait",
+            "nous": "décidions",
+            "vous": "décidiez",
+            "ils": "décidaient",
+            "elles": "décidaient"
+          },
+          "passe_compose": {
+            "je": "ai décidé",
+            "tu": "as décidé",
+            "il": "a décidé",
+            "elle": "a décidé",
+            "nous": "avons décidé",
+            "vous": "avez décidé",
+            "ils": "ont décidé",
+            "elles": "ont décidé"
+          },
+          "conditionnel": {
+            "je": "déciderais",
+            "tu": "déciderais",
+            "il": "déciderait",
+            "elle": "déciderait",
+            "nous": "déciderions",
+            "vous": "décideriez",
+            "ils": "décideraient",
+            "elles": "décideraient"
+          },
+          "futur_proche": {
+            "je": "vais décider",
+            "tu": "vas décider",
+            "il": "va décider",
+            "elle": "va décider",
+            "nous": "allons décider",
+            "vous": "allez décider",
+            "ils": "vont décider",
+            "elles": "vont décider"
+          }
+        },
+        "Demander": {
+          "id": 33,
+          "group": "er",
+          "present": {
+            "je": "demande",
+            "tu": "demandes",
+            "il": "demande",
+            "elle": "demande",
+            "nous": "demandons",
+            "vous": "demandez",
+            "ils": "demandent",
+            "elles": "demandent"
+          },
+          "imparfait": {
+            "je": "demandais",
+            "tu": "demandais",
+            "il": "demandait",
+            "elle": "demandait",
+            "nous": "demandions",
+            "vous": "demandiez",
+            "ils": "demandaient",
+            "elles": "demandaient"
+          },
+          "passe_compose": {
+            "je": "ai demandé",
+            "tu": "as demandé",
+            "il": "a demandé",
+            "elle": "a demandé",
+            "nous": "avons demandé",
+            "vous": "avez demandé",
+            "ils": "ont demandé",
+            "elles": "ont demandé"
+          },
+          "conditionnel": {
+            "je": "demanderais",
+            "tu": "demanderais",
+            "il": "demanderait",
+            "elle": "demanderait",
+            "nous": "demanderions",
+            "vous": "demanderiez",
+            "ils": "demanderaient",
+            "elles": "demanderaient"
+          },
+          "futur_proche": {
+            "je": "vais demander",
+            "tu": "vas demander",
+            "il": "va demander",
+            "elle": "va demander",
+            "nous": "allons demander",
+            "vous": "allez demander",
+            "ils": "vont demander",
+            "elles": "vont demander"
+          }
+        },
+        "Déménager": {
+          "id": 34,
+          "group": "er",
+          "present": {
+            "je": "déménage",
+            "tu": "déménages",
+            "il": "déménage",
+            "elle": "déménage",
+            "nous": "déménageons",
+            "vous": "déménagez",
+            "ils": "déménagent",
+            "elles": "déménagent"
+          },
+          "imparfait": {
+            "je": "déménageais",
+            "tu": "déménageais",
+            "il": "déménageait",
+            "elle": "déménageait",
+            "nous": "déménagions",
+            "vous": "déménagiez",
+            "ils": "déménageaient",
+            "elles": "déménageaient"
+          },
+          "passe_compose": {
+            "je": "ai déménagé",
+            "tu": "as déménagé",
+            "il": "a déménagé",
+            "elle": "a déménagé",
+            "nous": "avons déménagé",
+            "vous": "avez déménagé",
+            "ils": "ont déménagé",
+            "elles": "ont déménagé"
+          },
+          "conditionnel": {
+            "je": "déménagerais",
+            "tu": "déménagerais",
+            "il": "déménagerait",
+            "elle": "déménagerait",
+            "nous": "déménagerions",
+            "vous": "déménageriez",
+            "ils": "déménageraient",
+            "elles": "déménageraient"
+          },
+          "futur_proche": {
+            "je": "vais déménager",
+            "tu": "vas déménager",
+            "il": "va déménager",
+            "elle": "va déménager",
+            "nous": "allons déménager",
+            "vous": "allez déménager",
+            "ils": "vont déménager",
+            "elles": "vont déménager"
+          }
+        },
+        "Dépenser": {
+          "id": 35,
+          "group": "er",
+          "present": {
+            "je": "dépense",
+            "tu": "dépenses",
+            "il": "dépense",
+            "elle": "dépense",
+            "nous": "dépensons",
+            "vous": "dépensez",
+            "ils": "dépensent",
+            "elles": "dépensent"
+          },
+          "imparfait": {
+            "je": "dépensais",
+            "tu": "dépensais",
+            "il": "dépensait",
+            "elle": "dépensait",
+            "nous": "dépensions",
+            "vous": "dépensiez",
+            "ils": "dépensaient",
+            "elles": "dépensaient"
+          },
+          "passe_compose": {
+            "je": "ai dépensé",
+            "tu": "as dépensé",
+            "il": "a dépensé",
+            "elle": "a dépensé",
+            "nous": "avons dépensé",
+            "vous": "avez dépensé",
+            "ils": "ont dépensé",
+            "elles": "ont dépensé"
+          },
+          "conditionnel": {
+            "je": "dépenserais",
+            "tu": "dépenserais",
+            "il": "dépenserait",
+            "elle": "dépenserait",
+            "nous": "dépenserions",
+            "vous": "dépenseriez",
+            "ils": "dépenseraient",
+            "elles": "dépenseraient"
+          },
+          "futur_proche": {
+            "je": "vais dépenser",
+            "tu": "vas dépenser",
+            "il": "va dépenser",
+            "elle": "va dépenser",
+            "nous": "allons dépenser",
+            "vous": "allez dépenser",
+            "ils": "vont dépenser",
+            "elles": "vont dépenser"
+          }
+        },
+        "Descendre": {
+          "id": 36,
+          "group": "irreg",
+          "present": {
+            "je": "descends",
+            "tu": "descends",
+            "il": "descend",
+            "elle": "descend",
+            "nous": "descendons",
+            "vous": "descendez",
+            "ils": "descendent",
+            "elles": "descendent"
+          },
+          "imparfait": {
+            "je": "descendais",
+            "tu": "descendais",
+            "il": "descendait",
+            "elle": "descendait",
+            "nous": "descendions",
+            "vous": "descendiez",
+            "ils": "descendaient",
+            "elles": "descendaient"
+          },
+          "passe_compose": {
+            "je": "suis descendu",
+            "tu": "es descendu",
+            "il": "est descendu",
+            "elle": "est descendue",
+            "nous": "sommes descendus",
+            "vous": "êtes descendus",
+            "ils": "sont descendus",
+            "elles": "sont descendues"
+          },
+          "conditionnel": {
+            "je": "descendrais",
+            "tu": "descendrais",
+            "il": "descendrait",
+            "elle": "descendrait",
+            "nous": "descendrions",
+            "vous": "descendriez",
+            "ils": "descendraient",
+            "elles": "descendraient"
+          },
+          "futur_proche": {
+            "je": "vais descendre",
+            "tu": "vas descendre",
+            "il": "va descendre",
+            "elle": "va descendre",
+            "nous": "allons descendre",
+            "vous": "allez descendre",
+            "ils": "vont descendre",
+            "elles": "vont descendre"
+          }
+        },
+        "Donner": {
+          "id": 37,
+          "group": "er",
+          "present": {
+            "je": "donne",
+            "tu": "donnes",
+            "il": "donne",
+            "elle": "donne",
+            "nous": "donnons",
+            "vous": "donnez",
+            "ils": "donnent",
+            "elles": "donnent"
+          },
+          "imparfait": {
+            "je": "donnais",
+            "tu": "donnais",
+            "il": "donnais",
+            "elle": "donnais",
+            "nous": "donnions",
+            "vous": "donniez",
+            "ils": "donnaient",
+            "elles": "donnaient"
+          },
+          "passe_compose": {
+            "je": "ai donné",
+            "tu": "as donné",
+            "il": "a donné",
+            "elle": "a donné",
+            "nous": "avons donné",
+            "vous": "avez donné",
+            "ils": "ont donné",
+            "elles": "ont donné"
+          },
+          "conditionnel": {
+            "je": "donnerais",
+            "tu": "donnerais",
+            "il": "donnerait",
+            "elle": "donnerait",
+            "nous": "donnerions",
+            "vous": "donneriez",
+            "ils": "donneraient",
+            "elles": "donneraient"
+          },
+          "futur_proche": {
+            "je": "vais donner",
+            "tu": "vas donner",
+            "il": "va donner",
+            "elle": "va donner",
+            "nous": "allons donner",
+            "vous": "allez donner",
+            "ils": "vont donner",
+            "elles": "vont donner"
+          }
+        },
+        "Dormir": {
+          "id": 38,
+          "group": "irreg",
+          "present": {
+            "je": "dors",
+            "tu": "dors",
+            "il": "dort",
+            "elle": "dort",
+            "nous": "dormons",
+            "vous": "dormez",
+            "ils": "dorment",
+            "elles": "dorment"
+          },
+          "imparfait": {
+            "je": "dormais",
+            "tu": "dormais",
+            "il": "dormait",
+            "elle": "dormait",
+            "nous": "dormions",
+            "vous": "dormiez",
+            "ils": "dormaient",
+            "elles": "dormaient"
+          },
+          "passe_compose": {
+            "je": "ai dormi",
+            "tu": "as dormi",
+            "il": "a dormi",
+            "elle": "a dormi",
+            "nous": "avons dormi",
+            "vous": "avez dormi",
+            "ils": "ont dormi",
+            "elles": "ont dormi"
+          },
+          "conditionnel": {
+            "je": "dormirais",
+            "tu": "dormirais",
+            "il": "dormirait",
+            "elle": "dormirait",
+            "nous": "dormirions",
+            "vous": "dormiriez",
+            "ils": "dormiraient",
+            "elles": "dormiraient"
+          },
+          "futur_proche": {
+            "je": "vais dormir",
+            "tu": "vas dormir",
+            "il": "va dormir",
+            "elle": "va dormir",
+            "nous": "allons dormir",
+            "vous": "allez dormir",
+            "ils": "vont dormir",
+            "elles": "vont dormir"
+          }
+        },
+        "Écouter": {
+          "id": 39,
+          "group": "er",
+          "present": {
+            "je": "écoute",
+            "tu": "écoutes",
+            "il": "écoute",
+            "elle": "écoute",
+            "nous": "écoutons",
+            "vous": "écoutez",
+            "ils": "écoutent",
+            "elles": "écoutent"
+          },
+          "imparfait": {
+            "je": "écoutais",
+            "tu": "écoutais",
+            "il": "écoutait",
+            "elle": "écoutait",
+            "nous": "écutions",
+            "vous": "écoutiez",
+            "ils": "écoutaient",
+            "elles": "écoutaient"
+          },
+          "passe_compose": {
+            "je": "ai écouté",
+            "tu": "as écouté",
+            "il": "a écouté",
+            "elle": "a écouté",
+            "nous": "avons écouté",
+            "vous": "avez écouté",
+            "ils": "ont écouté",
+            "elles": "ont écouté"
+          },
+          "conditionnel": {
+            "je": "écouterais",
+            "tu": "écouterais",
+            "il": "écouterait",
+            "elle": "écouterait",
+            "nous": "écouterions",
+            "vous": "écouteriez",
+            "ils": "écouteraient",
+            "elles": "écouteraient"
+          },
+          "futur_proche": {
+            "je": "vais écouter",
+            "tu": "vas écouter",
+            "il": "va écouter",
+            "elle": "va écouter",
+            "nous": "allons écouter",
+            "vous": "allez écouter",
+            "ils": "vont écouter",
+            "elles": "vont écouter"
+          }
+        },
+        "Écrire": {
+          "id": 40,
+          "group": "irreg",
+          "present": {
+            "je": "écris",
+            "tu": "écris",
+            "il": "écrit",
+            "elle": "écrit",
+            "nous": "écrivons",
+            "vous": "écrivez",
+            "ils": "écrivent",
+            "elles": "écrivent"
+          },
+          "imparfait": {
+            "je": "écrivais",
+            "tu": "écrivais",
+            "il": "écrivait",
+            "elle": "écrivait",
+            "nous": "écrivions",
+            "vous": "écriviez",
+            "ils": "écrivaient",
+            "elles": "écrivaient"
+          },
+          "passe_compose": {
+            "je": "ai écrit",
+            "tu": "as écrit",
+            "il": "a écrit",
+            "elle": "a écrit",
+            "nous": "avons écrit",
+            "vous": "avez écrit",
+            "ils": "ont écrit",
+            "elles": "ont écrit"
+          },
+          "conditionnel": {
+            "je": "écrirais",
+            "tu": "écrirais",
+            "il": "écrirait",
+            "elle": "écrirait",
+            "nous": "écririons",
+            "vous": "écririez",
+            "ils": "écriraient",
+            "elles": "écriraient"
+          },
+          "futur_proche": {
+            "je": "vais écrire",
+            "tu": "vas écrire",
+            "il": "va écrire",
+            "elle": "va écrire",
+            "nous": "allons écrire",
+            "vous": "allez écrire",
+            "ils": "vont écrire",
+            "elles": "vont écrire"
+          }
+        },
+        "Enlever": {
+          "id": 41,
+          "group": "er",
+          "present": {
+            "je": "enlève",
+            "tu": "enlèves",
+            "il": "enlève",
+            "elle": "enlève",
+            "nous": "enlevons",
+            "vous": "enlevez",
+            "ils": "enlèvent",
+            "elles": "enlèvent"
+          },
+          "imparfait": {
+            "je": "enlevais",
+            "tu": "enlevais",
+            "il": "enlevait",
+            "elle": "enlevait",
+            "nous": "enlevions",
+            "vous": "enleviez",
+            "ils": "enlevaient",
+            "elles": "enlevaient"
+          },
+          "passe_compose": {
+            "je": "ai enlevé",
+            "tu": "as enlevé",
+            "il": "a enlevé",
+            "elle": "a enlevé",
+            "nous": "avons enlevé",
+            "vous": "avez enlevé",
+            "ils": "ont enlevé",
+            "elles": "ont enlevé"
+          },
+          "conditionnel": {
+            "je": "enlèverais",
+            "tu": "enlèverais",
+            "il": "enlèverait",
+            "elle": "enlèverait",
+            "nous": "enlèverions",
+            "vous": "enlèveriez",
+            "ils": "enlèveraient",
+            "elles": "enlèveraient"
+          },
+          "futur_proche": {
+            "je": "vais enlever",
+            "tu": "vas enlever",
+            "il": "va enlever",
+            "elle": "va enlever",
+            "nous": "allons enlever",
+            "vous": "allez enlever",
+            "ils": "vont enlever",
+            "elles": "vont enlever"
+          }
+        },
+        "Entendre": {
+          "id": 42,
+          "group": "re",
+          "present": {
+            "je": "entends",
+            "tu": "entends",
+            "il": "entend",
+            "elle": "entend",
+            "nous": "entendons",
+            "vous": "entendez",
+            "ils": "entendent",
+            "elles": "entendent"
+          },
+          "imparfait": {
+            "je": "entendais",
+            "tu": "entendais",
+            "il": "entendait",
+            "elle": "entendait",
+            "nous": "entendions",
+            "vous": "entendiez",
+            "ils": "entendaient",
+            "elles": "entendaient"
+          },
+          "passe_compose": {
+            "je": "ai entendu",
+            "tu": "as entendu",
+            "il": "a entendu",
+            "elle": "a entendu",
+            "nous": "avons entendu",
+            "vous": "avez entendu",
+            "ils": "ont entendu",
+            "elles": "ont entendu"
+          },
+          "conditionnel": {
+            "je": "entendrais",
+            "tu": "entendrais",
+            "il": "entendrait",
+            "elle": "entendrait",
+            "nous": "entendrions",
+            "vous": "entendriez",
+            "ils": "entendraient",
+            "elles": "entendraient"
+          },
+          "futur_proche": {
+            "je": "vais entendre",
+            "tu": "vas entendre",
+            "il": "va entendre",
+            "elle": "va entendre",
+            "nous": "allons entendre",
+            "vous": "allez entendre",
+            "ils": "vont entendre",
+            "elles": "vont entendre"
+          }
+        },
+        "Envoyer": {
+          "id": 43,
+          "group": "irreg",
+          "present": {
+            "je": "envoie",
+            "tu": "envoies",
+            "il": "envoie",
+            "elle": "envoie",
+            "nous": "envoyons",
+            "vous": "envoyez",
+            "ils": "envoient",
+            "elles": "envoient"
+          },
+          "imparfait": {
+            "je": "envoyais",
+            "tu": "envoyais",
+            "il": "envoyait",
+            "elle": "envoyait",
+            "nous": "envoyions",
+            "vous": "envoyiez",
+            "ils": "envoyaient",
+            "elles": "envoyaient"
+          },
+          "passe_compose": {
+            "je": "ai envoyé",
+            "tu": "as envoyé",
+            "il": "a envoyé",
+            "elle": "a envoyé",
+            "nous": "avons envoyé",
+            "vous": "avez envoyé",
+            "ils": "ont envoyé",
+            "elles": "ont envoyé"
+          },
+          "conditionnel": {
+            "je": "enverrais",
+            "tu": "enverrais",
+            "il": "enverrait",
+            "elle": "enverrait",
+            "nous": "enverrions",
+            "vous": "enverriez",
+            "ils": "enverraient",
+            "elles": "enverraient"
+          },
+          "futur_proche": {
+            "je": "vais envoyer",
+            "tu": "vas envoyer",
+            "il": "va envoyer",
+            "elle": "va envoyer",
+            "nous": "allons envoyer",
+            "vous": "allez envoyer",
+            "ils": "vont envoyer",
+            "elles": "vont envoyer"
+          }
+        },
+        "Essayer": {
+          "id": 44,
+          "group": "er",
+          "present": {
+            "je": "essaie",
+            "tu": "essaies",
+            "il": "essaie",
+            "elle": "essaie",
+            "nous": "essayons",
+            "vous": "essayez",
+            "ils": "essaient",
+            "elles": "essaient"
+          },
+          "imparfait": {
+            "je": "essayais",
+            "tu": "essayais",
+            "il": "essayait",
+            "elle": "essayait",
+            "nous": "essayions",
+            "vous": "essayiez",
+            "ils": "essayaient",
+            "elles": "essayaient"
+          },
+          "passe_compose": {
+            "je": "ai essayé",
+            "tu": "as essayé",
+            "il": "a essayé",
+            "elle": "a essayé",
+            "nous": "avons essayé",
+            "vous": "avez essayé",
+            "ils": "ont essayé",
+            "elles": "ont essayé"
+          },
+          "conditionnel": {
+            "je": "essaierais",
+            "tu": "essaierais",
+            "il": "essaierait",
+            "elle": "essaierait",
+            "nous": "essaierions",
+            "vous": "essaieriez",
+            "ils": "essaieraient",
+            "elles": "essaieraient"
+          },
+          "futur_proche": {
+            "je": "vais essayer",
+            "tu": "vas essayer",
+            "il": "va essayer",
+            "elle": "va essayer",
+            "nous": "allons essayer",
+            "vous": "allez essayer",
+            "ils": "vont essayer",
+            "elles": "vont essayer"
+          }
+        },
+        "Étudier": {
+          "id": 45,
+          "group": "er",
+          "present": {
+            "je": "étudie",
+            "tu": "étudies",
+            "il": "étudie",
+            "elle": "étudie",
+            "nous": "étudions",
+            "vous": "étudiez",
+            "ils": "étudient",
+            "elles": "étudient"
+          },
+          "imparfait": {
+            "je": "étudiais",
+            "tu": "étudiais",
+            "il": "étudiait",
+            "elle": "étudiait",
+            "nous": "étudiions",
+            "vous": "étudiiez",
+            "ils": "étudiaient",
+            "elles": "étudiaient"
+          },
+          "passe_compose": {
+            "je": "ai étudié",
+            "tu": "as étudié",
+            "il": "a étudié",
+            "elle": "a étudié",
+            "nous": "avons étudié",
+            "vous": "avez étudié",
+            "ils": "ont étudié",
+            "elles": "ont étudié"
+          },
+          "conditionnel": {
+            "je": "étudierais",
+            "tu": "étudierais",
+            "il": "étudierait",
+            "elle": "étudierait",
+            "nous": "étudierions",
+            "vous": "étudieriez",
+            "ils": "étudieraient",
+            "elles": "étudieraient"
+          },
+          "futur_proche": {
+            "je": "vais étudier",
+            "tu": "vas étudier",
+            "il": "va étudier",
+            "elle": "va étudier",
+            "nous": "allons étudier",
+            "vous": "allez étudier",
+            "ils": "vont étudier",
+            "elles": "vont étudier"
+          }
+        },
+        "Fermer": {
+          "id": 46,
+          "group": "er",
+          "present": {
+            "je": "ferme",
+            "tu": "fermes",
+            "il": "ferme",
+            "elle": "ferme",
+            "nous": "fermons",
+            "vous": "fermez",
+            "ils": "ferment",
+            "elles": "ferment"
+          },
+          "imparfait": {
+            "je": "fermais",
+            "tu": "fermais",
+            "il": "fermait",
+            "elle": "fermait",
+            "nous": "fermions",
+            "vous": "fermiez",
+            "ils": "fermaient",
+            "elles": "fermaient"
+          },
+          "passe_compose": {
+            "je": "ai fermé",
+            "tu": "as fermé",
+            "il": "a fermé",
+            "elle": "a fermé",
+            "nous": "avons fermé",
+            "vous": "avez fermé",
+            "ils": "ont fermé",
+            "elles": "ont fermé"
+          },
+          "conditionnel": {
+            "je": "fermerais",
+            "tu": "fermerais",
+            "il": "fermerait",
+            "elle": "fermerait",
+            "nous": "fermerions",
+            "vous": "fermeriez",
+            "ils": "fermeraient",
+            "elles": "fermeraient"
+          },
+          "futur_proche": {
+            "je": "vais fermer",
+            "tu": "vas fermer",
+            "il": "va fermer",
+            "elle": "va fermer",
+            "nous": "allons fermer",
+            "vous": "allez fermer",
+            "ils": "vont fermer",
+            "elles": "vont fermer"
+          }
+        },
+        "Finir": {
+          "id": 47,
+          "group": "ir",
+          "present": {
+            "je": "finis",
+            "tu": "finis",
+            "il": "finit",
+            "elle": "finit",
+            "nous": "finissons",
+            "vous": "finissez",
+            "ils": "finissent",
+            "elles": "finissent"
+          },
+          "imparfait": {
+            "je": "finissais",
+            "tu": "finissais",
+            "il": "finissait",
+            "elle": "finissait",
+            "nous": "finissions",
+            "vous": "finissiez",
+            "ils": "finissaient",
+            "elles": "finissaient"
+          },
+          "passe_compose": {
+            "je": "ai fini",
+            "tu": "as fini",
+            "il": "a fini",
+            "elle": "a fini",
+            "nous": "avons fini",
+            "vous": "avez fini",
+            "ils": "ont fini",
+            "elles": "ont fini"
+          },
+          "conditionnel": {
+            "je": "finirais",
+            "tu": "finirais",
+            "il": "finirait",
+            "elle": "finirait",
+            "nous": "finirions",
+            "vous": "finiriez",
+            "ils": "finiraient",
+            "elles": "finiraient"
+          },
+          "futur_proche": {
+            "je": "vais finir",
+            "tu": "vas finir",
+            "il": "va finir",
+            "elle": "va finir",
+            "nous": "allons finir",
+            "vous": "allez finir",
+            "ils": "vont finir",
+            "elles": "vont finir"
+          }
+        },
+        "Gagner": {
+          "id": 48,
+          "group": "er",
+          "present": {
+            "je": "gagne",
+            "tu": "gagnes",
+            "il": "gagne",
+            "elle": "gagne",
+            "nous": "gagnons",
+            "vous": "gagnez",
+            "ils": "gagnent",
+            "elles": "gagnent"
+          },
+          "imparfait": {
+            "je": "gagnais",
+            "tu": "gagnais",
+            "il": "gagnait",
+            "elle": "gagnait",
+            "nous": "gagnions",
+            "vous": "gagniez",
+            "ils": "gagnaient",
+            "elles": "gagnaient"
+          },
+          "passe_compose": {
+            "je": "ai gagné",
+            "tu": "as gagné",
+            "il": "a gagné",
+            "elle": "a gagné",
+            "nous": "avons gagné",
+            "vous": "avez gagné",
+            "ils": "ont gagné",
+            "elles": "ont gagné"
+          },
+          "conditionnel": {
+            "je": "gagnerais",
+            "tu": "gagnerais",
+            "il": "gagnerait",
+            "elle": "gagnerait",
+            "nous": "gagnerions",
+            "vous": "gagneriez",
+            "ils": "gagneraient",
+            "elles": "gagneraient"
+          },
+          "futur_proche": {
+            "je": "vais gagner",
+            "tu": "vas gagner",
+            "il": "va gagner",
+            "elle": "va gagner",
+            "nous": "allons gagner",
+            "vous": "allez gagner",
+            "ils": "vont gagner",
+            "elles": "vont gagner"
+          }
+        },
+        "Gaspiller": {
+          "id": 49,
+          "group": "er",
+          "present": {
+            "je": "gaspille",
+            "tu": "gaspilles",
+            "il": "gaspille",
+            "elle": "gaspille",
+            "nous": "gaspillons",
+            "vous": "gaspillez",
+            "ils": "gaspillent",
+            "elles": "gaspillent"
+          },
+          "imparfait": {
+            "je": "gaspillais",
+            "tu": "gaspillais",
+            "il": "gaspillait",
+            "elle": "gaspillait",
+            "nous": "gaspillions",
+            "vous": "gaspilliez",
+            "ils": "gaspillaient",
+            "elles": "gaspillaient"
+          },
+          "passe_compose": {
+            "je": "ai gaspillé",
+            "tu": "as gaspillé",
+            "il": "a gaspillé",
+            "elle": "a gaspillé",
+            "nous": "avons gaspillé",
+            "vous": "avez gaspillé",
+            "ils": "ont gaspillé",
+            "elles": "ont gaspillé"
+          },
+          "conditionnel": {
+            "je": "gaspillerais",
+            "tu": "gaspillerais",
+            "il": "gaspillerait",
+            "elle": "gaspillerait",
+            "nous": "gaspillerions",
+            "vous": "gaspilleriez",
+            "ils": "gaspilleraient",
+            "elles": "gaspilleraient"
+          },
+          "futur_proche": {
+            "je": "vais gaspiller",
+            "tu": "vas gaspiller",
+            "il": "va gaspiller",
+            "elle": "va gaspiller",
+            "nous": "allons gaspiller",
+            "vous": "allez gaspiller",
+            "ils": "vont gaspiller",
+            "elles": "vont gaspiller"
+          }
+        },
+        "Goûter": {
+          "id": 50,
+          "group": "er",
+          "present": {
+            "je": "goûte",
+            "tu": "goûtes",
+            "il": "goûte",
+            "elle": "goûte",
+            "nous": "goûtons",
+            "vous": "goûtez",
+            "ils": "goûtent",
+            "elles": "goûtent"
+          },
+          "imparfait": {
+            "je": "goûtais",
+            "tu": "goûtais",
+            "il": "goûtait",
+            "elle": "goûtait",
+            "nous": "goûtions",
+            "vous": "goûtiez",
+            "ils": "goûtaient",
+            "elles": "goûtaient"
+          },
+          "passe_compose": {
+            "je": "ai goûté",
+            "tu": "as goûté",
+            "il": "a goûté",
+            "elle": "a goûté",
+            "nous": "avons goûté",
+            "vous": "avez goûté",
+            "ils": "ont goûté",
+            "elles": "ont goûté"
+          },
+          "conditionnel": {
+            "je": "goûterais",
+            "tu": "goûterais",
+            "il": "goûterait",
+            "elle": "goûterait",
+            "nous": "goûterions",
+            "vous": "goûteriez",
+            "ils": "goûteraient",
+            "elles": "goûteraient"
+          },
+          "futur_proche": {
+            "je": "vais goûter",
+            "tu": "vas goûter",
+            "il": "va goûter",
+            "elle": "va goûter",
+            "nous": "allons goûter",
+            "vous": "allez goûter",
+            "ils": "vont goûter",
+            "elles": "vont goûter"
+          }
+        },
+        "Habiter": {
+          "id": 51,
+          "group": "er",
+          "present": {
+            "je": "habite",
+            "tu": "habites",
+            "il": "habite",
+            "elle": "habite",
+            "nous": "habitons",
+            "vous": "habitez",
+            "ils": "habitent",
+            "elles": "habitent"
+          },
+          "imparfait": {
+            "je": "habitais",
+            "tu": "habitais",
+            "il": "habitait",
+            "elle": "habitait",
+            "nous": "habitions",
+            "vous": "habitiez",
+            "ils": "habitaient",
+            "elles": "habitaient"
+          },
+          "passe_compose": {
+            "je": "ai habité",
+            "tu": "as habité",
+            "il": "a habité",
+            "elle": "a habité",
+            "nous": "avons habité",
+            "vous": "avez habité",
+            "ils": "ont habité",
+            "elles": "ont habité"
+          },
+          "conditionnel": {
+            "je": "habiterais",
+            "tu": "habiterais",
+            "il": "habiterait",
+            "elle": "habiterait",
+            "nous": "habiterions",
+            "vous": "habiteriez",
+            "ils": "habiteraient",
+            "elles": "habiteraient"
+          },
+          "futur_proche": {
+            "je": "vais habiter",
+            "tu": "vas habiter",
+            "il": "va habiter",
+            "elle": "va habiter",
+            "nous": "allons habiter",
+            "vous": "allez habiter",
+            "ils": "vont habiter",
+            "elles": "vont habiter"
+          }
+        },
+        "Introduire": {
+          "id": 52,
+          "group": "irreg",
+          "present": {
+            "je": "introduis",
+            "tu": "introduis",
+            "il": "introduit",
+            "elle": "introduit",
+            "nous": "introduisons",
+            "vous": "introduisez",
+            "ils": "introduisent",
+            "elles": "introduisent"
+          },
+          "imparfait": {
+            "je": "introduisais",
+            "tu": "introduisais",
+            "il": "introduisait",
+            "elle": "introduisait",
+            "nous": "introduisions",
+            "vous": "introduisiez",
+            "ils": "introduisaient",
+            "elles": "introduisaient"
+          },
+          "passe_compose": {
+            "je": "ai introduit",
+            "tu": "as introduit",
+            "il": "a introduit",
+            "elle": "a introduit",
+            "nous": "avons introduit",
+            "vous": "avez introduit",
+            "ils": "ont introduit",
+            "elles": "ont introduit"
+          },
+          "conditionnel": {
+            "je": "introduirais",
+            "tu": "introduirais",
+            "il": "introduirait",
+            "elle": "introduirait",
+            "nous": "introduirions",
+            "vous": "introduiriez",
+            "ils": "introduiraient",
+            "elles": "introduiraient"
+          },
+          "futur_proche": {
+            "je": "vais introduire",
+            "tu": "vas introduire",
+            "il": "va introduire",
+            "elle": "va introduire",
+            "nous": "allons introduire",
+            "vous": "allez introduire",
+            "ils": "vont introduire",
+            "elles": "vont introduire"
+          }
+        },
+        "Inviter": {
+          "id": 53,
+          "group": "er",
+          "present": {
+            "je": "invite",
+            "tu": "invites",
+            "il": "invite",
+            "elle": "invite",
+            "nous": "invitons",
+            "vous": "invitez",
+            "ils": "invitent",
+            "elles": "invitent"
+          },
+          "imparfait": {
+            "je": "invitais",
+            "tu": "invitais",
+            "il": "invitait",
+            "elle": "invitait",
+            "nous": "invitions",
+            "vous": "invitiez",
+            "ils": "invitaient",
+            "elles": "invitaient"
+          },
+          "passe_compose": {
+            "je": "ai invité",
+            "tu": "as invité",
+            "il": "a invité",
+            "elle": "a invité",
+            "nous": "avons invité",
+            "vous": "avez invité",
+            "ils": "ont invité",
+            "elles": "ont invité"
+          },
+          "conditionnel": {
+            "je": "inviterais",
+            "tu": "inviterais",
+            "il": "inviterait",
+            "elle": "inviterait",
+            "nous": "inviterions",
+            "vous": "inviteriez",
+            "ils": "inviteraient",
+            "elles": "inviteraient"
+          },
+          "futur_proche": {
+            "je": "vais inviter",
+            "tu": "vas inviter",
+            "il": "va inviter",
+            "elle": "va inviter",
+            "nous": "allons inviter",
+            "vous": "allez inviter",
+            "ils": "vont inviter",
+            "elles": "vont inviter"
+          }
+        },
+        "Jouer": {
+          "id": 54,
+          "group": "er",
+          "present": {
+            "je": "joue",
+            "tu": "joues",
+            "il": "joue",
+            "elle": "joue",
+            "nous": "jouons",
+            "vous": "jouez",
+            "ils": "jouent",
+            "elles": "jouent"
+          },
+          "imparfait": {
+            "je": "jouais",
+            "tu": "jouais",
+            "il": "jouait",
+            "elle": "jouait",
+            "nous": "jouions",
+            "vous": "jouiez",
+            "ils": "jouaient",
+            "elles": "jouaient"
+          },
+          "passe_compose": {
+            "je": "ai joué",
+            "tu": "as joué",
+            "il": "a joué",
+            "elle": "a joué",
+            "nous": "avons joué",
+            "vous": "avez joué",
+            "ils": "ont joué",
+            "elles": "ont joué"
+          },
+          "conditionnel": {
+            "je": "jouerais",
+            "tu": "jouerais",
+            "il": "jouerait",
+            "elle": "jouerait",
+            "nous": "jouerions",
+            "vous": "joueriez",
+            "ils": "joueraient",
+            "elles": "joueraient"
+          },
+          "futur_proche": {
+            "je": "vais jouer",
+            "tu": "vas jouer",
+            "il": "va jouer",
+            "elle": "va jouer",
+            "nous": "allons jouer",
+            "vous": "allez jouer",
+            "ils": "vont jouer",
+            "elles": "vont jouer"
+          }
+        },
+        "Laisser": {
+          "id": 55,
+          "group": "er",
+          "present": {
+            "je": "laisse",
+            "tu": "laisses",
+            "il": "laisse",
+            "elle": "laisse",
+            "nous": "laissons",
+            "vous": "laissez",
+            "ils": "laissent",
+            "elles": "laissent"
+          },
+          "imparfait": {
+            "je": "laissais",
+            "tu": "laissais",
+            "il": "laissait",
+            "elle": "laissait",
+            "nous": "laissions",
+            "vous": "laissiez",
+            "ils": "laissaient",
+            "elles": "laissaient"
+          },
+          "passe_compose": {
+            "je": "ai laissé",
+            "tu": "as laissé",
+            "il": "a laissé",
+            "elle": "a laissé",
+            "nous": "avons laissé",
+            "vous": "avez laissé",
+            "ils": "ont laissé",
+            "elles": "ont laissé"
+          },
+          "conditionnel": {
+            "je": "laisserais",
+            "tu": "laisserais",
+            "il": "laisserait",
+            "elle": "laisserait",
+            "nous": "laisserions",
+            "vous": "laisseriez",
+            "ils": "laisseraient",
+            "elles": "laisseraient"
+          },
+          "futur_proche": {
+            "je": "vais laisser",
+            "tu": "vas laisser",
+            "il": "va laisser",
+            "elle": "va laisser",
+            "nous": "allons laisser",
+            "vous": "allez laisser",
+            "ils": "vont laisser",
+            "elles": "vont laisser"
+          }
+        },
+        "Laver": {
+          "id": 56,
+          "group": "er",
+          "present": {
+            "je": "lave",
+            "tu": "laves",
+            "il": "lave",
+            "elle": "lave",
+            "nous": "lavons",
+            "vous": "lavez",
+            "ils": "lavent",
+            "elles": "lavent"
+          },
+          "imparfait": {
+            "je": "lavais",
+            "tu": "lavais",
+            "il": "lavait",
+            "elle": "lavait",
+            "nous": "lavions",
+            "vous": "laviez",
+            "ils": "lavaient",
+            "elles": "lavaient"
+          },
+          "passe_compose": {
+            "je": "ai lavé",
+            "tu": "as lavé",
+            "il": "a lavé",
+            "elle": "a lavé",
+            "nous": "avons lavé",
+            "vous": "avez lavé",
+            "ils": "ont lavé",
+            "elles": "ont lavé"
+          },
+          "conditionnel": {
+            "je": "laverais",
+            "tu": "laverais",
+            "il": "laverait",
+            "elle": "laverait",
+            "nous": "laverions",
+            "vous": "laveriez",
+            "ils": "laveraient",
+            "elles": "laveraient"
+          },
+          "futur_proche": {
+            "je": "vais laver",
+            "tu": "vas laver",
+            "il": "va laver",
+            "elle": "va laver",
+            "nous": "allons laver",
+            "vous": "allez laver",
+            "ils": "vont laver",
+            "elles": "vont laver"
+          }
+        },
+        "Lire": {
+          "id": 57,
+          "group": "irreg",
+          "present": {
+            "je": "lis",
+            "tu": "lis",
+            "il": "lit",
+            "elle": "lit",
+            "nous": "lisons",
+            "vous": "lisez",
+            "ils": "lisent",
+            "elles": "lisent"
+          },
+          "imparfait": {
+            "je": "lisais",
+            "tu": "lisais",
+            "il": "lisait",
+            "elle": "lisait",
+            "nous": "lisions",
+            "vous": "lisiez",
+            "ils": "lisaient",
+            "elles": "lisaient"
+          },
+          "passe_compose": {
+            "je": "ai lu",
+            "tu": "as lu",
+            "il": "a lu",
+            "elle": "a lu",
+            "nous": "avons lu",
+            "vous": "avez lu",
+            "ils": "ont lu",
+            "elles": "ont lu"
+          },
+          "conditionnel": {
+            "je": "lirais",
+            "tu": "lirais",
+            "il": "lirait",
+            "elle": "lirait",
+            "nous": "lirions",
+            "vous": "liriez",
+            "ils": "liraient",
+            "elles": "liraient"
+          },
+          "futur_proche": {
+            "je": "vais lire",
+            "tu": "vas lire",
+            "il": "va lire",
+            "elle": "va lire",
+            "nous": "allons lire",
+            "vous": "allez lire",
+            "ils": "vont lire",
+            "elles": "vont lire"
+          }
+        },
+        "Manger": {
+          "id": 58,
+          "group": "er",
+          "present": {
+            "je": "mange",
+            "tu": "manges",
+            "il": "mange",
+            "elle": "mange",
+            "nous": "mangeons",
+            "vous": "mangez",
+            "ils": "mangent",
+            "elles": "mangent"
+          },
+          "imparfait": {
+            "je": "mangeais",
+            "tu": "mangeais",
+            "il": "mangeait",
+            "elle": "mangeait",
+            "nous": "mangiions",
+            "vous": "mangiiez",
+            "ils": "mangeaient",
+            "elles": "mangeaient"
+          },
+          "passe_compose": {
+            "je": "ai mangé",
+            "tu": "as mangé",
+            "il": "a mangé",
+            "elle": "a mangé",
+            "nous": "avons mangé",
+            "vous": "avez mangé",
+            "ils": "ont mangé",
+            "elles": "ont mangé"
+          },
+          "conditionnel": {
+            "je": "mangerais",
+            "tu": "mangerais",
+            "il": "mangerait",
+            "elle": "mangerait",
+            "nous": "mangerions",
+            "vous": "mangeriez",
+            "ils": "mangeraient",
+            "elles": "mangeraient"
+          },
+          "futur_proche": {
+            "je": "vais manger",
+            "tu": "vas manger",
+            "il": "va manger",
+            "elle": "va manger",
+            "nous": "allons manger",
+            "vous": "allez manger",
+            "ils": "vont manger",
+            "elles": "vont manger"
+          }
+        },
+        "Marcher": {
+          "id": 59,
+          "group": "er",
+          "present": {
+            "je": "marche",
+            "tu": "marches",
+            "il": "marche",
+            "elle": "marche",
+            "nous": "marchons",
+            "vous": "marchez",
+            "ils": "marchent",
+            "elles": "marchent"
+          },
+          "imparfait": {
+            "je": "marchais",
+            "tu": "marchais",
+            "il": "marchait",
+            "elle": "marchait",
+            "nous": "marchions",
+            "vous": "marchiez",
+            "ils": "marchaient",
+            "elles": "marchaient"
+          },
+          "passe_compose": {
+            "je": "ai marché",
+            "tu": "as marché",
+            "il": "a marché",
+            "elle": "a marché",
+            "nous": "avons marché",
+            "vous": "avez marché",
+            "ils": "ont marché",
+            "elles": "ont marché"
+          },
+          "conditionnel": {
+            "je": "marcherais",
+            "tu": "marcherais",
+            "il": "marcherait",
+            "elle": "marcherait",
+            "nous": "marcherions",
+            "vous": "marcheriez",
+            "ils": "marcheraient",
+            "elles": "marcheraient"
+          },
+          "futur_proche": {
+            "je": "vais marcher",
+            "tu": "vas marcher",
+            "il": "va marcher",
+            "elle": "va marcher",
+            "nous": "allons marcher",
+            "vous": "allez marcher",
+            "ils": "vont marcher",
+            "elles": "vont marcher"
+          }
+        },
+        "Mettre": {
+          "id": 60,
+          "group": "irreg",
+          "present": {
+            "je": "mets",
+            "tu": "mets",
+            "il": "met",
+            "elle": "met",
+            "nous": "mettons",
+            "vous": "mettez",
+            "ils": "mettent",
+            "elles": "mettent"
+          },
+          "imparfait": {
+            "je": "mettais",
+            "tu": "mettais",
+            "il": "mettait",
+            "elle": "mettait",
+            "nous": "mettions",
+            "vous": "mettiez",
+            "ils": "mettaient",
+            "elles": "mettaient"
+          },
+          "passe_compose": {
+            "je": "ai mis",
+            "tu": "as mis",
+            "il": "a mis",
+            "elle": "a mis",
+            "nous": "avons mis",
+            "vous": "avez mis",
+            "ils": "ont mis",
+            "elles": "ont mis"
+          },
+          "conditionnel": {
+            "je": "mettrais",
+            "tu": "mettrais",
+            "il": "mettrait",
+            "elle": "mettrait",
+            "nous": "mettrions",
+            "vous": "mettriez",
+            "ils": "mettraient",
+            "elles": "mettraient"
+          },
+          "futur_proche": {
+            "je": "vais mettre",
+            "tu": "vas mettre",
+            "il": "va mettre",
+            "elle": "va mettre",
+            "nous": "allons mettre",
+            "vous": "allez mettre",
+            "ils": "vont mettre",
+            "elles": "vont mettre"
+          }
+        },
+        "Monter": {
+          "id": 61,
+          "group": "er",
+          "present": {
+            "je": "monte",
+            "tu": "montes",
+            "il": "monte",
+            "elle": "monte",
+            "nous": "montons",
+            "vous": "montez",
+            "ils": "montent",
+            "elles": "montent"
+          },
+          "imparfait": {
+            "je": "montais",
+            "tu": "montais",
+            "il": "montait",
+            "elle": "montait",
+            "nous": "montions",
+            "vous": "montiez",
+            "ils": "montaient",
+            "elles": "montaient"
+          },
+          "passe_compose": {
+            "je": "suis monté",
+            "tu": "es monté",
+            "il": "est monté",
+            "elle": "est montée",
+            "nous": "sommes montés",
+            "vous": "êtes montés",
+            "ils": "sont montés",
+            "elles": "sont montées"
+          },
+          "conditionnel": {
+            "je": "monterais",
+            "tu": "monterais",
+            "il": "monterait",
+            "elle": "monterait",
+            "nous": "monterions",
+            "vous": "monteriez",
+            "ils": "monteraient",
+            "elles": "monteraient"
+          },
+          "futur_proche": {
+            "je": "vais monter",
+            "tu": "vas monter",
+            "il": "va monter",
+            "elle": "va monter",
+            "nous": "allons monter",
+            "vous": "allez monter",
+            "ils": "vont monter",
+            "elles": "vont monter"
+          }
+        },
+        "Nettoyer": {
+          "id": 62,
+          "group": "er",
+          "present": {
+            "je": "nettoie",
+            "tu": "nettoies",
+            "il": "nettoie",
+            "elle": "nettoie",
+            "nous": "nettoyons",
+            "vous": "nettoyez",
+            "ils": "nettoient",
+            "elles": "nettoient"
+          },
+          "imparfait": {
+            "je": "nettoyais",
+            "tu": "nettoyais",
+            "il": "nettoyait",
+            "elle": "nettoyait",
+            "nous": "nettoyions",
+            "vous": "nettoyiez",
+            "ils": "nettoyaient",
+            "elles": "nettoyaient"
+          },
+          "passe_compose": {
+            "je": "ai nettoyé",
+            "tu": "as nettoyé",
+            "il": "a nettoyé",
+            "elle": "a nettoyé",
+            "nous": "avons nettoyé",
+            "vous": "avez nettoyé",
+            "ils": "ont nettoyé",
+            "elles": "ont nettoyé"
+          },
+          "conditionnel": {
+            "je": "nettoierais",
+            "tu": "nettoierais",
+            "il": "nettoierait",
+            "elle": "nettoierait",
+            "nous": "nettoierions",
+            "vous": "nettoieriez",
+            "ils": "nettoieraient",
+            "elles": "nettoieraient"
+          },
+          "futur_proche": {
+            "je": "vais nettoyer",
+            "tu": "vas nettoyer",
+            "il": "va nettoyer",
+            "elle": "va nettoyer",
+            "nous": "allons nettoyer",
+            "vous": "allez nettoyer",
+            "ils": "vont nettoyer",
+            "elles": "vont nettoyer"
+          }
+        },
+        "Obtenir": {
+          "id": 63,
+          "group": "irreg",
+          "present": {
+            "je": "obtiens",
+            "tu": "obtiens",
+            "il": "obtient",
+            "elle": "obtient",
+            "nous": "obtenons",
+            "vous": "obtenez",
+            "ils": "obtiennent",
+            "elles": "obtiennent"
+          },
+          "imparfait": {
+            "je": "obtenais",
+            "tu": "obtenais",
+            "il": "obtenait",
+            "elle": "obtenait",
+            "nous": "obtenions",
+            "vous": "obteniez",
+            "ils": "obtenaient",
+            "elles": "obtenaient"
+          },
+          "passe_compose": {
+            "je": "ai obtenu",
+            "tu": "as obtenu",
+            "il": "a obtenu",
+            "elle": "a obtenu",
+            "nous": "avons obtenu",
+            "vous": "avez obtenu",
+            "ils": "ont obtenu",
+            "elles": "ont obtenu"
+          },
+          "conditionnel": {
+            "je": "obtiendrais",
+            "tu": "obtiendrais",
+            "il": "obtiendrait",
+            "elle": "obtiendrait",
+            "nous": "obtiendrions",
+            "vous": "obtiendriez",
+            "ils": "obtiendraient",
+            "elles": "obtiendraient"
+          },
+          "futur_proche": {
+            "je": "vais obtenir",
+            "tu": "vas obtenir",
+            "il": "va obtenir",
+            "elle": "va obtenir",
+            "nous": "allons obtenir",
+            "vous": "allez obtenir",
+            "ils": "vont obtenir",
+            "elles": "vont obtenir"
+          }
+        },
+        "Oublier": {
+          "id": 64,
+          "group": "er",
+          "present": {
+            "je": "oublie",
+            "tu": "oublies",
+            "il": "oublie",
+            "elle": "oublie",
+            "nous": "oublions",
+            "vous": "oubliez",
+            "ils": "oublient",
+            "elles": "oublient"
+          },
+          "imparfait": {
+            "je": "oubliais",
+            "tu": "oubliais",
+            "il": "oubliait",
+            "elle": "oubliait",
+            "nous": "oubliions",
+            "vous": "oubliiez",
+            "ils": "oubliaient",
+            "elles": "oubliaient"
+          },
+          "passe_compose": {
+            "je": "ai oublié",
+            "tu": "as oublié",
+            "il": "a oublié",
+            "elle": "a oublié",
+            "nous": "avons oublié",
+            "vous": "avez oublié",
+            "ils": "ont oublié",
+            "elles": "ont oublié"
+          },
+          "conditionnel": {
+            "je": "oublierais",
+            "tu": "oublierais",
+            "il": "oublierait",
+            "elle": "oublierait",
+            "nous": "oublierions",
+            "vous": "oublieriez",
+            "ils": "oublieraient",
+            "elles": "oublieraient"
+          },
+          "futur_proche": {
+            "je": "vais oublier",
+            "tu": "vas oublier",
+            "il": "va oublier",
+            "elle": "va oublier",
+            "nous": "allons oublier",
+            "vous": "allez oublier",
+            "ils": "vont oublier",
+            "elles": "vont oublier"
+          }
+        },
+        "Ouvrir": {
+          "id": 65,
+          "group": "irreg",
+          "present": {
+            "je": "ouvre",
+            "tu": "ouvres",
+            "il": "ouvre",
+            "elle": "ouvre",
+            "nous": "ouvrons",
+            "vous": "ouvrez",
+            "ils": "ouvrent",
+            "elles": "ouvrent"
+          },
+          "imparfait": {
+            "je": "ouvrais",
+            "tu": "ouvrais",
+            "il": "ouvrait",
+            "elle": "ouvrait",
+            "nous": "ouvrions",
+            "vous": "ouvriez",
+            "ils": "ouvraient",
+            "elles": "ouvraient"
+          },
+          "passe_compose": {
+            "je": "ai ouvert",
+            "tu": "as ouvert",
+            "il": "a ouvert",
+            "elle": "a ouvert",
+            "nous": "avons ouvert",
+            "vous": "avez ouvert",
+            "ils": "ont ouvert",
+            "elles": "ont ouvert"
+          },
+          "conditionnel": {
+            "je": "ouvrirais",
+            "tu": "ouvrirais",
+            "il": "ouvrirait",
+            "elle": "ouvrirait",
+            "nous": "ouvririons",
+            "vous": "ouvririez",
+            "ils": "ouvriraient",
+            "elles": "ouvriraient"
+          },
+          "futur_proche": {
+            "je": "vais ouvrir",
+            "tu": "vas ouvrir",
+            "il": "va ouvrir",
+            "elle": "va ouvrir",
+            "nous": "allons ouvrir",
+            "vous": "allez ouvrir",
+            "ils": "vont ouvrir",
+            "elles": "vont ouvrir"
+          }
+        },
+        "Partir": {
+          "id": 66,
+          "group": "irreg",
+          "present": {
+            "je": "pars",
+            "tu": "pars",
+            "il": "part",
+            "elle": "part",
+            "nous": "partons",
+            "vous": "partez",
+            "ils": "partent",
+            "elles": "partent"
+          },
+          "imparfait": {
+            "je": "partais",
+            "tu": "partais",
+            "il": "partait",
+            "elle": "partait",
+            "nous": "partions",
+            "vous": "partiez",
+            "ils": "partaient",
+            "elles": "partaient"
+          },
+          "passe_compose": {
+            "je": "suis parti",
+            "tu": "es parti",
+            "il": "est parti",
+            "elle": "est partie",
+            "nous": "sommes partis",
+            "vous": "êtes partis",
+            "ils": "sont partis",
+            "elles": "sont parties"
+          },
+          "conditionnel": {
+            "je": "partirais",
+            "tu": "partirais",
+            "il": "partirait",
+            "elle": "partirait",
+            "nous": "partirions",
+            "vous": "partiriez",
+            "ils": "partiraient",
+            "elles": "partiraient"
+          },
+          "futur_proche": {
+            "je": "vais partir",
+            "tu": "vas partir",
+            "il": "va partir",
+            "elle": "va partir",
+            "nous": "allons partir",
+            "vous": "allez partir",
+            "ils": "vont partir",
+            "elles": "vont partir"
+          }
+        },
+        "Parler": {
+          "id": 67,
+          "group": "er",
+          "present": {
+            "je": "parle",
+            "tu": "parles",
+            "il": "parle",
+            "elle": "parle",
+            "nous": "parlons",
+            "vous": "parlez",
+            "ils": "parlent",
+            "elles": "parlent"
+          },
+          "imparfait": {
+            "je": "parlais",
+            "tu": "parlais",
+            "il": "parlait",
+            "elle": "parlait",
+            "nous": "parlions",
+            "vous": "parliez",
+            "ils": "parlaient",
+            "elles": "parlaient"
+          },
+          "passe_compose": {
+            "je": "ai parlé",
+            "tu": "as parlé",
+            "il": "a parlé",
+            "elle": "a parlé",
+            "nous": "avons parlé",
+            "vous": "avez parlé",
+            "ils": "ont parlé",
+            "elles": "ont parlé"
+          },
+          "conditionnel": {
+            "je": "parlerais",
+            "tu": "parlerais",
+            "il": "parlerait",
+            "elle": "parlerait",
+            "nous": "parlerions",
+            "vous": "parleriez",
+            "ils": "parleraient",
+            "elles": "parleraient"
+          },
+          "futur_proche": {
+            "je": "vais parler",
+            "tu": "vas parler",
+            "il": "va parler",
+            "elle": "va parler",
+            "nous": "allons parler",
+            "vous": "allez parler",
+            "ils": "vont parler",
+            "elles": "vont parler"
+          }
+        },
+        "Passer": {
+          "id": 68,
+          "group": "er",
+          "present": {
+            "je": "passe",
+            "tu": "passes",
+            "il": "passe",
+            "elle": "passe",
+            "nous": "passons",
+            "vous": "passez",
+            "ils": "passent",
+            "elles": "passent"
+          },
+          "imparfait": {
+            "je": "passais",
+            "tu": "passais",
+            "il": "passait",
+            "elle": "passait",
+            "nous": "passions",
+            "vous": "passiez",
+            "ils": "passaient",
+            "elles": "passaient"
+          },
+          "passe_compose": {
+            "je": "ai passé",
+            "tu": "as passé",
+            "il": "a passé",
+            "elle": "a passé",
+            "nous": "avons passé",
+            "vous": "avez passé",
+            "ils": "ont passé",
+            "elles": "ont passé"
+          },
+          "conditionnel": {
+            "je": "passerais",
+            "tu": "passerais",
+            "il": "passerait",
+            "elle": "passerait",
+            "nous": "passerions",
+            "vous": "passeriez",
+            "ils": "passeraient",
+            "elles": "passeraient"
+          },
+          "futur_proche": {
+            "je": "vais passer",
+            "tu": "vas passer",
+            "il": "va passer",
+            "elle": "va passer",
+            "nous": "allons passer",
+            "vous": "allez passer",
+            "ils": "vont passer",
+            "elles": "vont passer"
+          }
+        },
+        "Payer": {
+          "id": 69,
+          "group": "er",
+          "present": {
+            "je": "paie",
+            "tu": "paies",
+            "il": "paie",
+            "elle": "paie",
+            "nous": "payons",
+            "vous": "payez",
+            "ils": "paient",
+            "elles": "paient"
+          },
+          "imparfait": {
+            "je": "payais",
+            "tu": "payais",
+            "il": "payait",
+            "elle": "payait",
+            "nous": "payions",
+            "vous": "payiez",
+            "ils": "payaient",
+            "elles": "payaient"
+          },
+          "passe_compose": {
+            "je": "ai payé",
+            "tu": "as payé",
+            "il": "a payé",
+            "elle": "a payé",
+            "nous": "avons payé",
+            "vous": "avez payé",
+            "ils": "ont payé",
+            "elles": "ont payé"
+          },
+          "conditionnel": {
+            "je": "paierais",
+            "tu": "paierais",
+            "il": "paierait",
+            "elle": "paierait",
+            "nous": "paierions",
+            "vous": "paieriez",
+            "ils": "paieraient",
+            "elles": "paieraient"
+          },
+          "futur_proche": {
+            "je": "vais payer",
+            "tu": "vas payer",
+            "il": "va payer",
+            "elle": "va payer",
+            "nous": "allons payer",
+            "vous": "allez payer",
+            "ils": "vont payer",
+            "elles": "vont payer"
+          }
+        },
+        "Penser": {
+          "id": 70,
+          "group": "er",
+          "present": {
+            "je": "pense",
+            "tu": "penses",
+            "il": "pense",
+            "elle": "pense",
+            "nous": "pensons",
+            "vous": "pensez",
+            "ils": "pensent",
+            "elles": "pensent"
+          },
+          "imparfait": {
+            "je": "pensais",
+            "tu": "pensais",
+            "il": "pensait",
+            "elle": "pensait",
+            "nous": "pensions",
+            "vous": "pensiez",
+            "ils": "pensaient",
+            "elles": "pensaient"
+          },
+          "passe_compose": {
+            "je": "ai pensé",
+            "tu": "as pensé",
+            "il": "a pensé",
+            "elle": "a pensé",
+            "nous": "avons pensé",
+            "vous": "avez pensé",
+            "ils": "ont pensé",
+            "elles": "ont pensé"
+          },
+          "conditionnel": {
+            "je": "penserais",
+            "tu": "penserais",
+            "il": "penserait",
+            "elle": "penserait",
+            "nous": "penserions",
+            "vous": "penseriez",
+            "ils": "penseraient",
+            "elles": "penseraient"
+          },
+          "futur_proche": {
+            "je": "vais penser",
+            "tu": "vas penser",
+            "il": "va penser",
+            "elle": "va penser",
+            "nous": "allons penser",
+            "vous": "allez penser",
+            "ils": "vont penser",
+            "elles": "vont penser"
+          }
+        },
+        "Perdre": {
+          "id": 71,
+          "group": "re",
+          "present": {
+            "je": "perds",
+            "tu": "perds",
+            "il": "perd",
+            "elle": "perd",
+            "nous": "perdons",
+            "vous": "perdez",
+            "ils": "perdent",
+            "elles": "perdent"
+          },
+          "imparfait": {
+            "je": "perdais",
+            "tu": "perdais",
+            "il": "perdait",
+            "elle": "perdait",
+            "nous": "perdions",
+            "vous": "perdiez",
+            "ils": "perdaient",
+            "elles": "perdaient"
+          },
+          "passe_compose": {
+            "je": "ai perdu",
+            "tu": "as perdu",
+            "il": "a perdu",
+            "elle": "a perdu",
+            "nous": "avons perdu",
+            "vous": "avez perdu",
+            "ils": "ont perdu",
+            "elles": "ont perdu"
+          },
+          "conditionnel": {
+            "je": "perdrais",
+            "tu": "perdrais",
+            "il": "perdrait",
+            "elle": "perdrait",
+            "nous": "perdrions",
+            "vous": "perdriez",
+            "ils": "perdraient",
+            "elles": "perdraient"
+          },
+          "futur_proche": {
+            "je": "vais perdre",
+            "tu": "vas perdre",
+            "il": "va perdre",
+            "elle": "va perdre",
+            "nous": "allons perdre",
+            "vous": "allez perdre",
+            "ils": "vont perdre",
+            "elles": "vont perdre"
+          }
+        },
+        "Porter": {
+          "id": 72,
+          "group": "er",
+          "present": {
+            "je": "porte",
+            "tu": "portes",
+            "il": "porte",
+            "elle": "porte",
+            "nous": "portons",
+            "vous": "portez",
+            "ils": "portent",
+            "elles": "portent"
+          },
+          "imparfait": {
+            "je": "portais",
+            "tu": "portais",
+            "il": "portait",
+            "elle": "portait",
+            "nous": "portions",
+            "vous": "portiez",
+            "ils": "portaient",
+            "elles": "portaient"
+          },
+          "passe_compose": {
+            "je": "ai porté",
+            "tu": "as porté",
+            "il": "a porté",
+            "elle": "a porté",
+            "nous": "avons porté",
+            "vous": "avez porté",
+            "ils": "ont porté",
+            "elles": "ont porté"
+          },
+          "conditionnel": {
+            "je": "porterais",
+            "tu": "porterais",
+            "il": "porterait",
+            "elle": "porterait",
+            "nous": "porterions",
+            "vous": "porteriez",
+            "ils": "porteraient",
+            "elles": "porteraient"
+          },
+          "futur_proche": {
+            "je": "vais porter",
+            "tu": "vas porter",
+            "il": "va porter",
+            "elle": "va porter",
+            "nous": "allons porter",
+            "vous": "allez porter",
+            "ils": "vont porter",
+            "elles": "vont porter"
+          }
+        },
+        "Prendre": {
+          "id": 73,
+          "group": "irreg",
+          "present": {
+            "je": "prends",
+            "tu": "prends",
+            "il": "prend",
+            "elle": "prend",
+            "nous": "prenons",
+            "vous": "prenez",
+            "ils": "prennent",
+            "elles": "prennent"
+          },
+          "imparfait": {
+            "je": "prenais",
+            "tu": "prenais",
+            "il": "prenait",
+            "elle": "prenait",
+            "nous": "prenions",
+            "vous": "preniez",
+            "ils": "prenaient",
+            "elles": "prenaient"
+          },
+          "passe_compose": {
+            "je": "ai pris",
+            "tu": "as pris",
+            "il": "a pris",
+            "elle": "a pris",
+            "nous": "avons pris",
+            "vous": "avez pris",
+            "ils": "ont pris",
+            "elles": "ont pris"
+          },
+          "conditionnel": {
+            "je": "prendrais",
+            "tu": "prendrais",
+            "il": "prendrait",
+            "elle": "prendrait",
+            "nous": "prendrions",
+            "vous": "prendriez",
+            "ils": "prendraient",
+            "elles": "prendraient"
+          },
+          "futur_proche": {
+            "je": "vais prendre",
+            "tu": "vas prendre",
+            "il": "va prendre",
+            "elle": "va prendre",
+            "nous": "allons prendre",
+            "vous": "allez prendre",
+            "ils": "vont prendre",
+            "elles": "vont prendre"
+          }
+        },
+        "Préparer": {
+          "id": 74,
+          "group": "er",
+          "present": {
+            "je": "prépare",
+            "tu": "prépares",
+            "il": "prépare",
+            "elle": "prépare",
+            "nous": "préparons",
+            "vous": "préparez",
+            "ils": "préparent",
+            "elles": "préparent"
+          },
+          "imparfait": {
+            "je": "préparais",
+            "tu": "préparais",
+            "il": "préparait",
+            "elle": "préparait",
+            "nous": "préparions",
+            "vous": "prépariez",
+            "ils": "préparaient",
+            "elles": "préparaient"
+          },
+          "passe_compose": {
+            "je": "ai préparé",
+            "tu": "as préparé",
+            "il": "a préparé",
+            "elle": "a préparé",
+            "nous": "avons préparé",
+            "vous": "avez préparé",
+            "ils": "ont préparé",
+            "elles": "ont préparé"
+          },
+          "conditionnel": {
+            "je": "préparerais",
+            "tu": "préparerais",
+            "il": "préparerait",
+            "elle": "préparerait",
+            "nous": "préparerions",
+            "vous": "prépareriez",
+            "ils": "prépareraient",
+            "elles": "prépareraient"
+          },
+          "futur_proche": {
+            "je": "vais préparer",
+            "tu": "vas préparer",
+            "il": "va préparer",
+            "elle": "va préparer",
+            "nous": "allons préparer",
+            "vous": "allez préparer",
+            "ils": "vont préparer",
+            "elles": "vont préparer"
+          }
+        },
+        "Quitter": {
+          "id": 75,
+          "group": "er",
+          "present": {
+            "je": "quitte",
+            "tu": "quittes",
+            "il": "quitte",
+            "elle": "quitte",
+            "nous": "quittons",
+            "vous": "quittez",
+            "ils": "quittent",
+            "elles": "quittent"
+          },
+          "imparfait": {
+            "je": "quittais",
+            "tu": "quittais",
+            "il": "quittait",
+            "elle": "quittait",
+            "nous": "quittions",
+            "vous": "quittiez",
+            "ils": "quittaient",
+            "elles": "quittaient"
+          },
+          "passe_compose": {
+            "je": "ai quitté",
+            "tu": "as quitté",
+            "il": "a quitté",
+            "elle": "a quitté",
+            "nous": "avons quitté",
+            "vous": "avez quitté",
+            "ils": "ont quitté",
+            "elles": "ont quitté"
+          },
+          "conditionnel": {
+            "je": "quitterais",
+            "tu": "quitterais",
+            "il": "quitterait",
+            "elle": "quitterait",
+            "nous": "quitterions",
+            "vous": "quitteriez",
+            "ils": "quitteraient",
+            "elles": "quitteraient"
+          },
+          "futur_proche": {
+            "je": "vais quitter",
+            "tu": "vas quitter",
+            "il": "va quitter",
+            "elle": "va quitter",
+            "nous": "allons quitter",
+            "vous": "allez quitter",
+            "ils": "vont quitter",
+            "elles": "vont quitter"
+          }
+        },
+        "Recevoir": {
+          "id": 76,
+          "group": "irreg",
+          "present": {
+            "je": "reçois",
+            "tu": "reçois",
+            "il": "reçoit",
+            "elle": "reçoit",
+            "nous": "recevons",
+            "vous": "recevez",
+            "ils": "reçoivent",
+            "elles": "reçoivent"
+          },
+          "imparfait": {
+            "je": "recevais",
+            "tu": "recevais",
+            "il": "recevait",
+            "elle": "recevait",
+            "nous": "recevions",
+            "vous": "receviez",
+            "ils": "recevaient",
+            "elles": "recevaient"
+          },
+          "passe_compose": {
+            "je": "ai reçu",
+            "tu": "as reçu",
+            "il": "a reçu",
+            "elle": "a reçu",
+            "nous": "avons reçu",
+            "vous": "avez reçu",
+            "ils": "ont reçu",
+            "elles": "ont reçu"
+          },
+          "conditionnel": {
+            "je": "recevrais",
+            "tu": "recevrais",
+            "il": "recevrait",
+            "elle": "recevrait",
+            "nous": "recevrions",
+            "vous": "recevriez",
+            "ils": "recevraient",
+            "elles": "recevraient"
+          },
+          "futur_proche": {
+            "je": "vais recevoir",
+            "tu": "vas recevoir",
+            "il": "va recevoir",
+            "elle": "va recevoir",
+            "nous": "allons recevoir",
+            "vous": "allez recevoir",
+            "ils": "vont recevoir",
+            "elles": "vont recevoir"
+          }
+        },
+        "Recommander": {
+          "id": 77,
+          "group": "er",
+          "present": {
+            "je": "recommande",
+            "tu": "recommandes",
+            "il": "recommande",
+            "elle": "recommande",
+            "nous": "recommandons",
+            "vous": "recommandez",
+            "ils": "recommandent",
+            "elles": "recommandent"
+          },
+          "imparfait": {
+            "je": "recommandais",
+            "tu": "recommandais",
+            "il": "recommandait",
+            "elle": "recommandait",
+            "nous": "recommandions",
+            "vous": "recommandiez",
+            "ils": "recommandaient",
+            "elles": "recommandaient"
+          },
+          "passe_compose": {
+            "je": "ai recommandé",
+            "tu": "as recommandé",
+            "il": "a recommandé",
+            "elle": "a recommandé",
+            "nous": "avons recommandé",
+            "vous": "avez recommandé",
+            "ils": "ont recommandé",
+            "elles": "ont recommandé"
+          },
+          "conditionnel": {
+            "je": "recommanderais",
+            "tu": "recommanderais",
+            "il": "recommanderait",
+            "elle": "recommanderait",
+            "nous": "recommanderions",
+            "vous": "recommanderiez",
+            "ils": "recommanderaient",
+            "elles": "recommanderaient"
+          },
+          "futur_proche": {
+            "je": "vais recommander",
+            "tu": "vas recommander",
+            "il": "va recommander",
+            "elle": "va recommander",
+            "nous": "allons recommander",
+            "vous": "allez recommander",
+            "ils": "vont recommander",
+            "elles": "vont recommander"
+          }
+        },
+        "Regarder": {
+          "id": 78,
+          "group": "er",
+          "present": {
+            "je": "regarde",
+            "tu": "regardes",
+            "il": "regarde",
+            "elle": "regarde",
+            "nous": "regardons",
+            "vous": "regardez",
+            "ils": "regardent",
+            "elles": "regardent"
+          },
+          "imparfait": {
+            "je": "regardais",
+            "tu": "regardais",
+            "il": "regardait",
+            "elle": "regardait",
+            "nous": "regardions",
+            "vous": "regardiez",
+            "ils": "regardaient",
+            "elles": "regardaient"
+          },
+          "passe_compose": {
+            "je": "ai regardé",
+            "tu": "as regardé",
+            "il": "a regardé",
+            "elle": "a regardé",
+            "nous": "avons regardé",
+            "vous": "avez regardé",
+            "ils": "ont regardé",
+            "elles": "ont regardé"
+          },
+          "conditionnel": {
+            "je": "regarderais",
+            "tu": "regarderais",
+            "il": "regarderait",
+            "elle": "regarderait",
+            "nous": "regarderions",
+            "vous": "regarderiez",
+            "ils": "regarderaient",
+            "elles": "regarderaient"
+          },
+          "futur_proche": {
+            "je": "vais regarder",
+            "tu": "vas regarder",
+            "il": "va regarder",
+            "elle": "va regarder",
+            "nous": "allons regarder",
+            "vous": "allez regarder",
+            "ils": "vont regarder",
+            "elles": "vont regarder"
+          }
+        },
+        "Remplir": {
+          "id": 79,
+          "group": "ir",
+          "present": {
+            "je": "remplis",
+            "tu": "remplis",
+            "il": "remplit",
+            "elle": "remplit",
+            "nous": "remplissons",
+            "vous": "remplissez",
+            "ils": "remplissent",
+            "elles": "remplissent"
+          },
+          "imparfait": {
+            "je": "remplissais",
+            "tu": "remplissais",
+            "il": "remplissait",
+            "elle": "remplissait",
+            "nous": "remplissions",
+            "vous": "remplissiez",
+            "ils": "remplissaient",
+            "elles": "remplissaient"
+          },
+          "passe_compose": {
+            "je": "ai rempli",
+            "tu": "as rempli",
+            "il": "a rempli",
+            "elle": "a rempli",
+            "nous": "avons rempli",
+            "vous": "avez rempli",
+            "ils": "ont rempli",
+            "elles": "ont rempli"
+          },
+          "conditionnel": {
+            "je": "remplirais",
+            "tu": "remplirais",
+            "il": "remplirait",
+            "elle": "remplirait",
+            "nous": "remplirions",
+            "vous": "rempliriez",
+            "ils": "rempliraient",
+            "elles": "rempliraient"
+          },
+          "futur_proche": {
+            "je": "vais remplir",
+            "tu": "vas remplir",
+            "il": "va remplir",
+            "elle": "va remplir",
+            "nous": "allons remplir",
+            "vous": "allez remplir",
+            "ils": "vont remplir",
+            "elles": "vont remplir"
+          }
+        },
+        "Rendre": {
+          "id": 80,
+          "group": "re",
+          "present": {
+            "je": "rends",
+            "tu": "rends",
+            "il": "rend",
+            "elle": "rend",
+            "nous": "rendons",
+            "vous": "rendez",
+            "ils": "rendent",
+            "elles": "rendent"
+          },
+          "imparfait": {
+            "je": "rendais",
+            "tu": "rendais",
+            "il": "rendait",
+            "elle": "rendait",
+            "nous": "rendions",
+            "vous": "rendiez",
+            "ils": "rendaient",
+            "elles": "rendaient"
+          },
+          "passe_compose": {
+            "je": "ai rendu",
+            "tu": "as rendu",
+            "il": "a rendu",
+            "elle": "a rendu",
+            "nous": "avons rendu",
+            "vous": "avez rendu",
+            "ils": "ont rendu",
+            "elles": "ont rendu"
+          },
+          "conditionnel": {
+            "je": "rendrais",
+            "tu": "rendrais",
+            "il": "rendrait",
+            "elle": "rendrait",
+            "nous": "rendrions",
+            "vous": "rendriez",
+            "ils": "rendraient",
+            "elles": "rendraient"
+          },
+          "futur_proche": {
+            "je": "vais rendre",
+            "tu": "vas rendre",
+            "il": "va rendre",
+            "elle": "va rendre",
+            "nous": "allons rendre",
+            "vous": "allez rendre",
+            "ils": "vont rendre",
+            "elles": "vont rendre"
+          }
+        },
+        "Réparer": {
+          "id": 81,
+          "group": "er",
+          "present": {
+            "je": "répare",
+            "tu": "répares",
+            "il": "répare",
+            "elle": "répare",
+            "nous": "réparons",
+            "vous": "réparez",
+            "ils": "réparent",
+            "elles": "réparent"
+          },
+          "imparfait": {
+            "je": "réparais",
+            "tu": "réparais",
+            "il": "réparait",
+            "elle": "réparait",
+            "nous": "réparions",
+            "vous": "répariez",
+            "ils": "réparaient",
+            "elles": "réparaient"
+          },
+          "passe_compose": {
+            "je": "ai réparé",
+            "tu": "as réparé",
+            "il": "a réparé",
+            "elle": "a réparé",
+            "nous": "avons réparé",
+            "vous": "avez réparé",
+            "ils": "ont réparé",
+            "elles": "ont réparé"
+          },
+          "conditionnel": {
+            "je": "réparerais",
+            "tu": "réparerais",
+            "il": "réparerait",
+            "elle": "réparerait",
+            "nous": "réparerions",
+            "vous": "répareriez",
+            "ils": "répareraient",
+            "elles": "répareraient"
+          },
+          "futur_proche": {
+            "je": "vais réparer",
+            "tu": "vas réparer",
+            "il": "va réparer",
+            "elle": "va réparer",
+            "nous": "allons réparer",
+            "vous": "allez réparer",
+            "ils": "vont réparer",
+            "elles": "vont réparer"
+          }
+        },
+        "Répondre": {
+          "id": 82,
+          "group": "re",
+          "present": {
+            "je": "réponds",
+            "tu": "réponds",
+            "il": "répond",
+            "elle": "répond",
+            "nous": "répondons",
+            "vous": "répondez",
+            "ils": "répondent",
+            "elles": "répondent"
+          },
+          "imparfait": {
+            "je": "répondais",
+            "tu": "répondais",
+            "il": "répondait",
+            "elle": "répondait",
+            "nous": "répondions",
+            "vous": "répondiez",
+            "ils": "répondaient",
+            "elles": "répondaient"
+          },
+          "passe_compose": {
+            "je": "ai répondu",
+            "tu": "as répondu",
+            "il": "a répondu",
+            "elle": "a répondu",
+            "nous": "avons répondu",
+            "vous": "avez répondu",
+            "ils": "ont répondu",
+            "elles": "ont répondu"
+          },
+          "conditionnel": {
+            "je": "répondrais",
+            "tu": "répondrais",
+            "il": "répondrait",
+            "elle": "répondrait",
+            "nous": "répondrions",
+            "vous": "répondriez",
+            "ils": "répondraient",
+            "elles": "répondraient"
+          },
+          "futur_proche": {
+            "je": "vais répondre",
+            "tu": "vas répondre",
+            "il": "va répondre",
+            "elle": "va répondre",
+            "nous": "allons répondre",
+            "vous": "allez répondre",
+            "ils": "vont répondre",
+            "elles": "vont répondre"
+          }
+        },
+        "Rire": {
+          "id": 83,
+          "group": "irreg",
+          "present": {
+            "je": "ris",
+            "tu": "ris",
+            "il": "rit",
+            "elle": "rit",
+            "nous": "rions",
+            "vous": "riez",
+            "ils": "rient",
+            "elles": "rient"
+          },
+          "imparfait": {
+            "je": "riyais",
+            "tu": "riyais",
+            "il": "riyait",
+            "elle": "riyait",
+            "nous": "riyions",
+            "vous": "riyiez",
+            "ils": "riyaient",
+            "elles": "riyaient"
+          },
+          "passe_compose": {
+            "je": "ai ri",
+            "tu": "as ri",
+            "il": "a ri",
+            "elle": "a ri",
+            "nous": "avons ri",
+            "vous": "avez ri",
+            "ils": "ont ri",
+            "elles": "ont ri"
+          },
+          "conditionnel": {
+            "je": "rirais",
+            "tu": "rirais",
+            "il": "rirait",
+            "elle": "rirait",
+            "nous": "ririons",
+            "vous": "ririez",
+            "ils": "riraient",
+            "elles": "riraient"
+          },
+          "futur_proche": {
+            "je": "vais rire",
+            "tu": "vas rire",
+            "il": "va rire",
+            "elle": "va rire",
+            "nous": "allons rire",
+            "vous": "allez rire",
+            "ils": "vont rire",
+            "elles": "vont rire"
+          }
+        },
+        "Retourner": {
+          "id": 84,
+          "group": "er",
+          "present": {
+            "je": "retourne",
+            "tu": "retourne",
+            "il": "retourne",
+            "elle": "retourne",
+            "nous": "retournons",
+            "vous": "retournez",
+            "ils": "retournent",
+            "elles": "retournent"
+          },
+          "imparfait": {
+            "je": "retournais",
+            "tu": "retournais",
+            "il": "retournait",
+            "elle": "retournait",
+            "nous": "retournions",
+            "vous": "retourniez",
+            "ils": "retournaient",
+            "elles": "retournaient"
+          },
+          "passe_compose": {
+            "je": "suis retourné",
+            "tu": "es retourné",
+            "il": "est retourné",
+            "elle": "est retournée",
+            "nous": "sommes retournés",
+            "vous": "êtes retournés",
+            "ils": "sont retournés",
+            "elles": "sont retournées"
+          },
+          "conditionnel": {
+            "je": "retournerais",
+            "tu": "retournerais",
+            "il": "retournerait",
+            "elle": "retournerait",
+            "nous": "retournerions",
+            "vous": "retourneriez",
+            "ils": "retourneraient",
+            "elles": "retourneraient"
+          },
+          "futur_proche": {
+            "je": "vais retourner",
+            "tu": "vas retourner",
+            "il": "va retourner",
+            "elle": "va retourner",
+            "nous": "allons retourner",
+            "vous": "allez retourner",
+            "ils": "vont retourner",
+            "elles": "vont retourner"
+          }
+        },
+        "Se coucher": {
+          "id": 85,
+          "group": "reflexive",
+          "present": {
+            "je": "me couche",
+            "tu": "te couches",
+            "il": "se couche",
+            "elle": "se couche",
+            "nous": "nous couchons",
+            "vous": "vous couchez",
+            "ils": "se couchent",
+            "elles": "se couchent"
+          },
+          "imparfait": {
+            "je": "me couchais",
+            "tu": "te couchais",
+            "il": "se couchait",
+            "elle": "se couchait",
+            "nous": "nous couchions",
+            "vous": "vous couchiez",
+            "ils": "se couchaient",
+            "elles": "se couchaient"
+          },
+          "passe_compose": {
+            "je": "me suis couché",
+            "tu": "t'es couché",
+            "il": "s'est couché",
+            "elle": "s'est couchée",
+            "nous": "nous sommes couchés",
+            "vous": "vous êtes couchés",
+            "ils": "se sont couchés",
+            "elles": "se sont couchées"
+          },
+          "conditionnel": {
+            "je": "me coucherais",
+            "tu": "te coucherais",
+            "il": "se coucherait",
+            "elle": "se coucherait",
+            "nous": "nous coucherions",
+            "vous": "vous coucheriez",
+            "ils": "se coucheraient",
+            "elles": "se coucheraient"
+          },
+          "futur_proche": {
+            "je": "vais me coucher",
+            "tu": "vas te coucher",
+            "il": "va se coucher",
+            "elle": "va se coucher",
+            "nous": "allons nous coucher",
+            "vous": "allez vous coucher",
+            "ils": "vont se coucher",
+            "elles": "vont se coucher"
+          }
+        },
+        "Se laver": {
+          "id": 86,
+          "group": "reflexive",
+          "present": {
+            "je": "me lave",
+            "tu": "te laves",
+            "il": "se lave",
+            "elle": "se lave",
+            "nous": "nous lavons",
+            "vous": "vous lavez",
+            "ils": "se lavent",
+            "elles": "se lavent"
+          },
+          "imparfait": {
+            "je": "me lavais",
+            "tu": "te lavais",
+            "il": "se lavait",
+            "elle": "se lavait",
+            "nous": "nous lavions",
+            "vous": "vous laviez",
+            "ils": "se lavaient",
+            "elles": "se lavaient"
+          },
+          "passe_compose": {
+            "je": "me suis lavé",
+            "tu": "t'es lavé",
+            "il": "s'est lavé",
+            "elle": "s'est lavée",
+            "nous": "nous sommes lavés",
+            "vous": "vous êtes lavés",
+            "ils": "se sont lavés",
+            "elles": "se sont lavées"
+          },
+          "conditionnel": {
+            "je": "me laverais",
+            "tu": "te laverais",
+            "il": "se laverait",
+            "elle": "se laverait",
+            "nous": "nous laverions",
+            "vous": "vous laveriez",
+            "ils": "se laveraient",
+            "elles": "se laveraient"
+          },
+          "futur_proche": {
+            "je": "vais me laver",
+            "tu": "vas te laver",
+            "il": "va se laver",
+            "elle": "va se laver",
+            "nous": "allons nous laver",
+            "vous": "allez vous laver",
+            "ils": "vont se laver",
+            "elles": "vont se laver"
+          }
+        },
+        "Se lever": {
+          "id": 87,
+          "group": "reflexive",
+          "present": {
+            "je": "me lève",
+            "tu": "te lèves",
+            "il": "se lève",
+            "elle": "se lève",
+            "nous": "nous levons",
+            "vous": "vous levez",
+            "ils": "se lèvent",
+            "elles": "se lèvent"
+          },
+          "imparfait": {
+            "je": "me levais",
+            "tu": "te levais",
+            "il": "se levait",
+            "elle": "se levait",
+            "nous": "nous levions",
+            "vous": "vous leviez",
+            "ils": "se levaient",
+            "elles": "se levaient"
+          },
+          "passe_compose": {
+            "je": "me suis levé",
+            "tu": "t'es levé",
+            "il": "s'est levé",
+            "elle": "s'est levée",
+            "nous": "nous sommes levés",
+            "vous": "vous êtes levés",
+            "ils": "se sont levés",
+            "elles": "se sont levées"
+          },
+          "conditionnel": {
+            "je": "me lèverais",
+            "tu": "te lèverais",
+            "il": "se lèverait",
+            "elle": "se lèverait",
+            "nous": "nous lèverions",
+            "vous": "vous lèveriez",
+            "ils": "se lèveraient",
+            "elles": "se lèveraient"
+          },
+          "futur_proche": {
+            "je": "vais me lever",
+            "tu": "vas te lever",
+            "il": "va se lever",
+            "elle": "va se lever",
+            "nous": "allons nous lever",
+            "vous": "allez vous lever",
+            "ils": "vont se lever",
+            "elles": "vont lever"
+          }
+        },
+        "Se reposer": {
+          "id": 88,
+          "group": "reflexive",
+          "present": {
+            "je": "me repose",
+            "tu": "te reposes",
+            "il": "se repose",
+            "elle": "se repose",
+            "nous": "nous reposons",
+            "vous": "vous reposez",
+            "ils": "se reposent",
+            "elles": "se reposent"
+          },
+          "imparfait": {
+            "je": "me reposais",
+            "tu": "te reposais",
+            "il": "se reposait",
+            "elle": "se reposait",
+            "nous": "nous reposions",
+            "vous": "vous reposiez",
+            "ils": "se reposaient",
+            "elles": "se reposaient"
+          },
+          "passe_compose": {
+            "je": "me suis reposé",
+            "tu": "t'es reposé",
+            "il": "s'est reposé",
+            "elle": "s'est reposée",
+            "nous": "nous sommes reposés",
+            "vous": "vous êtes reposés",
+            "ils": "se sont reposés",
+            "elles": "se sont reposées"
+          },
+          "conditionnel": {
+            "je": "me reposerais",
+            "tu": "te reposerais",
+            "il": "se reposerait",
+            "elle": "se reposerait",
+            "nous": "nous reposerions",
+            "vous": "vous reposeriez",
+            "ils": "se reposeraient",
+            "elles": "se reposeraient"
+          },
+          "futur_proche": {
+            "je": "vais me reposer",
+            "tu": "vas te reposer",
+            "il": "va se reposer",
+            "elle": "va se reposer",
+            "nous": "allons nous reposer",
+            "vous": "allez vous reposer",
+            "ils": "vont se reposer",
+            "elles": "vont se reposer"
+          }
+        },
+        "Se souvenir": {
+          "id": 89,
+          "group": "reflexive",
+          "present": {
+            "je": "me souviens",
+            "tu": "te souviens",
+            "il": "se souvient",
+            "elle": "se souvient",
+            "nous": "nous souvenons",
+            "vous": "vous souvenez",
+            "ils": "se souviennent",
+            "elles": "se souviennent"
+          },
+          "imparfait": {
+            "je": "me souvenais",
+            "tu": "te souvenais",
+            "il": "se souvenait",
+            "elle": "se souvenait",
+            "nous": "nous souvenions",
+            "vous": "vous souveniez",
+            "ils": "se souvenaient",
+            "elles": "se souvenaient"
+          },
+          "passe_compose": {
+            "je": "me suis souvenu",
+            "tu": "t'es souvenu",
+            "il": "s'est souvenu",
+            "elle": "s'est souvenue",
+            "nous": "nous sommes souvenus",
+            "vous": "vous êtes souvenus",
+            "ils": "se sont souvenus",
+            "elles": "se sont souvenues"
+          },
+          "conditionnel": {
+            "je": "me souviendrais",
+            "tu": "te souviendrais",
+            "il": "se souviendrait",
+            "elle": "se souviendrait",
+            "nous": "nous souviendrions",
+            "vous": "vous souviendriez",
+            "ils": "se souviendraient",
+            "elles": "se souviendraient"
+          },
+          "futur_proche": {
+            "je": "vais me souvenir",
+            "tu": "vas te souvenir",
+            "il": "va se souvenir",
+            "elle": "va se souvenir",
+            "nous": "allons nous souvenir",
+            "vous": "allez nous souvenir",
+            "ils": "vont se souvenir",
+            "elles": "vont se souvenir"
+          }
+        },
+        "Signer": {
+          "id": 90,
+          "group": "er",
+          "present": {
+            "je": "signe",
+            "tu": "signes",
+            "il": "signe",
+            "elle": "signe",
+            "nous": "signons",
+            "vous": "signez",
+            "ils": "signent",
+            "elles": "signent"
+          },
+          "imparfait": {
+            "je": "signais",
+            "tu": "signais",
+            "il": "signait",
+            "elle": "signait",
+            "nous": "signions",
+            "vous": "signiez",
+            "ils": "signaient",
+            "elles": "signaient"
+          },
+          "passe_compose": {
+            "je": "ai signé",
+            "tu": "as signé",
+            "il": "a signé",
+            "elle": "a signé",
+            "nous": "avons signé",
+            "vous": "avez signé",
+            "ils": "ont signé",
+            "elles": "ont signé"
+          },
+          "conditionnel": {
+            "je": "signerais",
+            "tu": "signerais",
+            "il": "signerait",
+            "elle": "signerait",
+            "nous": "signerions",
+            "vous": "signeriez",
+            "ils": "signeraient",
+            "elles": "signeraient"
+          },
+          "futur_proche": {
+            "je": "vais signer",
+            "tu": "vas signer",
+            "il": "va signer",
+            "elle": "va signer",
+            "nous": "allons signer",
+            "vous": "allez signer",
+            "ils": "vont signer",
+            "elles": "vont signer"
+          }
+        },
+        "S'inquiéter": {
+          "id": 91,
+          "group": "reflexive",
+          "present": {
+            "je": "m'inquiète",
+            "tu": "t'inquiètes",
+            "il": "s'inquiète",
+            "elle": "s'inquiète",
+            "nous": "nous inquiétons",
+            "vous": "vous inquiétez",
+            "ils": "s'inquiètent",
+            "elles": "s'inquiètent"
+          },
+          "imparfait": {
+            "je": "m'inquiétais",
+            "tu": "t'inquiétais",
+            "il": "s'inquiétait",
+            "elle": "s'inquiétait",
+            "nous": "nous inquiétions",
+            "vous": "vous inquiétiez",
+            "ils": "s'inquiétaient",
+            "elles": "s'inquiétaient"
+          },
+          "passe_compose": {
+            "je": "me suis inquiété",
+            "tu": "t'es inquiété",
+            "il": "s'est inquiété",
+            "elle": "s'est inquiétée",
+            "nous": "nous sommes inquiétés",
+            "vous": "vous êtes inquiétés",
+            "ils": "se sont inquiétés",
+            "elles": "se sont inquiétées"
+          },
+          "conditionnel": {
+            "je": "m'inquiéterais",
+            "tu": "m'inquiéterais",
+            "il": "m'inquiéterait",
+            "elle": "m'inquiéterait",
+            "nous": "nous inquiéterions",
+            "vous": "vous inquiéteriez",
+            "ils": "m'inquiéteraient",
+            "elles": "m'inquiéteraient"
+          },
+          "futur_proche": {
+            "je": "vais m'inquiéter",
+            "tu": "vas t'inquiéter",
+            "il": "va s'inquiéter",
+            "elle": "va s'inquiéter",
+            "nous": "allons nous inquiéter",
+            "vous": "allez vous inquiéter",
+            "ils": "vont s'inquiéter",
+            "elles": "vont s'inquiéter"
+          }
+        },
+        "Suivre": {
+          "id": 92,
+          "group": "irreg",
+          "present": {
+            "je": "suis",
+            "tu": "suis",
+            "il": "suit",
+            "elle": "suit",
+            "nous": "suivons",
+            "vous": "suivez",
+            "ils": "suivent",
+            "elles": "suivent"
+          },
+          "imparfait": {
+            "je": "suivais",
+            "tu": "suivais",
+            "il": "suivait",
+            "elle": "suivait",
+            "nous": "suivions",
+            "vous": "suiviez",
+            "ils": "suivaient",
+            "elles": "suivaient"
+          },
+          "passe_compose": {
+            "je": "ai suivi",
+            "tu": "as suivi",
+            "il": "a suivi",
+            "elle": "a suivi",
+            "nous": "avons suivi",
+            "vous": "avez suivi",
+            "ils": "ont suivi",
+            "elles": "ont suivi"
+          },
+          "conditionnel": {
+            "je": "suivrais",
+            "tu": "suivrais",
+            "il": "suivrait",
+            "elle": "suivrait",
+            "nous": "suivrions",
+            "vous": "suivriez",
+            "ils": "suivraient",
+            "elles": "suivraient"
+          },
+          "futur_proche": {
+            "je": "vais suivre",
+            "tu": "vas suivre",
+            "il": "va suivre",
+            "elle": "va suivre",
+            "nous": "allons suivre",
+            "vous": "allez suivre",
+            "ils": "vont suivre",
+            "elles": "vont suivre"
+          }
+        },
+        "Trouver": {
+          "id": 93,
+          "group": "er",
+          "present": {
+            "je": "trouve",
+            "tu": "trouves",
+            "il": "trouve",
+            "elle": "trouve",
+            "nous": "trouvons",
+            "vous": "trouvez",
+            "ils": "trouvent",
+            "elles": "trouvent"
+          },
+          "imparfait": {
+            "je": "trouvais",
+            "tu": "trouvais",
+            "il": "trouvait",
+            "elle": "trouvait",
+            "nous": "trouvions",
+            "vous": "trouviez",
+            "ils": "trouvaient",
+            "elles": "trouvaient"
+          },
+          "passe_compose": {
+            "je": "ai trouvé",
+            "tu": "as trouvé",
+            "il": "a trouvé",
+            "elle": "a trouvé",
+            "nous": "avons trouvé",
+            "vous": "avez trouvé",
+            "ils": "ont trouvé",
+            "elles": "ont trouvé"
+          },
+          "conditionnel": {
+            "je": "trouverais",
+            "tu": "trouverais",
+            "il": "trouverait",
+            "elle": "trouverait",
+            "nous": "trouverions",
+            "vous": "trouveriez",
+            "ils": "trouveraient",
+            "elles": "trouveraient"
+          },
+          "futur_proche": {
+            "je": "vais trouver",
+            "tu": "vas trouver",
+            "il": "va trouver",
+            "elle": "va trouver",
+            "nous": "allons trouver",
+            "vous": "allez trouver",
+            "ils": "vont trouver",
+            "elles": "vont trouver"
+          }
+        },
+        "S'asseoir": {
+          "id": 94,
+          "group": "reflexive",
+          "present": {
+            "je": "m'assieds",
+            "tu": "t'assieds",
+            "il": "s'assied",
+            "elle": "s'assied",
+            "nous": "nous asseyons",
+            "vous": "vous asseyez",
+            "ils": "s'asseyent",
+            "elles": "s'asseyent"
+          },
+          "imparfait": {
+            "je": "m'asseyais",
+            "tu": "t'asseyais",
+            "il": "s'asseyait",
+            "elle": "s'asseyait",
+            "nous": "nous asseyions",
+            "vous": "vous asseyiez",
+            "ils": "s'asseyaient",
+            "elles": "sasseyaient"
+          },
+          "passe_compose": {
+            "je": "me suis assis",
+            "tu": "t'es assis",
+            "il": "s'est assis",
+            "elle": "s'est assise",
+            "nous": "nous sommes assis",
+            "vous": "vous êtes assis",
+            "ils": "se sont assis",
+            "elles": "se sont assises"
+          },
+          "conditionnel": {
+            "je": "m'assiérais",
+            "tu": "m'assiérais",
+            "il": "m'assiérait",
+            "elle": "m'assiérait",
+            "nous": "nous assiérions",
+            "vous": "vous assiériez",
+            "ils": "m'assiéraient",
+            "elles": "m'assiéraient"
+          },
+          "futur_proche": {
+            "je": "vais m'asseoir",
+            "tu": "vas t'asseoir",
+            "il": "va s'asseoir",
+            "elle": "va s'asseoir",
+            "nous": "allons nous asseoir",
+            "vous": "allez nous asseoir",
+            "ils": "vont s'asseoir",
+            "elles": "vont s'asseoir"
+          }
+        },
+        "Tomber": {
+          "id": 95,
+          "group": "er",
+          "present": {
+            "je": "tombe",
+            "tu": "tombes",
+            "il": "tombe",
+            "elle": "tombe",
+            "nous": "tombons",
+            "vous": "tombez",
+            "ils": "tombent",
+            "elles": "tombent"
+          },
+          "imparfait": {
+            "je": "tombais",
+            "tu": "tombais",
+            "il": "tombait",
+            "elle": "tombait",
+            "nous": "tombions",
+            "vous": "tombiez",
+            "ils": "tombaient",
+            "elles": "tombaient"
+          },
+          "passe_compose": {
+            "je": "suis tombé",
+            "tu": "es tombé",
+            "il": "est tombé",
+            "elle": "est tombée",
+            "nous": "sommes tombés",
+            "vous": "êtes tombés",
+            "ils": "sont tombés",
+            "elles": "sont tombées"
+          },
+          "conditionnel": {
+            "je": "tomberais",
+            "tu": "tomberais",
+            "il": "tomberait",
+            "elle": "tomberait",
+            "nous": "tomberions",
+            "vous": "tomberiez",
+            "ils": "tomberaient",
+            "elles": "tomberaient"
+          },
+          "futur_proche": {
+            "je": "vais tomber",
+            "tu": "vas tomber",
+            "il": "va tomber",
+            "elle": "va tomber",
+            "nous": "allons tomber",
+            "vous": "allez tomber",
+            "ils": "vont tomber",
+            "elles": "vont tomber"
+          }
+        },
+        "Travailler": {
+          "id": 96,
+          "group": "er",
+          "present": {
+            "je": "travaille",
+            "tu": "travailles",
+            "il": "travaille",
+            "elle": "travaille",
+            "nous": "travaillons",
+            "vous": "travaillez",
+            "ils": "travaillent",
+            "elles": "travaillent"
+          },
+          "imparfait": {
+            "je": "travaillais",
+            "tu": "travaillais",
+            "il": "travaillait",
+            "elle": "travaillait",
+            "nous": "travaillions",
+            "vous": "travailliez",
+            "ils": "travaillaient",
+            "elles": "travaillaient"
+          },
+          "passe_compose": {
+            "je": "ai travaillé",
+            "tu": "as travaillé",
+            "il": "a travaillé",
+            "elle": "a travaillé",
+            "nous": "avons travaillé",
+            "vous": "avez travaillé",
+            "ils": "ont travaillé",
+            "elles": "ont travaillé"
+          },
+          "conditionnel": {
+            "je": "travaillerais",
+            "tu": "travaillerais",
+            "il": "travaillerait",
+            "elle": "travaillerait",
+            "nous": "travaillerions",
+            "vous": "travailleriez",
+            "ils": "travailleraient",
+            "elles": "travailleraient"
+          },
+          "futur_proche": {
+            "je": "vais travailler",
+            "tu": "vas travailler",
+            "il": "va travailler",
+            "elle": "va travailler",
+            "nous": "allons travailler",
+            "vous": "allez travailler",
+            "ils": "vont travailler",
+            "elles": "vont travailler"
+          }
+        },
+        "Utiliser": {
+          "id": 97,
+          "group": "er",
+          "present": {
+            "je": "utilise",
+            "tu": "utilises",
+            "il": "utilise",
+            "elle": "utilise",
+            "nous": "utilisons",
+            "vous": "utilisez",
+            "ils": "utilisent",
+            "elles": "utilisent"
+          },
+          "imparfait": {
+            "je": "utilisais",
+            "tu": "utilisais",
+            "il": "utilisait",
+            "elle": "utilisait",
+            "nous": "utilisions",
+            "vous": "utilisiez",
+            "ils": "utilisaient",
+            "elles": "utilisaient"
+          },
+          "passe_compose": {
+            "je": "ai utilisé",
+            "tu": "as utilisé",
+            "il": "a utilisé",
+            "elle": "a utilisé",
+            "nous": "avons utilisé",
+            "vous": "avez utilisé",
+            "ils": "ont utilisé",
+            "elles": "ont utilisé"
+          },
+          "conditionnel": {
+            "je": "utiliserais",
+            "tu": "utiliserais",
+            "il": "utiliserait",
+            "elle": "utiliserait",
+            "nous": "utiliserions",
+            "vous": "utiliseriez",
+            "ils": "utiliseraient",
+            "elles": "utiliseraient"
+          },
+          "futur_proche": {
+            "je": "vais utiliser",
+            "tu": "vas utiliser",
+            "il": "va utiliser",
+            "elle": "va utiliser",
+            "nous": "allons utiliser",
+            "vous": "allez utiliser",
+            "ils": "vont utiliser",
+            "elles": "vont utiliser"
+          }
+        },
+        "Vendre": {
+          "id": 98,
+          "group": "re",
+          "present": {
+            "je": "vends",
+            "tu": "vends",
+            "il": "vend",
+            "elle": "vend",
+            "nous": "vendons",
+            "vous": "vendez",
+            "ils": "vendent",
+            "elles": "vendent"
+          },
+          "imparfait": {
+            "je": "vendais",
+            "tu": "vendais",
+            "il": "vendait",
+            "elle": "vendait",
+            "nous": "vendions",
+            "vous": "vendiez",
+            "ils": "vendaient",
+            "elles": "vendaient"
+          },
+          "passe_compose": {
+            "je": "ai vendu",
+            "tu": "as vendu",
+            "il": "a vendu",
+            "elle": "a vendu",
+            "nous": "avons vendu",
+            "vous": "avez vendu",
+            "ils": "ont vendu",
+            "elles": "ont vendu"
+          },
+          "conditionnel": {
+            "je": "vendrais",
+            "tu": "vendrais",
+            "il": "vendrait",
+            "elle": "vendrait",
+            "nous": "vendrions",
+            "vous": "vendriez",
+            "ils": "vendraient",
+            "elles": "vendraient"
+          },
+          "futur_proche": {
+            "je": "vais vendre",
+            "tu": "vas vendre",
+            "il": "va vendre",
+            "elle": "va vendre",
+            "nous": "allons vendre",
+            "vous": "allez vendre",
+            "ils": "vont vendre",
+            "elles": "vont vendre"
+          }
+        },
+        "Visiter": {
+          "id": 99,
+          "group": "er",
+          "present": {
+            "je": "visite",
+            "tu": "visites",
+            "il": "visite",
+            "elle": "visite",
+            "nous": "visitons",
+            "vous": "visitez",
+            "ils": "visitent",
+            "elles": "visitent"
+          },
+          "imparfait": {
+            "je": "visitais",
+            "tu": "visitais",
+            "il": "visitait",
+            "elle": "visitait",
+            "nous": "visitions",
+            "vous": "visitiez",
+            "ils": "visitaient",
+            "elles": "visitaient"
+          },
+          "passe_compose": {
+            "je": "ai visité",
+            "tu": "as visité",
+            "il": "a visité",
+            "elle": "a visité",
+            "nous": "avons visité",
+            "vous": "avez visité",
+            "ils": "ont visité",
+            "elles": "ont visité"
+          },
+          "conditionnel": {
+            "je": "visiterais",
+            "tu": "visiterais",
+            "il": "visiterait",
+            "elle": "visiterait",
+            "nous": "visiterions",
+            "vous": "visiteriez",
+            "ils": "visiteraient",
+            "elles": "visiteraient"
+          },
+          "futur_proche": {
+            "je": "vais visiter",
+            "tu": "vas visiter",
+            "il": "va visiter",
+            "elle": "va visiter",
+            "nous": "allons visiter",
+            "vous": "allez visiter",
+            "ils": "vont visiter",
+            "elles": "vont visiter"
+          }
+        },
+        "Vivre": {
+          "id": 100,
+          "group": "irreg",
+          "present": {
+            "je": "vis",
+            "tu": "vis",
+            "il": "vit",
+            "elle": "vit",
+            "nous": "vivons",
+            "vous": "vivez",
+            "ils": "vivent",
+            "elles": "vivent"
+          },
+          "imparfait": {
+            "je": "vivais",
+            "tu": "vivais",
+            "il": "vivait",
+            "elle": "vivait",
+            "nous": "vivions",
+            "vous": "viviez",
+            "ils": "vivaient",
+            "elles": "vivaient"
+          },
+          "passe_compose": {
+            "je": "ai vécu",
+            "tu": "as vécu",
+            "il": "a vécu",
+            "elle": "a vécu",
+            "nous": "avons vécu",
+            "vous": "avez vécu",
+            "ils": "ont vécu",
+            "elles": "ont vécu"
+          },
+          "conditionnel": {
+            "je": "vivrais",
+            "tu": "vivrais",
+            "il": "vivrait",
+            "elle": "vivrait",
+            "nous": "vivrions",
+            "vous": "vivriez",
+            "ils": "vivraient",
+            "elles": "vivraient"
+          },
+          "futur_proche": {
+            "je": "vais vivre",
+            "tu": "vas vivre",
+            "il": "va vivre",
+            "elle": "va vivre",
+            "nous": "allons vivre",
+            "vous": "allez vivre",
+            "ils": "vont vivre",
+            "elles": "vont vivre"
+          }
+        },
+        "Voyager": {
+          "id": 101,
+          "group": "er",
+          "present": {
+            "je": "voyage",
+            "tu": "voyages",
+            "il": "voyage",
+            "elle": "voyage",
+            "nous": "voyageons",
+            "vous": "voyagez",
+            "ils": "voyagent",
+            "elles": "voyagent"
+          },
+          "imparfait": {
+            "je": "voyageais",
+            "tu": "voyageais",
+            "il": "voyageait",
+            "elle": "voyageait",
+            "nous": "voyagions",
+            "vous": "voyagiez",
+            "ils": "voyageaient",
+            "elles": "voyageaient"
+          },
+          "passe_compose": {
+            "je": "ai voyagé",
+            "tu": "as voyagé",
+            "il": "a voyagé",
+            "elle": "a voyagé",
+            "nous": "avons voyagé",
+            "vous": "avez voyagé",
+            "ils": "ont voyagé",
+            "elles": "ont voyagé"
+          },
+          "conditionnel": {
+            "je": "voyagerais",
+            "tu": "voyagerais",
+            "il": "voyagerait",
+            "elle": "voyagerait",
+            "nous": "voyagerions",
+            "vous": "voyageriez",
+            "ils": "voyageraient",
+            "elles": "voyageraient"
+          },
+          "futur_proche": {
+            "je": "vais voyager",
+            "tu": "vas voyager",
+            "il": "va voyager",
+            "elle": "va voyager",
+            "nous": "allons voyager",
+            "vous": "allez voyager",
+            "ils": "vont voyager",
+            "elles": "vont voyager"
+          }
+        },
+        "Voir": {
+          "id": 102,
+          "group": "irreg",
+          "present": {
+            "je": "vois",
+            "tu": "vois",
+            "il": "voit",
+            "elle": "voit",
+            "nous": "voyons",
+            "vous": "voyez",
+            "ils": "voient",
+            "elles": "voient"
+          },
+          "imparfait": {
+            "je": "voyais",
+            "tu": "voyais",
+            "il": "voyait",
+            "elle": "voyait",
+            "nous": "voyions",
+            "vous": "voyiez",
+            "ils": "voyaient",
+            "elles": "voyaient"
+          },
+          "passe_compose": {
+            "je": "ai vu",
+            "tu": "as vu",
+            "il": "a vu",
+            "elle": "a vu",
+            "nous": "avons vu",
+            "vous": "avez vu",
+            "ils": "ont vu",
+            "elles": "ont vu"
+          },
+          "conditionnel": {
+            "je": "verrais",
+            "tu": "verrais",
+            "il": "verrait",
+            "elle": "verrait",
+            "nous": "verrions",
+            "vous": "verriez",
+            "ils": "verraient",
+            "elles": "verraient"
+          },
+          "futur_proche": {
+            "je": "vais voir",
+            "tu": "vas voir",
+            "il": "va voir",
+            "elle": "va voir",
+            "nous": "allons voir",
+            "vous": "allez voir",
+            "ils": "vont voir",
+            "elles": "vont voir"
+          }
+        }
+      }
+    }
+  },
+  "questions": [
+    {
+      "v": "Avoir",
+      "t": "present",
+      "p": "j'",
+      "s": "J'______ de la chance aujourd'hui.",
+      "g": "irreg",
+      "tier": "tier_1_essential"
+    },
+    {
+      "v": "Être",
+      "t": "imparfait",
+      "p": "nous",
+      "s": "Nous ______ très fatigués hier soir.",
+      "g": "irreg",
+      "tier": "tier_1_essential"
+    },
+    {
+      "v": "Aller",
+      "t": "futur_proche",
+      "p": "vous",
+      "s": "Vous ______ au cinéma ce soir ?",
+      "g": "irreg",
+      "tier": "tier_1_essential"
+    },
+    {
+      "v": "Savoir",
+      "t": "conditionnel",
+      "p": "tu",
+      "s": "Tu ______ quoi faire à ma place ?",
+      "g": "irreg",
+      "tier": "tier_1_essential"
+    },
+    {
+      "v": "Venir",
+      "t": "passe_compose",
+      "p": "elle",
+      "s": "Elle ______ nous voir le week-end dernier.",
+      "g": "irreg",
+      "tier": "tier_1_essential"
+    },
+    {
+      "v": "Acheter",
+      "t": "present",
+      "p": "ils",
+      "s": "Ils ______ du pain frais tous les matins.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Apprendre",
+      "t": "passe_compose",
+      "p": "je",
+      "s": "J'______ beaucoup de choses pendant ce voyage.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Arriver",
+      "t": "passe_compose",
+      "p": "ils",
+      "s": "Ils ______ en retard à cause du train.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Descendre",
+      "t": "passe_compose",
+      "p": "elle",
+      "s": "Elle ______ par l'escalier.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Dormir",
+      "t": "imparfait",
+      "p": "ils",
+      "s": "Ils ______ paisiblement quand le chat a sauté.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Écrire",
+      "t": "conditionnel",
+      "p": "je",
+      "s": "J'______ un roman si j'avais du talent.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Envoyer",
+      "t": "futur_proche",
+      "p": "nous",
+      "s": "Nous ______ le colis demain matin.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Manger",
+      "t": "present",
+      "p": "nous",
+      "s": "Nous ______ souvent au restaurant le vendredi.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Partir",
+      "t": "passe_compose",
+      "p": "vous",
+      "s": "À quelle heure ______-vous ce matin ?",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Payer",
+      "t": "present",
+      "p": "je",
+      "s": "Je ______ par carte bancaire.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Prendre",
+      "t": "present",
+      "p": "tu",
+      "s": "Tu ______ le métro pour aller au travail ?",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Se lever",
+      "t": "passe_compose",
+      "p": "il",
+      "s": "Il ______ à six heures pour faire du sport.",
+      "g": "reflexive",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Se souvenir",
+      "t": "present",
+      "p": "vous",
+      "s": "Est-ce que vous vous ______ de cet homme ?",
+      "g": "reflexive",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Vendre",
+      "t": "futur_proche",
+      "p": "elles",
+      "s": "Elles ______ leur vieille voiture bientôt.",
+      "g": "re",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Travailler",
+      "t": "present",
+      "p": "elle",
+      "s": "Elle ______ pour une organisation non-lucrative.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Danser",
+      "t": "present",
+      "p": "nous",
+      "s": "Nous ______ ensemble au mariage.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Décider",
+      "t": "passe_compose",
+      "p": "j'",
+      "s": "J'______ de partir en vacances en France.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Demander",
+      "t": "present",
+      "p": "tu",
+      "s": "Tu ______ l'addition au serveur ?",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Déménager",
+      "t": "futur_proche",
+      "p": "ils",
+      "s": "Ils vont ______ à Paris le mois prochain.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Dépenser",
+      "t": "imparfait",
+      "p": "elle",
+      "s": "Elle ______ trop d'argent quand elle était jeune.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Descendre",
+      "t": "passe_compose",
+      "p": "je",
+      "s": "Je ______ l'escalier rapidement.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Donner",
+      "t": "present",
+      "p": "vous",
+      "s": "Vous ______ des cours de français ?",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Dormir",
+      "t": "conditionnel",
+      "p": "je",
+      "s": "Je ______ mieux s'il n'y avait pas de bruit.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Écouter",
+      "t": "present",
+      "p": "nous",
+      "s": "Nous ______ de la musique classique.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Écrire",
+      "t": "passe_compose",
+      "p": "tu",
+      "s": "Tu ______ cette lettre hier ?",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Enlever",
+      "t": "present",
+      "p": "je",
+      "s": "Je ______ mes chaussures à l'entrée.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Entendre",
+      "t": "imparfait",
+      "p": "on",
+      "s": "On ______ souvent les oiseaux le matin.",
+      "g": "re",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Envoyer",
+      "t": "futur_proche",
+      "p": "vous",
+      "s": "Vous allez ______ ce courriel maintenant ?",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Essayer",
+      "t": "present",
+      "p": "je",
+      "s": "J'______ cette nouvelle recette de soupe.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Étudier",
+      "t": "imparfait",
+      "p": "nous",
+      "s": "Nous ______ tard à la bibliothèque.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Fermer",
+      "t": "present",
+      "p": "ils",
+      "s": "Ils ______ la fenêtre à cause du vent.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Finir",
+      "t": "conditionnel",
+      "p": "tu",
+      "s": "Tu ______ ton repas si tu n'étais pas fatigué.",
+      "g": "ir",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Gagner",
+      "t": "passe_compose",
+      "p": "nous",
+      "s": "Nous ______ le match de football.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Gaspiller",
+      "t": "present",
+      "p": "vous",
+      "s": "Vous ______ trop d'eau !",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Goûter",
+      "t": "futur_proche",
+      "p": "je",
+      "s": "Je vais ______ ce gâteau aux pommes.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Habiter",
+      "t": "present",
+      "p": "j'",
+      "s": "J'______ dans une petite ville près de Lyon.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Introduire",
+      "t": "passe_compose",
+      "p": "il",
+      "s": "Il ______ son nouvel ami à ses parents.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Inviter",
+      "t": "futur_proche",
+      "p": "nous",
+      "s": "Nous allons ______ tous nos voisins à la fête.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Jouer",
+      "t": "imparfait",
+      "p": "tu",
+      "s": "Tu ______ souvent au football quand tu étais petit ?",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Laisser",
+      "t": "present",
+      "p": "vous",
+      "s": "Vous ______ vos clés sur la table ?",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Laver",
+      "t": "conditionnel",
+      "p": "je",
+      "s": "Je ______ la voiture s'il faisait beau.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Lire",
+      "t": "present",
+      "p": "ils",
+      "s": "Ils ______ le journal chaque matin.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Manger",
+      "t": "passe_compose",
+      "p": "nous",
+      "s": "Nous ______ dans un excellent restaurant italien.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Marcher",
+      "t": "futur_proche",
+      "p": "je",
+      "s": "Je vais ______ jusqu'au parc pour faire de l'exercice.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Mettre",
+      "t": "present",
+      "p": "tu",
+      "s": "Tu ______ ton manteau car il fait froid dehors.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Monter",
+      "t": "passe_compose",
+      "p": "elle",
+      "s": "Elle ______ l'escalier pour aller dans sa chambre.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Nettoyer",
+      "t": "imparfait",
+      "p": "je",
+      "s": "Je ______ ma chambre tous les samedis matin.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Obtenir",
+      "t": "conditionnel",
+      "p": "nous",
+      "s": "Nous ______ de meilleurs résultats si nous travaillions plus.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Oublier",
+      "t": "present",
+      "p": "vous",
+      "s": "Vous ______ toujours vos lunettes !",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Ouvrir",
+      "t": "passe_compose",
+      "p": "j'",
+      "s": "J'______ la fenêtre pour faire entrer de l'air frais.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Partir",
+      "t": "futur_proche",
+      "p": "ils",
+      "s": "Ils vont ______ en vacances demain matin.",
+      "g": "irreg",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Parler",
+      "t": "imparfait",
+      "p": "tu",
+      "s": "Tu ______ beaucoup quand tu étais enfant.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Passer",
+      "t": "present",
+      "p": "nous",
+      "s": "Nous ______ devant ta maison tous les jours.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Payer",
+      "t": "conditionnel",
+      "p": "je",
+      "s": "Je ______ par chèque si j'en avais un.",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    },
+    {
+      "v": "Penser",
+      "t": "present",
+      "p": "vous",
+      "s": "Vous ______ que c'est une bonne idée ?",
+      "g": "er",
+      "tier": "tier_2_high_frequency"
+    }
+  ]
+}
