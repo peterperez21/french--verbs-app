@@ -1,0 +1,807 @@
+  {
+    "manger": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "eat",
+        "en_past": "ate",
+        "en_ing": "eating"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "noun_category": "food",
+      "reflexive": false,
+      "stems": {
+        "default": "mang",
+        "past_participle": "mangé"
+      }
+    },
+    "finir": {
+      "category": "ir_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "finish",
+        "en_past": "finished",
+        "en_ing": "finishing"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_finish",
+      "stems": {
+        "default": "fin",
+        "present_plural": "finiss",
+        "past_participle": "fini"
+      }
+    },
+    "attendre": {
+      "category": "re_regular",
+      "cefr": "A2",
+      "translation": {
+        "en": "wait",
+        "en_past": "wawaited",
+        "en_ing": "waiting"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_wait_for",
+      "stems": {
+        "default": "attend",
+        "past_participle": "attendu"
+      }
+    },
+    "partir": {
+      "category": "ir_irregular",
+      "cefr": "A2",
+      "translation": {
+        "en": "depart",
+        "en_past": "departed",
+        "en_ing": "departing"
+      },
+      "auxiliary": "être",
+      "transitivity": "intransitive",
+      "reflexive": false,
+      "noun_category": "departures",
+      "stems": {
+        "singular": "par",
+        "plural": "part",
+        "past_participle": "parti"
+      }
+    },
+    "se_laver": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "wash oneself",
+        "en_past": "washed oneself",
+        "en_ing": "washing oneself"
+      },
+      "auxiliary": "être",
+      "transitivity": "transitive",
+      "reflexive": true,
+      "noun_category": "hygiene",
+      "stems": {
+        "default": "lav",
+        "past_participle": "lavé"
+      },
+      "imperative_present": [
+        null,
+        "lave-toi",
+        null,
+        "lavons-nous",
+        "lavez-vous",
+        null
+      ],
+      "present": [
+        "me lave",
+        "te laves",
+        "se lave",
+        "nous lavons",
+        "vous lavez",
+        "se lavent"
+      ]
+    },
+    "être": {
+      "category": "full_irregulars",
+      "cefr": "A1",
+      "translation": {
+        "en": "be",
+        "en_past": "was",
+        "en_ing": "being"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "intransitive",
+      "reflexive": false,
+      "noun_category": "states",
+      "stems": {
+        "present": [
+          "suis",
+          "es",
+          "est",
+          "sommes",
+          "êtes",
+          "sont"
+        ],
+        "imparfait": "ét",
+        "future": "ser",
+        "past_participle": "été",
+        "impératif_present": [
+          null,
+          "sois",
+          null,
+          "soyons",
+          "soyez",
+          null
+        ],
+        "subjonctif_present": [
+          "sois",
+          "sois",
+          "soit",
+          "soyons",
+          "soyez",
+          "soient"
+        ]
+      }
+    },
+    "avoir": {
+      "category": "full_irregulars",
+      "cefr": "A1",
+      "translation": {
+        "en": "have",
+        "en_past": "had",
+        "en_ing": "having"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "possessions",
+      "stems": {
+        "present": [
+          "ai",
+          "as",
+          "a",
+          "avons",
+          "avez",
+          "ont"
+        ],
+        "past_participle": "eu",
+        "future": "aur",
+        "impératif_present": [
+          null,
+          "aie",
+          null,
+          "ayons",
+          "ayez",
+          null
+        ],
+        "subjonctif_present": [
+          "aie",
+          "aies",
+          "ait",
+          "ayons",
+          "ayez",
+          "aient"
+        ]
+      }
+    },
+    "aller": {
+      "category": "full_irregulars",
+      "cefr": "A1",
+      "translation": {
+        "en": "go",
+        "en_past": "went",
+        "en_ing": "going"
+      },
+      "auxiliary": "être",
+      "transitivity": "intransitive",
+      "reflexive": false,
+      "noun_category": "places_to_go",
+      "stems": {
+        "present": [
+          "vais",
+          "vas",
+          "va",
+          "allons",
+          "allez",
+          "vont"
+        ],
+        "past_participle": "allé",
+        "future": "ir",
+        "imparfait": "all",
+        "impératif_present": [
+          null,
+          "va",
+          null,
+          "allons",
+          "allez",
+          null
+        ],
+        "subjonctif_present": [
+          "aille",
+          "ailles",
+          "aille",
+          "allions",
+          "alliez",
+          "aillent"
+        ]
+      }
+    },
+    "faire": {
+      "category": "full_irregulars",
+      "cefr": "A1",
+      "translation": {
+        "en": "do/make",
+        "en_past": "did",
+        "en_ing": "doing"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_do",
+      "stems": {
+        "present": [
+          "fais",
+          "fais",
+          "fait",
+          "faisons",
+          "faites",
+          "font"
+        ],
+        "past_participle": "fait",
+        "future": "fer",
+        "imparfait": "fais",
+        "subjonctif_present": [
+          "fasse",
+          "fasses",
+          "fasse",
+          "fassions",
+          "fassiez",
+          "fassent"
+        ]
+      }
+    },
+    "dire": {
+      "category": "re_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "say/tell",
+        "en_past": "said",
+        "en_ing": "saying"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_say",
+      "stems": {
+        "default": "dis",
+        "present": [
+          "dis",
+          "dis",
+          "dit",
+          "disons",
+          "dites",
+          "disent"
+        ],
+        "past_participle": "dit"
+      }
+    },
+    "pouvoir": {
+      "category": "oir_irregular",
+      "cefr": "A1",
+      "translation": {
+        "en": "can",
+        "en_past": "could",
+        "en_ing": "being able to"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "actions_can_must",
+      "stems": {
+        "present": [
+          "peux",
+          "peux",
+          "peut",
+          "pouvons",
+          "pouvez",
+          "peuvent"
+        ],
+        "past_participle": "pu",
+        "future": "pourr",
+        "imparfait": "pouv",
+        "subjonctif_present": [
+          "puisse",
+          "puisses",
+          "puisse",
+          "puissions",
+          "puissiez",
+          "puissent"
+        ]
+      }
+    },
+    "vouloir": {
+      "category": "oir_irregular",
+      "cefr": "A1",
+      "translation": {
+        "en": "want",
+        "en_past": "wanted",
+        "en_ing": "wanting"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "drink_desire",
+      "stems": {
+        "present": [
+          "veux",
+          "veux",
+          "veut",
+          "voulons",
+          "voulez",
+          "veulent"
+        ],
+        "past_participle": "voulu",
+        "future": "voudr",
+        "imparfait": "voul",
+        "impératif_present": [
+          null,
+          "veuille",
+          null,
+          "veuillons",
+          "veuillez",
+          null
+        ],
+        "subjonctif_present": [
+          "veuille",
+          "veuilles",
+          "veuille",
+          "voulions",
+          "vouliez",
+          "veuillent"
+        ]
+      }
+    },
+    "savoir": {
+      "category": "oir_irregular",
+      "cefr": "A1",
+      "translation": {
+        "en": "know",
+        "en_past": "knew",
+        "en_ing": "knowing"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_know",
+      "stems": {
+        "present": [
+          "sais",
+          "sais",
+          "sait",
+          "savons",
+          "savez",
+          "savent"
+        ],
+        "past_participle": "su",
+        "future": "saur",
+        "imparfait": "sav",
+        "impératif_present": [
+          null,
+          "sache",
+          null,
+          "sachons",
+          "sachez",
+          null
+        ],
+        "subjonctif_present": [
+          "sache",
+          "saches",
+          "sache",
+          "sachions",
+          "sachiez",
+          "sachent"
+        ]
+      }
+    },
+    "voir": {
+      "category": "oir_irregular",
+      "cefr": "A1",
+      "translation": {
+        "en": "see",
+        "en_past": "saw",
+        "en_ing": "seeing"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_see",
+      "stems": {
+        "present": [
+          "vois",
+          "vois",
+          "voit",
+          "voyons",
+          "voyez",
+          "voient"
+        ],
+        "past_participle": "vu",
+        "future": "verr",
+        "imparfait": "voy",
+        "subjonctif_present": [
+          "voie",
+          "voies",
+          "voie",
+          "voyions",
+          "voyiez",
+          "voient"
+        ]
+      }
+    },
+    "devoir": {
+      "category": "oir_irregular",
+      "cefr": "A1",
+      "translation": {
+        "en": "must",
+        "en_past": "had to",
+        "en_ing": "having to"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "actions_can_must",
+      "stems": {
+        "present": [
+          "dois",
+          "dois",
+          "doit",
+          "devons",
+          "devez",
+          "doivent"
+        ],
+        "past_participle": "dû",
+        "future": "devr",
+        "imparfait": "dev",
+        "subjonctif_present": [
+          "doive",
+          "doives",
+          "doive",
+          "devions",
+          "deviez",
+          "doivent"
+        ]
+      }
+    },
+    "venir": {
+      "category": "ir_irregular",
+      "cefr": "A1",
+      "translation": {
+        "en": "come",
+        "en_past": "came",
+        "en_ing": "coming"
+      },
+      "auxiliary": "être",
+      "transitivity": "intransitive",
+      "reflexive": false,
+      "noun_category": "places_to_go",
+      "stems": {
+        "present": [
+          "viens",
+          "viens",
+          "vient",
+          "venons",
+          "venez",
+          "viennent"
+        ],
+        "past_participle": "venu",
+        "future": "viendr",
+        "imparfait": "ven",
+        "subjonctif_present": [
+          "vienne",
+          "viennes",
+          "vienne",
+          "venions",
+          "veniez",
+          "viennent"
+        ]
+      }
+    },
+    "donner": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "give",
+        "en_past": "gave",
+        "en_ing": "giving"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_give",
+      "stems": {
+        "default": "donn",
+        "past_participle": "donné"
+      }
+    },
+    "prendre": {
+      "category": "re_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "take",
+        "en_past": "took",
+        "en_ing": "taking"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_take",
+      "stems": {
+        "present": [
+          "prends",
+          "prends",
+          "prend",
+          "prenons",
+          "prenez",
+          "prennent"
+        ],
+        "past_participle": "pris",
+        "imparfait": "pren",
+        "future": "prendr",
+        "subjonctif_present": [
+          "prenne",
+          "prennes",
+          "prenne",
+          "prenions",
+          "preniez",
+          "prennent"
+        ]
+      }
+    },
+    "parler": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "speak",
+        "en_past": "spoke",
+        "en_ing": "speaking"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "intransitive",
+      "reflexive": false,
+      "noun_category": "topics",
+      "stems": {
+        "default": "parl",
+        "past_participle": "parlé"
+      }
+    },
+    "aimer": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "love",
+        "en_past": "loved",
+        "en_ing": "loving"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_love",
+      "stems": {
+        "default": "aim",
+        "past_participle": "aimé"
+      }
+    },
+    "passer": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "spend time",
+        "en_past": "spent time",
+        "en_ing": "spending time"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_pass",
+      "stems": {
+        "default": "pass",
+        "past_participle": "passé"
+      }
+    },
+    "croire": {
+      "category": "re_regular",
+      "cefr": "A2",
+      "translation": {
+        "en": "believe",
+        "en_past": "believed",
+        "en_ing": "believing"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_believe",
+      "stems": {
+        "present": [
+          "crois",
+          "crois",
+          "croit",
+          "croyons",
+          "croyez",
+          "croient"
+        ],
+        "past_participle": "cru",
+        "imparfait": "croy",
+        "future": "croir",
+        "subjonctif_present": [
+          "croie",
+          "croies",
+          "croie",
+          "croyions",
+          "croyiez",
+          "croient"
+        ]
+      }
+    },
+    "mettre": {
+      "category": "re_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "put",
+        "en_past": "put",
+        "en_ing": "putting"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_put",
+      "stems": {
+        "present": [
+          "mets",
+          "mets",
+          "met",
+          "mettons",
+          "mettez",
+          "mettent"
+        ],
+        "past_participle": "mis",
+        "imparfait": "mett",
+        "future": "mettr"
+      }
+    },
+    "demander": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "ask",
+        "en_past": "asked",
+        "en_ing": "asking"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_ask",
+      "stems": {
+        "default": "demand",
+        "past_participle": "demandé"
+      }
+    },
+    "tenir": {
+      "category": "ir_irregular",
+      "cefr": "A2",
+      "translation": {
+        "en": "hold",
+        "en_past": "held",
+        "en_ing": "holding"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_hold",
+      "stems": {
+        "present": [
+          "tiens",
+          "tiens",
+          "tient",
+          "tenons",
+          "tenez",
+          "tiennent"
+        ],
+        "past_participle": "tenu",
+        "future": "tiendr",
+        "imparfait": "ten",
+        "subjonctif_present": [
+          "tienne",
+          "tiennes",
+          "tienne",
+          "tenions",
+          "teniez",
+          "tiennent"
+        ]
+      }
+    },
+    "sembler": {
+      "category": "er_regular",
+      "cefr": "A2",
+      "translation": {
+        "en": "seem",
+        "en_past": "seemed",
+        "en_ing": "seeming"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "intransitive",
+      "reflexive": false,
+      "noun_category": "states",
+      "stems": {
+        "default": "sembl",
+        "past_participle": "semblé"
+      }
+    },
+    "laisser": {
+      "category": "er_regular",
+      "cefr": "A2",
+      "translation": {
+        "en": "leave behind",
+        "en_past": "left behind",
+        "en_ing": "leaving behind"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_leave_behind",
+      "stems": {
+        "default": "laiss",
+        "past_participle": "laissé"
+      }
+    },
+    "rester": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "stay",
+        "en_past": "stayed",
+        "en_ing": "staying"
+      },
+      "auxiliary": "être",
+      "transitivity": "intransitive",
+      "reflexive": false,
+      "noun_category": "places_to_stay",
+      "stems": {
+        "default": "rest",
+        "past_participle": "resté"
+      }
+    },
+    "penser": {
+      "category": "er_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "think",
+        "en_past": "thought",
+        "en_ing": "thinking"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "intransitive",
+      "reflexive": false,
+      "noun_category": "things_to_think",
+      "stems": {
+        "default": "pens",
+        "past_participle": "pensé"
+      }
+    },
+    "entendre": {
+      "category": "re_regular",
+      "cefr": "A1",
+      "translation": {
+        "en": "hear",
+        "en_past": "heard",
+        "en_ing": "hearing"
+      },
+      "auxiliary": "avoir",
+      "transitivity": "transitive",
+      "reflexive": false,
+      "noun_category": "things_to_hear",
+      "stems": {
+        "default": "entend",
+        "past_participle": "entendu"
+      }
+    }
+  }

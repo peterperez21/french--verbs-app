@@ -1,0 +1,252 @@
+{
+  "verb_functional_schema": {
+    "moods": {
+      "indicative": {
+        "description": "States facts, opinions, or asks questions about reality.",
+        "tenses": {
+          "present": {
+            "levels": ["A1", "A2", "B1", "B2"],
+            "en_equivalents": {
+              "simple": "{subject} {verb}",
+              "continuous": "{subject_be} {verb_ing}"
+            }
+          },
+          "imparfait": {
+            "levels": ["B1", "B2"],
+            "en_equivalents": {
+              "continuous_past": "{subject_be_past} {verb_ing}",
+              "habitual": "{subject} used to {verb}"
+            }
+          },
+          "passé_composé": {
+            "levels": ["A2", "B1", "B2"],
+            "en_equivalents": {
+              "past_simple": "{subject} {verb_past}",
+              "present_perfect": "{subject_have} {verb_past_participle}"
+            }
+          },
+          "futur_simple": {
+            "levels": ["B1", "B2"],
+            "en_equivalents": {
+              "future": "{subject} will {verb}"
+            }
+          },
+          "plus_que_parfait": {
+            "levels": ["B2"],
+            "en_equivalents": {
+              "past_perfect": "{subject} had {verb_past_participle}"
+            }
+          },
+          "futur_antérieur": {
+            "levels": ["B2"],
+            "en_equivalents": {
+              "future_perfect": "{subject} will have {verb_past_participle}"
+            }
+          },
+          "futur_proche": {
+            "example": "je vais manger",
+            "levels": ["B1", "B2"],
+            "en_equivalents": {
+              "going_to": "{subject_be} going to {verb}"
+            }
+          }
+        },
+        "levels": ["A1", "A2", "B1", "B2"]
+      },
+      "imperative": {
+        "description": "Gives commands, requests, or directions.",
+        "tenses": {
+          "impératif_present": {
+            "levels": ["A2", "B1", "B2"],
+            "en_equivalents": {
+              "command": "{verb}!"
+            }
+          }
+        },
+        "levels": ["A2", "B1", "B2"]
+      },
+      "conditional": {
+        "description": "Expresses a state dependent on a condition.",
+        "tenses": {
+          "conditionnel_present": {
+            "levels": ["B1", "B2"],
+            "en_equivalents": {
+              "conditional": "{subject} would {verb}"
+            }
+          },
+          "conditionnel_passé": {
+            "levels": ["B2"],
+            "en_equivalents": {
+              "conditional_past": "{subject} would have {verb_past_participle}"
+            }
+          }
+        },
+        "levels": ["B1", "B2"]
+      },
+      "subjunctive": {
+        "description": "Expresses doubt, desire, hypothetical situations, or commands.",
+        "tenses": {
+          "subjonctif_present": {
+            "levels": ["B2"],
+            "en_equivalents": {
+              "subjunctive": "that {subject} {verb_base}"
+            }
+          },
+          "subjonctif_passé": {
+            "levels": ["B2"],
+            "en_equivalents": {
+              "subjunctive_past": "that {subject} {verb_have_past} {verb_past_participle}"
+            }
+          }
+        },
+        "levels": ["B2"]
+      }
+    },
+    "non_finite_forms": {
+      "infinitive": {
+        "l_infinitif_present": {
+          "levels": ["A1", "A2", "B1", "B2"]
+        },
+        "L’infinitif passé": {
+          "example": "avoir mangé / être allé",
+          "levels": ["B1", "B2"]
+        }
+      },
+      "participle": {
+        "le_participe_present": {
+          "levels": ["B1", "B2"]
+        },
+        "le_participe_passé": {
+          "levels": ["A1", "A2", "B1", "B2"]
+        }
+      },
+      "gérondif": {
+        "example": "en parlant",
+        "levels": ["B1", "B2"]
+      }
+    },
+    "verb_endings_selection": {
+      "er_regular": {
+        "levels": ["A1", "A2", "B1", "B2"],
+        "source": "verb_endings_db.json#/ending_groups/er_regular"
+      },
+      "ir_regular": {
+        "levels": ["A1", "A2", "B1", "B2"],
+        "source": "verb_endings_db.json#/ending_groups/ir_regular"
+      },
+      "re_regular": {
+        "levels": ["A1", "A2", "B1", "B2"],
+        "source": "verb_endings_db.json#/ending_groups/re_regular"
+      },
+      "ir_irregular": {
+        "levels": ["A1", "A2", "B1", "B2"],
+        "source": "verb_endings_db.json#/ending_groups/ir_irregular"
+      },
+      "oir_irregular": {
+        "levels": ["A1", "A2", "B1", "B2"],
+        "source": "verb_endings_db.json#/ending_groups/oir_irregular"
+      },
+      "full_irregulars": {
+        "verbs": ["être", "avoir", "aller", "faire"],
+        "levels": ["A1", "A2", "B1", "B2"],
+        "source": "verb_endings_db.json#/ending_groups/full_irregulars"
+      }
+    },
+    "stem_logic_rules": {
+      "regular_groups": {
+        "er": ["rule: infinitive.slice(0, -2)", "levels: A1-B2"],
+        "ir": ["singular: slice(0, -2)", "plural: slice(0, -2) + 'iss'", "levels: A2-B2"],
+        "re": ["rule: infinitive.slice(0, -2)", "levels: A1-B2"]
+      },
+      "orthographic_rules": {
+        "ger_verbs": ["rule: if ending starts with 'o' or 'a', insert 'e'", "levels: A2-B2"],
+        "cer_verbs": ["rule: if ending starts with 'o' or 'a', c becomes ç", "levels: B1-B2"]
+      },
+      "bypass_logic": {
+        "full_irregulars": ["action: skip_calculation", "source: verb_stems_and_endings_db.json#/full_irregulars"],
+        "modal_stems": ["verbs: vouloir, pouvoir, devoir", "action: check_stem_db_for_tense_map"]
+      }
+    },
+    "voice": {
+      "active": {
+        "levels": ["A1", "A2", "B1", "B2"]
+      },
+      "passive": {
+        "formula": "être + past participle",
+        "levels": ["B1", "B2"]
+      }
+    },
+    "transitivity": {
+      "transitive": {
+        "levels": ["A1", "A2", "B1", "B2"]
+      },
+      "intransitive": {
+        "levels": ["A1", "A2", "B1", "B2"]
+      }
+    },
+    "compound_tense_logic": {
+      "agreement_rules": [
+        "Agreement with être verbs (gender/number)",
+        "Agreement with avoir verbs when the direct object precedes the verb",
+        "Agreement with reflexive verbs"
+      ],
+      "auxiliary_choice": {
+        "avoir": {
+          "levels": ["A1", "A2", "B1", "B2"]
+        },
+        "être": {
+          "levels": ["A1", "A2", "B1", "B2"]
+        }
+      }
+    },
+    "verbal_structures": {
+      "modal_verbs": {
+        "verbs": ["vouloir", "pouvoir", "devoir"],
+        "levels": ["A1", "A2", "B1", "B2"]
+      },
+      "recent_past": {
+        "formula": "venir de + infinitive",
+        "levels": ["A2", "B1", "B2"],
+        "en_equivalent": "{subject_have} just {verb_past_participle}"
+      },
+      "continuous_present": {
+        "formula": "être en train de + infinitive",
+        "levels": ["A2", "B1", "B2"],
+        "en_equivalent": "{subject_be} in the middle of {verb_ing}"
+      }
+    },
+    "reflexive_verbs": {
+      "tenses": ["present", "futur proche", "futur simple", "passé composé"],
+      "levels": ["A1", "A2", "B1", "B2"],
+      "source": "verb_stems_and_endings_db.json#/pronouns/reflexive"
+    },
+    "core_verbs": {
+      "faire": {
+        "levels": ["A1", "A2", "B1", "B2"]
+      },
+      "être": {
+        "levels": ["A1", "A2", "B1", "B2"]
+      },
+      "aller": {
+        "levels": ["A1", "A2", "B1", "B2"]
+      },
+      "avoir": {
+        "levels": ["A2", "B1", "B2"]
+      }
+    },
+    "curriculum_tiers": {
+      "tier_1": {
+        "label": "Tier 1: Survival",
+        "verbs": ["être", "avoir", "aller", "faire", "dire", "pouvoir", "vouloir", "savoir", "devoir", "voir", "venir", "prendre", "parler", "donner", "mettre"]
+      },
+      "tier_2": {
+        "label": "Tier 2: Everyday",
+        "verbs": ["aimer", "passer", "croire", "demander", "tenir", "sembler", "laisser", "rester", "penser", "entendre", "manger", "finir", "attendre", "partir", "se_laver"]
+      },
+      "tier_3_all": {
+        "label": "Tier 3: All Verbs",
+        "verbs": "ALL_VERBS"
+      }
+    }
+  }
+}

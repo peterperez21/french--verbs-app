@@ -1,0 +1,74 @@
+[ ]- B2 level questions
+[ ]- mobile friendly
+[ ]- mastery shared between desktop and mobileM9duelemibuttt
+[ ]- A1 level 
+[ ]- Test the verb database is accurately conjugated
+[ ]- Update Tenses with these details: https://docs.google.com/spreadsheets/d/1KMofZT8yH-A0HCI7-rx0qAhwQPwYVSILz_bK9gII1YM/edit?usp=sharing 
+
+The 5-step plan previously mentioned provides the high-level strategy, but it is not the same as a **technical roadmap** designed to prevent "restarts." The "restarts" you experienced (like rebuilding your JSON for CEFR levels) happen when the **Data Schema** doesn't support the **Feature UI**.
+
+To avoid rebuilding again, follow this technical task list, which prioritizes "extensibility" (making it easy to add things later without breaking what exists):
+
+[ ]### Phase 1: Data Architecture (The Foundation)
+
+    * **Task 1.1: Finalize the "Contract" between JSON files:** Ensure `questions.json` always uses a `verb_id` that matches an `id` in `verbs.json`. This "relational" setup means you can add 100 more verbs to `verbs.json` without ever touching your question logic.
+    * **Task 1.2: Standardize Metadata:** You’ve already added `level` (A1, A2) to both files. Add any other "filters" now (e.g., `regular/irregular`, `tense`) so your code can filter them later without a data rewrite.
+            The "Restart" Insurance Policy
+            To ensure you can upgrade your logic in 6 weeks without losing progress, you just need to save your data as an Object rather than a single number.
+            * Bad Storage (Hard to upgrade): verb_1_score: 4
+            * Good Storage (Easy to upgrade): verb_1: { "streak": 4, "last_seen": "2026-02-21", "difficulty": 2.5 }
+            Even if your app only uses the streak value today, having the last_seen date saved means that in 6 weeks, you can write a new function that says: "If last_seen was more than 7 days ago, drop the streak by 1." Boom—you've just added Spaced Repetition without rebuilding anything.
+
+[ ]### Phase 2: Logic and Filtering (The Engine)
+
+[ ]    * **Task 2.1: Dynamic Filtering:** Instead of hard-coding which levels to load, write a function in `script.js` that looks at the `tier-checkboxes` in `index.html` and filters `globalData.questions` on the fly.
+[ ]    * **Task 2.2: The "State" Machine:** Create a single object in your script to track the "State" (e.g., `currentScore`, `remainingQuestions`, `selectedLevels`). This prevents variables from getting tangled as the app grows.
+
+[ ]### Phase 3: Mobile-First UI/UX (The "Friendly" Layer)
+
+[ ]* **Task 3.1: Flexbox/Grid Refinement:** Your `style.css` uses a container-based layout. Ensure all interactive elements (buttons, inputs) are at least 44px tall/wide to meet mobile "tap target" standards.
+[ ]* **Task 3.2: Immediate Feedback:** Since you're vibing for a teacher/student audience, add a "Progress Bar" to `index.html` so users know how far they are in a session.
+
+[ ]### Phase 4: Persistence (Moving beyond the "Session")
+
+[ ]* **Task 4.1: LocalStorage Implementation:** Before building a whole login system, use `window.localStorage` to save high scores or "Mastered Verbs." This works instantly on mobile without needing a database.
+[ ]* **Task 4.2: Performance History Object:** Create a small data structure that records "Verb ID + Success/Failure." This is the foundation for the "History" feature you mentioned.
+
+[ ]### Phase 5: Deployment and "Teacher Mode"
+
+[ ]* **Task 5.1: Static Hosting:** Upload these files to GitHub Pages or Netlify. This gives you a URL you can send to your teacher immediately.
+[ ]* **Task 5.2: The "Share" Feature:** Instead of complex user profiles, you can create a "Share Result" button that copies a text summary of the student's performance to their clipboard so they can email it to the teacher.
+
+**Why this prevents restarts:** By finalizing your **Data Architecture (Phase 1)** first, you ensure that any new UI button you add in **Phase 3** already has the data it needs to function. You are essentially building the "back-end" logic before the "front-end" paint.
+
+
+Revised Strategic Roadmap for "Minimal Restarts"
+
+[ ] To ensure you can reach that "Syncing/Mobile" goal, here is the specific technical order: https://docs.google.com/spreadsheets/d/13jWwHHYA2Ecv4S5Bc7zaizZEthxB4_SWwbgvgRrd7xQ/edit?usp=sharing
+
++Prompt: New Task/Feature
+
+Do not fuckin change anything I did not ask for Just do only what I fuckin told you.
+Do you have any questions for me before you proceed?
+
++Prompt: Confirm Task Completion
+I'm vibe coding a web app to help me master french verb conjugation. Based on the attached files, have we completed this task: 
+
++Features:
+[ ]Maybe add a toggle to switch from cumulative to descrete CEFR levels. How should that affect your progress when you switch back and forth?
+[ ]As a user, I want to see how many and which words I've mastered so that I can understand my progress in that way. Mastery can be fluid, which SRS accounts for. 
+
+[x]!!!NEGATIVES AND QUESTIONS TOO!!!
+
+[ ] Enhance verb schema
+    [ ]###CONTROL TENSES WITH THE CEFR LEVELS###
+        [ ]ID which tenses go with which CEFR levels
+        [ ]Update the app accordingly
+    [ ]reflexive, etc.
+        [ ]ID whhat else
+    [ ]Tenses 
+        [ ]add passé composé
+
+[ ] Update the verbs and questions to fillout the data bases
+
+Note: For overall product purpose, audience, and high-level design principles, see `VISION.md` in this repository. Use this file (`Tasks.txt`) for concrete technical and feature tasks, and the vision document for higher-level direction.

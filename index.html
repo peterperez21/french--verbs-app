@@ -3,170 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        const saved = localStorage.getItem("french_theme");
+        const system = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (saved === "dark" || (!saved && system)) {
+          document.documentElement.classList.add("dark-mode");
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="style.css" />
 
     <title>Maîtrise des Verbes Français</title>
   </head>
-  <body>
+  <body class="preload">
     <div class="container">
       <div id="setup">
-        <h1>Maîtrise des Verbes Français</h1>
+        <h1>Maîtrise des Verbes</h1>
         <div class="config-grid">
+          <div class="col" data-purpose="cefr-level-selection">
+            <input type="range" id="cefr-level-slider" min="0" max="3" step="1" value="0" />
+            <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-top: 5px">
+              <span>A1</span>
+              <span>A2</span>
+              <span>B1</span>
+              <span>B2</span>
+            </div>
+          </div>
+          <div class="setting-item">
+            <label>Review Intensity (Gentle ↔ Aggressive)</label>
+            <input type="range" id="intensity-slider" min="1" max="9" value="2" step="1" />
+            <span id="intensity-val">Gentle</span>
+          </div>
+          <div class="setting-item">
+            <label>Mode Pression (Timer)</label>
+            <input type="checkbox" id="pressure-toggle" checked />
+          </div>
+          <div class="setting-item" id="timer-setting">
+            <label>Durée du Timer (s)</label>
+            <input type="range" id="timer-slider" min="2" max="10" value="4" step="1" />
+            <span id="timer-val">4</span>
+          </div>
           <div class="col">
-            <strong>Temps</strong>
-            <div id="tenses-list">
-              <label
-                ><input
-                  type="checkbox"
-                  class="tense-opt"
-                  value="present"
-                  checked
-                />
-                Présent</label
-              ><br />
-              <label
-                ><input
-                  type="checkbox"
-                  class="tense-opt"
-                  value="imparfait"
-                  checked
-                />
-                Imparfait</label
-              ><br />
-              <label
-                ><input
-                  type="checkbox"
-                  class="tense-opt"
-                  value="passe_compose"
-                  checked
-                />
-                Passé Composé</label
-              ><br />
-              <label
-                ><input
-                  type="checkbox"
-                  class="tense-opt"
-                  value="conditionnel"
-                  checked
-                />
-                Conditionnel</label
-              ><br />
-              <label
-                ><input
-                  type="checkbox"
-                  class="tense-opt"
-                  value="futur_proche"
-                  checked
-                />
-                Futur Proche</label
-              >
+            <strong>Vocabulaire (Par Fréquence)</strong>
+            <div id="type-filters" class="filter-button-group">
+              <button class="filter-btn" data-id="tier_1" onclick="toggleFilter('tier_1')">Tier 1: Survival<span class="mastery-badge">--%</span></button>
+              <button class="filter-btn" data-id="tier_2" onclick="toggleFilter('tier_2')">Tier 2: Everyday<span class="mastery-badge">--%</span></button>
+              <button class="filter-btn" data-id="tier_3_all" onclick="toggleFilter('tier_3_all')">Tier 3: All Verbs<span class="mastery-badge">--%</span></button>
             </div>
           </div>
           <div class="col">
-            <strong>Groupes</strong>
-            <div id="groups-list">
-              <label
-                ><input type="checkbox" class="group-opt" value="er" checked />
-                1er (-ER)</label
-              ><br />
-              <label
-                ><input type="checkbox" class="group-opt" value="ir" checked />
-                2e (-IR)</label
-              ><br />
-              <label
-                ><input type="checkbox" class="group-opt" value="re" checked />
-                3e (-RE)</label
-              ><br />
-              <label
-                ><input
-                  type="checkbox"
-                  class="group-opt"
-                  value="irreg"
-                  checked
-                />
-                Irréguliers</label
-              ><br />
-              <label
-                ><input
-                  type="checkbox"
-                  class="group-opt"
-                  value="reflexive"
-                  checked
-                />
-                Réfléchis</label
-              >
+            <strong>Type de Questions</strong>
+            <div id="question-type-filters" class="filter-button-group">
+              <button class="filter-btn" data-id="affirmative" onclick="toggleSentenceType('affirmative')">Affirmatif</button>
+              <button class="filter-btn" data-id="negative" onclick="toggleSentenceType('negative')">Négatif</button>
+              <button class="filter-btn" data-id="question" onclick="toggleSentenceType('question')">Questions</button>
             </div>
           </div>
-          <div class="col">
-            <strong>Tiers</strong>
-            <div id="tier-checkboxes">Loading tiers...</div>
-          </div>
-          <div class="setup-column">
-            <h3>Thème</h3>
-            <label class="theme-toggle-wrapper" for="toggle">
-              <div id="theme-toggle" class="toggle">
-                <div class="icons">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
-                    />
-                  </svg>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"
-                    />
-                  </svg>
-                </div>
-                <input id="toggle" type="checkbox" onclick="toggleDarkMode()" />
+          <div class="theme-switch">
+            <input type="checkbox" id="toggle" onclick="toggleDarkMode()" />
+            <label for="toggle">
+              <div class="icons">
+                <svg
+                  class="sun"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="5"></circle>
+                  <line x1="12" y1="1" x2="12" y2="3"></line>
+                  <line x1="12" y1="21" x2="12" y2="23"></line>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                  <line x1="1" y1="12" x2="3" y2="12"></line>
+                  <line x1="21" y1="12" x2="23" y2="12"></line>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                </svg>
+                <svg
+                  class="moon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
               </div>
             </label>
           </div>
         </div>
-        <button class="btn" onclick="startDrill()">
-          Lancer l'entraînement
-        </button>
+        <button class="btn" onclick="startDrill()">Commencer</button>
       </div>
 
       <div id="drill" class="hidden">
-        <h2 id="verb-info">Verb (Tense)</h2>
-        <div class="progress-container">
-          <div id="progress-bar" class="progress-bar"></div>
+        <div id="scenario-display" class="scenario-badge">📍 Situation générale</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+          <h2 id="verb-info" style="margin: 0;">Verb (Tense)</h2>
+          <div id="audio-warning" class="hidden" onclick="document.getElementById('audio-modal').classList.remove('hidden')" title="Audio non disponible - Cliquez pour réparer" style="cursor: pointer; color: var(--error);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
+          </div>
         </div>
-        <p
-          id="sentence"
-          style="font-size: 1.3rem; color: var(--primary); font-weight: 500"
-        >
-          Sentence goes here...
-        </p>
-        <div id="mastery-container" class="mastery-dots"></div>
-        <input
-          type="text"
-          id="answer-input"
-          autocomplete="off"
-          placeholder="Tapez la réponse..."
-        />
+        <p id="sentence-display">Sentence goes here...</p>
+
+        <p id="translation-display" class="hidden" style="font-style: italic; opacity: 0.8">Translation goes here...</p>
+
+        <div id="timer-container" class="timer-bar-container hidden">
+          <div id="timer-fill" class="timer-bar-fill"></div>
+        </div>
+
+        <div id="mastery-dots" style="display: flex; gap: 5px; justify-content: center; margin-bottom: 10px"></div>
+        <input type="text" id="answer-input" autocomplete="off" placeholder="Tapez votre réponse ici..." />
         <div id="feedback" class="feedback"></div>
-        <button class="btn" id="check-btn" onclick="checkAnswer()">
-          Vérifier
-        </button>
-        <button class="btn hidden" id="next-btn" onclick="nextQuestion()">
-          Suivant
-        </button>
+        <div class="button-group">
+          <button class="btn" id="check-btn" onclick="checkAnswer()">Vérifier</button>
+          <button class="btn hidden" id="next-btn">Suivant</button>
+        </div>
 
         <div id="table-container" class="hidden">
-          <table>
+          <table id="conjugation-table">
             <thead>
               <tr>
                 <th>Pronom</th>
@@ -175,17 +137,77 @@
             </thead>
             <tbody id="table-body"></tbody>
           </table>
-          <button
-            id="reset-btn"
-            class="btn-small"
-            onclick="resetCurrentMastery()"
-            style="margin-top: 10px; font-size: 0.8rem; opacity: 0.7"
-          >
-            Réinitialiser la maîtrise (Reset)
-          </button>
         </div>
+
+        <!-- Audio Warning Modal -->
+        <div id="audio-modal" class="modal hidden">
+          <div class="modal-content">
+            <span class="close-btn" onclick="document.getElementById('audio-modal').classList.add('hidden')">&times;</span>
+            <h2>Voix Française Introuvable</h2>
+            <p>Votre navigateur ou système d'exploitation ne possède pas de module de synthèse vocale (TTS) français installé par défaut.</p>
+            <h3>Pour les utilisateurs Windows :</h3>
+            <ol>
+              <li>Ouvrez les <strong>Paramètres</strong> Windows.</li>
+              <li>Allez dans <strong>Heure et langue</strong> > <strong>Voix</strong> (ou Téléchargement de voix).</li>
+              <li>Cliquez sur <strong>Ajouter des voix</strong>.</li>
+              <li>Cherchez et installez <strong>Français (France)</strong>.</li>
+              <li>Une fois terminé, redémarrez ce navigateur.</li>
+            </ol>
+            <h3>Pour les utilisateurs Mac / Safari :</h3>
+            <p>Allez dans <strong>Préférences Système</strong> > <strong>Accessibilité</strong> > <strong>Contenu énoncé</strong> et ajoutez une voix française de haute qualité.</p>
+          </div>
+        </div>
+
       </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Synchronous UI Hydration to prevent First Paint Flicker -->
+    <script>
+      (function() {
+        try {
+          var s = localStorage.getItem("french_settings");
+          var d = s ? JSON.parse(s) : {};
+          
+          if (d.cefr_level !== undefined) document.getElementById("cefr-level-slider").value = d.cefr_level;
+          
+          if (d.pressure_mode !== undefined) {
+            document.getElementById("pressure-toggle").checked = d.pressure_mode;
+            document.getElementById("timer-setting").style.display = d.pressure_mode ? "block" : "none";
+          }
+          
+          if (d.timer_duration !== undefined) {
+            var tmr = d.timer_duration / 1000;
+            document.getElementById("timer-slider").value = tmr;
+            document.getElementById("timer-val").innerText = tmr;
+          }
+          
+          if (d.fsrs_penalty !== undefined) {
+            var val = 10 - Math.round(d.fsrs_penalty * 10);
+            document.getElementById("intensity-slider").value = val;
+            var labels = ["", "Very Gentle", "Gentle", "Relaxed", "Moderate", "Balanced", "Firm", "Strict", "Hard", "Vicious"];
+            document.getElementById("intensity-val").innerText = labels[val];
+          }
+          
+          if (d.cached_mastery) {
+            ["tier_1", "tier_2", "tier_3_all"].forEach(function(cat) {
+              var btn = document.querySelector('button[data-id="' + cat + '"] .mastery-badge');
+              if (btn) btn.innerText = d.cached_mastery[cat] !== "--" ? d.cached_mastery[cat] + "%" : "--%";
+            });
+          }
+          
+          var activeTiers = d.curriculumTiers || ["tier_1"];
+          document.querySelectorAll('#type-filters .filter-btn').forEach(function(btn) {
+            if (activeTiers.includes(btn.getAttribute('data-id'))) btn.classList.add('active');
+          });
+          
+          var activeSentences = d.sentenceTypes || ["affirmative"];
+          document.querySelectorAll('#question-type-filters .filter-btn').forEach(function(btn) {
+             if (activeSentences.includes(btn.getAttribute('data-id'))) btn.classList.add('active');
+          });
+        } catch(e) {}
+      })();
+    </script>
+    <script src="audioService.js" defer></script>
+    <script src="script.js" defer></script>
   </body>
 </html>

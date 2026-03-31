@@ -1,0 +1,35 @@
+// THE CLEAN-UP FUNCTION (Sentence Schema Logic)
+function applyElision(sentence) {
+  // This looks for "me/te/se/je/ne/la/le" followed by a vowel or 'h'
+  return sentence.replace(
+    /\b(je|ne|me|te|se|le|la|que|de)\s([aeiouhâêîôû])/gi,
+    (match, p1, p2) => {
+      return p1.slice(0, -1) + "'" + p2;
+    },
+  );
+}
+
+function conjugate(verbKey, subject, gender) {
+  const verb = verbDatabase[verbKey];
+  const schema = verbFunctionalSchema.verb_functional_schema;
+
+  // 1. Get raw components
+  let aux = "est"; // Simplified for this test
+  let participle = verb.stems.past_participle;
+  let reflexive = verb.reflexive ? "se " : "";
+
+  // 2. Apply agreement rule from Schema
+  if (
+    schema.compound_tense_logic.agreement_rules.includes(
+      "Agreement with être verbs (gender/number)",
+    )
+  ) {
+    if (gender === "female") participle += "e";
+  }
+
+  // 3. Construct raw sentence
+  let rawSentence = `${subject} ${reflexive}${aux} ${participle}`;
+
+  // 4. Run through the Sentence Schema Clean-up
+  return applyElision(rawSentence);
+}

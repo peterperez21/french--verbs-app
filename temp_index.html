@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vibe-French Conjugator</title>
+    <link rel="stylesheet" href="temp_style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Le Conjugateur</h1>
+
+      <div class="controls">
+        <div class="control-group">
+          <label for="verb-select">Verb:</label>
+          <select id="verb-select"></select>
+        </div>
+
+        <div class="control-group">
+          <label for="tense-select">Tense:</label>
+          <select id="tense-select"></select>
+        </div>
+      </div>
+
+      <div id="translation-info" class="info-box"></div>
+
+      <div class="conjugation-grid" id="conjugation-output"></div>
+
+      <div class="footer">
+        <p>Target Level: <span id="cefr-badge">A1</span></p>
+      </div>
+    </div>
+    <script src="temp_script.js"></script>
+  </body>
+</html>

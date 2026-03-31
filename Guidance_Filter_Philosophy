@@ -1,0 +1,40 @@
+Let the user filter for one or more verb groups.
+Let the user filter for one or more sentence types.  
+Let the CEFR level filter for everything else.
+
+To make this work, your Logic Engine needs to treat the CEFR level as the Primary Filter that prunes your JSON schemas before the other filters even touch them.
+
+The Multi-Filter Logic Flow
+Here is how the data should flow through your engine:
+
+1.  CEFR Filter (The "Everything Else"): Prunes available Tenses, Moods, and Negation types from the verb_functional_schema.
+2.  Verb Group Filter: Prunes the verbs.json to only show, for example, "er_regular" and "full_irregulars".
+3.  Sentence Type Filter: Selects the specific formula from sentence_schema.json (e.g., "intonation" or "est_ce_que").
+
+Snippet:
+// --- THE MASTER FILTER FUNCTION ---
+function getPracticeSession(cefr, selectedGroups, selectedSentences) {
+// 1. Filter Verbs by Group + CEFR (Must be at or below slider)
+const availableVerbs = Object.keys(verbs).filter(v =>
+selectedGroups.includes(verbs[v].group) &&
+["A1", "A2", "B1", "B2"].indexOf(verbs[v].cefr) <= ["A1", "A2", "B1", "B2"].indexOf(cefr)
+);
+
+    // 2. Filter Tenses by CEFR
+    const availableTenses = Object.keys(verb_functional_schema.tenses).filter(t =>
+      verb_functional_schema.tenses[t].levels.includes(cefr)
+    );
+
+    // 3. Filter Sentence Types by Choice + CEFR
+    const availableSentences = Object.keys(sentence_schema.interrogative_logic).filter(s =>
+      selectedSentences.includes(s) &&
+      sentence_schema.interrogative_logic[s].levels.includes(cefr)
+    );
+
+    return {
+      verbs: availableVerbs,
+      tenses: availableTenses,
+      structures: availableSentences
+    };
+
+}

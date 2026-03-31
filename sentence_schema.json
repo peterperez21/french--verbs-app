@@ -1,0 +1,51 @@
+{
+  "interrogative_logic": {
+    "intonation": {
+      "levels": ["A1", "A2"],
+      "formula": "{subject} {pre_verb_particles} {conjugated_verb} {negation_particle_2} {main_verb} {noun_object} ?"
+    },
+    "est_ce_que": {
+      "levels": ["A1", "A2", "B1"],
+      "formula": "Est-ce que {subject} {pre_verb_particles} {conjugated_verb} {negation_particle_2} {main_verb} {noun_object} ?"
+    },
+    "inversion": {
+      "levels": ["B1", "B2"],
+      "formula": "{pre_verb_particles} {conjugated_verb}-{subject} {negation_particle_2} {main_verb} {noun_object} ?",
+      "rules": {
+        "hyphenation": "Between conjugated_verb and subject",
+        "euphonic_t": "Insert -t- if conjugated_verb ends in vowel and subject is il/elle/on",
+        "pronoun_stability": "Object pronouns remain in pre_verb_particles even during inversion"
+      }
+    }
+  },
+
+  "syntax_definitions": {
+    "pre_verb_particles": "Contains [ne] + [reflexive_pronoun] + [object_pronouns]",
+    "negation_particle_2": "Placed immediately after the conjugated_verb"
+  },
+
+  "negation_logic": {
+    "standard_negation": {
+      "particles": ["ne", "pas"],
+      "description": "Not",
+      "levels": ["A1", "A2"]
+    },
+    "temporal_negation": {
+      "particles": ["ne", "plus"],
+      "description": "No longer / Not anymore",
+      "levels": ["A2", "B1"],
+      "preferred_tenses": ["présent", "imparfait", "futur_simple"],
+      "avoid_tenses": ["passé_composé"]
+    },
+    "frequency_negation": {
+      "particles": ["ne", "jamais"],
+      "description": "Never",
+      "levels": ["A2", "B1"]
+    }
+  },
+  "placement_rules": {
+    "simple_tense": "{ne} + {conjugated_verb} + {negation_particle_2}",
+    "compound_tense": "{ne} + {conjugated_verb} + {negation_particle_2} + {main_verb}",
+    "infinitive": "ne {negation_particle_2} + {main_verb}"
+  }
+}

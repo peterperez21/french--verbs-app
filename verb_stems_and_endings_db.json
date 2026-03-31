@@ -1,0 +1,137 @@
+{
+  "metadata": {
+    "description": "Source of truth for French verb endings and reflexive particles.",
+    "parameters_supported": ["category", "mood", "tense", "person_number", "reflexivity", "elision"]
+  },
+  "pronouns": {
+    "reflexive": {
+      "standard": ["me", "te", "se", "nous", "vous", "se"],
+      "elided": ["m'", "t'", "s'", "nous", "vous", "s'"]
+    }
+  },
+  "irregular_stems": {
+    "vouloir": {
+      "present": ["veu", "veu", "veu", "voul", "voul", "veu"],
+      "futur_simple": ["voudr"],
+      "subjonctif_present": ["veuill", "veuill", "veuill", "voul", "voul", "veuill"]
+    },
+    "pouvoir": {
+      "present": ["peu", "peu", "peu", "pouv", "pouv", "peu"],
+      "futur_simple": ["pourr"],
+      "subjonctif_present": ["puiss"]
+    },
+    "devoir": {
+      "present": ["doi", "doi", "doi", "dev", "dev", "doiv"],
+      "futur_simple": ["devr"],
+      "subjonctif_present": ["doiv", "doiv", "doiv", "dev", "dev", "doiv"]
+    },
+    "aller": {
+      "present": ["vai", "va", "va", "all", "all", "von"],
+      "futur_simple": ["ir"],
+      "subjonctif_present": ["aill", "aill", "aill", "all", "all", "aill"]
+    },
+    "faire": {
+      "present": ["fai", "fai", "fai", "fais", "fait", "font"],
+      "imparfait": ["fais"],
+      "futur_simple": ["fer"],
+      "subjonctif_present": ["fass"]
+    }
+  },
+  "ending_groups": {
+    "er_regular": {
+      "indicative": {
+        "present": ["e", "es", "e", "ons", "ez", "ent"],
+        "imparfait": ["ais", "ais", "ait", "ions", "iez", "aient"],
+        "futur_simple": ["erai", "eras", "era", "erons", "erez", "eront"]
+      },
+      "subjunctive": {
+        "subjonctif_present": ["e", "es", "e", "ions", "iez", "ent"]
+      },
+      "conditional": {
+        "conditionnel_present": ["erais", "erais", "erait", "erions", "eriez", "eraient"]
+      },
+      "participle": {
+        "past_participle": "é"
+      },
+      "imperative": {
+        "impératif_present": [null, "e", null, "ons", "ez", null]
+      }
+    },
+    "ir_regular": {
+      "indicative": {
+        "present": ["is", "is", "it", "issons", "issez", "issent"],
+        "imparfait": ["issais", "issais", "issait", "issions", "issiez", "issaient"],
+        "futur_simple": ["irai", "iras", "ira", "irons", "irez", "iront"]
+      },
+      "imperative": {
+        "impératif_present": [null, "is", null, "issons", "issez", null]
+      },
+      "subjunctive": {
+        "subjonctif_present": ["isse", "isses", "isse", "issions", "issiez", "issent"]
+      },
+      "conditional": {
+        "conditionnel_present": ["irais", "irais", "irait", "irions", "iriez", "iraient"]
+      },
+      "participle": {
+        "past_participle": "i"
+      }
+    },
+    "re_regular": {
+      "indicative": {
+        "present": ["s", "s", "", "ons", "ez", "ent"],
+        "imparfait": ["ais", "ais", "ait", "ions", "iez", "aient"],
+        "futur_simple": ["rai", "ras", "ra", "rons", "rez", "ront"]
+      },
+      "subjunctive": {
+        "subjonctif_present": ["e", "es", "e", "ions", "iez", "ent"]
+      },
+      "conditional": {
+        "conditionnel_present": ["rais", "rais", "rait", "rions", "riez", "raient"]
+      },
+      "participle": {
+        "past_participle": "u"
+      },
+      "imperative": {
+        "impératif_present": [null, "s", null, "ons", "ez", null]
+      }
+    },
+    "ir_irregular": {
+      "indicative": {
+        "present": ["s", "s", "t", "ons", "ez", "ent"],
+        "imparfait": ["ais", "ais", "ait", "ions", "iez", "aient"],
+        "futur_simple": ["irai", "iras", "ira", "irons", "irez", "iront"]
+      },
+      "imperative": {
+        "impératif_present": [null, "s", null, "ons", "ez", null]
+      },
+      "subjunctive": {
+        "subjonctif_present": ["e", "es", "e", "ions", "iez", "ent"]
+      },
+      "conditional": {
+        "conditionnel_present": ["irais", "irais", "irait", "irions", "iriez", "iraient"]
+      },
+      "participle": {
+        "past_participle": "i"
+      }
+    },
+    "oir_irregular": {
+      "indicative": {
+        "present": ["x", "x", "t", "ons", "ez", "ent"],
+        "imparfait": ["ais", "ais", "ait", "ions", "iez", "aient"],
+        "futur_simple": ["ai", "as", "a", "ons", "ez", "ont"]
+      },
+      "imperative": {
+        "impératif_present": [null, "s", null, "ons", "ez", null]
+      },
+      "subjunctive": {
+        "subjonctif_present": ["e", "es", "e", "ions", "iez", "ent"]
+      },
+      "conditional": {
+        "conditionnel_present": ["ais", "ais", "ait", "ions", "iez", "aient"]
+      },
+      "participle": {
+        "past_participle": "u"
+      }
+    }
+  }
+}

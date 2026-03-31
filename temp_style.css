@@ -1,0 +1,84 @@
+:root {
+  --primary: #2c3e50;
+  --accent: #3498db;
+  --bg: #f4f7f6;
+  --card: #ffffff;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg);
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: var(--card);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: var(--accent);
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-top: 5px;
+}
+
+.info-box {
+  background: #e8f4fd;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+.conjugation-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.conjugation-item {
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid var(--accent);
+}
+
+.pronoun {
+  font-weight: bold;
+  color: #7f8c8d;
+  margin-right: 5px;
+}
+
+#cefr-badge {
+  background: var(--accent);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+}

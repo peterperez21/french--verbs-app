@@ -1,0 +1,10 @@
+##upload the jsons, html, js, and css files## 
+I'm vibe-coding a web app to help me master french verb conjugation. Based on the attached files, have we completed tihs task:
+
+I'm vibe-coding a web app to help me master french verb conjugation. I've been going back and forth between data organization (separate file for data to separate file for verb data and another for question data), functionality, platform "friendlyness" (I don't know how to describe this any other way, but I want it to work well on mobile), user profile (just me, share it with others, the app remembering their performance history, etc.), and UI/UX. I am not a developer or designer, so I'm just learning that these are all separate aspects of building an app, be it web or mobile. I haven't even started addressing security and I don't know what other aspects to concern myself with. I wanted this to be for me, but then I started wanting to let my French teacher to be able to share this with her other students. My coworker told me I can sell this, but I'm not ready to have to support something after the sale, so I would share this for free. Anyhow, in what order should I approach these aspects? What should inform that? 
+
+Bug Fix Prompts
+Are there bugs? TBD Prompts
+
+Responding to several bugs: 
+Let's address each of these issues one-by-one with verification before we move on to the next. 

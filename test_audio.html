@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AudioService TDD Suite</title>
+  <style>
+    body { font-family: sans-serif; background: #121212; color: #fff; padding: 20px; }
+    .pass { color: #2ecc71; font-weight: bold; }
+    .fail { color: #e74c3c; font-weight: bold; }
+    #log { background: #1e1e1e; padding: 15px; border-radius: 8px; margin-top: 20px; font-family: monospace; }
+  </style>
+</head>
+<body>
+  <h1>AudioService TDD</h1>
+  <div id="log"></div>
+
+  <script src="audioService.js"></script>
+  <script>
+    const logDiv = document.getElementById("log");
+    function print(msg, isPass) {
+      const el = document.createElement("div");
+      el.className = isPass ? "pass" : "fail";
+      el.innerText = `${isPass ? '✔ PASS' : '✖ FAIL'}: ${msg}`;
+      logDiv.appendChild(el);
+    }
+
+    // Wait slightly to simulate realistic browser environment
+    setTimeout(() => {
+      // --- TEST A: INITIALIZATION ---
+      try {
+        AudioService.init();
+        if (AudioService.voice && AudioService.voice.lang === 'fr-FR') {
+          print("Behavior A: AudioService bound to fr-FR voice.", true);
+        } else {
+          print("Behavior A: AudioService failed to bind to fr-FR voice.", false);
+        }
+      } catch (e) {
+        print("Behavior A: Errored out - " + e.message, false);
+      }
+    }, 500);
+  </script>
+</body>
+</html>

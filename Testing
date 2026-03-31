@@ -1,0 +1,71 @@
+In a "vibe-coding" project where you are balancing complex data (CEFR levels A1-B2) with logic, the best practice is to move away from "manual hunting" and implement a **Data Integrity Script**.
+
+Since you are a Business Analyst, you can think of this as a **"Health Check" report** for your app. It ensures that every verb in your database meets the minimum requirements to function without crashing.
+
+### 1. The "Minimum Viable Verb" Checklist
+
+Define a "schema" of required fields. For your French app, a verb is only "healthy" if it has:
+
+- **Translation keys**: `en`, `en_past`, and `en_ing`.
+- **Stems**: At least a `default` and a `past_participle`.
+- **Auxiliary**: Explicitly set to `avoir` or `être`.
+
+### 2. Implementation: The Validation Script
+
+You can add this temporary function to your `script.js` and call it once inside `initApp`. It will scan your entire `verbs_db.json` and tell you exactly what is missing in the console.
+
+```javascript
+function validateVerbDatabase() {
+  const verbs = globalData.verbs;
+  const requiredTranslationKeys = ["en", "en_past", "en_ing"];
+  const errors = [];
+
+  Object.entries(verbs).forEach(([id, data]) => {
+    // Check Translations
+    requiredTranslationKeys.forEach((key) => {
+      if (!data.translation || !data.translation[key]) {
+        errors.push(`Missing translation.${key} for verb: ${id}`);
+      }
+    });
+
+    // Check Stems
+    if (!data.stems || !data.stems.past_participle) {
+      errors.push(`Missing stems.past_participle for verb: ${id}`);
+    }
+
+    // Check Auxiliary (Critical for Passé Composé)
+    if (!data.auxiliary) {
+      errors.push(`Missing auxiliary for verb: ${id}`);
+    }
+  });
+
+  if (errors.length > 0) {
+    console.group("📂 Verb Database Health Report");
+    errors.forEach((err) => console.warn(err));
+    console.groupEnd();
+  } else {
+    console.log("✅ All verbs are schema-compliant!");
+  }
+}
+```
+
+### 3. Use "Strict" Fallbacks in Logic
+
+Instead of letting the app crash when a field like `en_past` is missing, use a fallback chain in your `assembleSentence` function. This allows the app to stay "up" even if the data is incomplete.
+
+```javascript
+// Inside assembleSentence
+const translation = verb.translation.en_past || verb.translation.en || "???";
+```
+
+### 4. Categorize by Mood/Tense
+
+As you visit France and expand the app, you’ll realize that certain "missing things" only matter for specific levels.
+
+- **A1**: Needs `en` and `present` stems.
+- **A2**: Needs `en_past`, `past_participle`, and `auxiliary`.
+- **B1/B2**: Needs `en_ing` (for Imparfait) and `future` stems.
+
+By running the validation script above, you catch the "missing things" during development rather than having a "Critical Error" pop up while you are practicing with your nephews.
+
+**Would you like me to help you add a "Debug Mode" toggle to your UI that shows these warnings directly on the screen while you code?**

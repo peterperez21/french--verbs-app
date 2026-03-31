@@ -1,0 +1,54 @@
+(function validateNouns() {
+  const requiredLevels = ["A1", "A2", "B1", "B2"];
+  const nouns = globalData.nouns;
+  let issues = 0;
+
+  console.group("🔍 Noun Database: Structural Audit");
+  
+  Object.keys(nouns).forEach(category => {
+    requiredLevels.forEach(level => {
+      const levelData = nouns[category][level];
+
+      // 1. Check if the Level Key exists
+      if (!levelData) {
+        console.warn(`❌ MISSING KEY: Category "${category}" is missing the "${level}" level.`);
+        issues++;
+        return;
+      }
+
+      // 2. Check if it's actually an array
+      if (!Array.isArray(levelData)) {
+        console.warn(`❌ TYPE ERROR: "${category}.${level}" should be an Array, but found ${typeof levelData}.`);
+        issues++;
+        return;
+      }
+
+      // 3. Check for empty arrays []
+      if (levelData.length === 0) {
+        console.warn(`⚠️ EMPTY ARRAY: "${category}.${level}" is an empty list [].`);
+        issues++;
+        return;
+      }
+
+      // 4. Check for "Invisible" data (empty strings like [""])
+      const hasEmptyStrings = levelData.some(item => typeof item === 'string' && item.trim() === "");
+      const allEmpty = levelData.every(item => typeof item === 'string' && item.trim() === "");
+
+      if (allEmpty) {
+        console.warn(`⚠️ GHOST DATA: "${category}.${level}" contains only empty strings (e.g., [""]).`);
+        issues++;
+      } else if (hasEmptyStrings) {
+        console.warn(`📝 FORMATTING: "${category}.${level}" has at least one empty string among valid items.`);
+        issues++;
+      }
+    });
+  });
+
+  if (issues === 0) {
+    console.log("%c✅ STRUCTURE CLEAR: All categories and levels (A1-B2) are populated and valid.", "color: #4CAF50; font-weight: bold;");
+  } else {
+    console.error(`%cFOUND ${issues} ISSUE(S): See warnings above for locations.`, "color: #FF5252; font-weight: bold;");
+  }
+  
+  console.groupEnd();
+})();

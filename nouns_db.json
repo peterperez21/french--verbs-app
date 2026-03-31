@@ -1,0 +1,137 @@
+{
+  "food": {
+    "A1": ["une pomme", "un croissant", "du fromage", "le dîner", "un sandwich", "un fruit"],
+    "A2": ["le petit-déjeuner", "une salade", "des frites", "un dessert", "une crêpe"],
+    "B1": ["un plat traditionnel", "la nourriture saine", "une spécialité locale", "un régime"]
+  },
+  "drink_desire": {
+    "A1": ["un café", "de l'eau", "un ami", "le faire", "venir", "manger"],
+    "A2": ["du temps", "une explication", "partir", "dormir", "une réponse", "du thé"],
+    "B1": ["la liberté", "un avenir meilleur", "une opportunité", "réussir"]
+  },
+  "places_to_go": {
+    "A1": ["à la maison", "au parc", "en France", "à Paris", "au cinéma"],
+    "A2": ["au restaurant", "à la plage", "au supermarché", "en vacances", "à l'école"],
+    "B1": ["à l'étranger", "au centre-ville", "en voyage", "à la gare"]
+  },
+  "places_to_stay": {
+    "A1": ["à la maison", "ici", "dans la chambre", "au lit", "avec moi", "debout"],
+    "A2": ["calme", "ouvert", "fermé", "tranquille"],
+    "B1": ["concentré", "en contact", "silencieux", "alerte"]
+  },
+  "things_to_do": {
+    "A1": ["du sport", "un gâteau", "la cuisine", "un effort", "une sieste"],
+    "A2": ["les courses", "une pause", "le ménage", "le choix", "des erreurs"],
+    "B1": ["attention", "la vaisselle", "un tour de magie", "la fête"]
+  },
+  "things_to_finish": {
+    "A1": ["les devoirs", "le travail", "le projet", "la leçon", "la phrase"],
+    "A2": ["le repas", "la mission", "l'exercice", "le livre", "la conversation"],
+    "B1": ["les recherches", "le contrat", "la réunion", "l'installation"]
+  },
+  "things_to_say": {
+    "A1": ["bonjour", "la vérité", "ça", "oui", "non", "le mot"],
+    "A2": ["merci", "pardon", "une histoire", "un secret", "un renseignement"],
+    "B1": ["n'importe quoi", "des excuses", "que c'est fini", "la même chose"]
+  },
+  "things_to_ask": {
+    "A1": ["une question", "le prix", "l'heure", "pardon", "ça"],
+    "A2": ["de l'aide", "un service", "un renseignement", "l'addition", "le chemin"],
+    "B1": ["des explications", "la permission", "une faveur", "un remboursement"]
+  },
+  "things_to_know": {
+    "A1": ["la vérité", "ça", "le numéro", "tout", "lire", "nager"],
+    "A2": ["la réponse", "jouer du piano", "l'adresse", "parler français", "conduire"],
+    "B1": ["ce qui se passe", "se débrouiller", "comment faire", "les règles"]
+  },
+  "things_to_see": {
+    "A1": ["le chat", "la voiture", "un ami", "la porte", "la télévision"],
+    "A2": ["le film", "la différence", "un oiseau", "le tableau", "le problème"],
+    "B1": ["les informations", "le paysage", "le documentaire", "la solution"]
+  },
+  "things_to_hear": {
+    "A1": ["la musique", "le bruit", "le chien", "le professeur", "la radio"],
+    "A2": ["une chanson", "le vent", "la télé", "le téléphone", "le réveil"],
+    "B1": ["une rumeur", "une voix", "l'annonce", "l'alarme"]
+  },
+  "things_to_take": {
+    "A1": ["le bus", "un café", "le livre", "le pain", "la clé", "un sac"],
+    "A2": ["le train", "le temps", "une douche", "le métro", "les photos"],
+    "B1": ["une décision", "un risque", "le petit-déjeuner", "un rendez-vous"]
+  },
+  "things_to_give": {
+    "A1": ["un cadeau", "le livre", "la pomme", "de l'argent", "la main"],
+    "A2": ["un conseil", "une réponse", "les clés", "un bisou", "l'exemple"],
+    "B1": ["une opportunité", "un coup de main", "l'autorisation", "des explications"]
+  },
+  "things_to_put": {
+    "A1": ["le livre sur la table", "un manteau", "les chaussures", "la table"],
+    "A2": ["le chapeau", "du temps", "la clé dans le sac", "beaucoup de temps"],
+    "B1": ["la veste", "fin à la discussion", "la voiture au garage"]
+  },
+  "things_to_hold": {
+    "A1": ["le sac", "la clé", "la main", "la porte"],
+    "A2": ["le coup", "la promesse", "le mur", "le bébé"],
+    "B1": ["le silence", "la pression", "la responsabilité", "le paquet"]
+  },
+  "things_to_wait_for": {
+    "A1": ["le bus", "un ami", "le train", "le professeur", "mon frère"],
+    "A2": ["un moment", "la réponse", "le docteur", "l'heure", "la fin"],
+    "B1": ["une occasion", "les résultats", "le bon moment", "la pluie"]
+  },
+  "things_to_believe": {
+    "A1": ["ça", "en Dieu", "au Père Noël", "ce garçon", "cette fille"],
+    "A2": ["que c'est vrai", "que c'est possible", "tout", "ce qu'il dit"],
+    "B1": ["à cette histoire", "au miracle", "en l'avenir", "la presse"]
+  },
+  "things_to_think": {
+    "A1": ["à toi", "à la famille", "à demain", "à ça", "à l'école"],
+    "A2": ["que c'est bien", "à l'avenir", "avoir raison", "à ce problème"],
+    "B1": ["que c'est faux", "à une solution", "à un projet", "au voyage"]
+  },
+  "things_to_love": {
+    "A1": ["le chocolat", "la France", "le film", "mon chien", "cette chanson"],
+    "A2": ["voyager", "lire", "danser", "le café", "la musique", "la vie"],
+    "B1": ["la littérature", "découvrir le monde", "apprendre", "le printemps"]
+  },
+  "things_to_pass": {
+    "A1": ["le livre", "le stylo", "le sel", "le ballon", "l'eau"],
+    "A2": ["les vacances", "du temps", "un test", "le week-end"],
+    "B1": ["un examen difficile", "un entretien", "l'aspirateur", "le permis de conduire"]
+  },
+  "things_to_leave_behind": {
+    "A1": ["la clé sur la table", "le sac ici", "le livre", "les enfants", "le chien"],
+    "A2": ["un message", "tomber", "la porte ouverte", "un mot", "le téléphone"],
+    "B1": ["une trace", "un commentaire", "un pourboire", "un héritage"]
+  },
+  "departures": {
+    "A1": ["demain", "aujourd'hui", "tôt", "plus tard", "ce soir"],
+    "A2": ["en vacances", "loin", "en voyage", "à midi", "tout de suite"],
+    "B1": ["en avance", "en retard", "définitivement", "en mission"]
+  },
+  "states": {
+    "A1": ["fatigué", "heureux", "prêt", "occupé", "ici", "petit", "grand", "vrai"],
+    "A2": ["malade", "triste", "en colère", "calme", "difficile", "impossible", "nouveau"],
+    "B1": ["en avance", "en retard", "évident", "stressé", "étonné", "en forme"]
+  },
+  "possessions": {
+    "A1": ["un stylo", "une voiture", "un chat", "faim", "soif", "peur", "un frère"],
+    "A2": ["le temps", "de la chance", "besoin", "froid", "chaud", "envie", "tort", "raison"],
+    "B1": ["l'habitude", "confiance", "honte", "une idée", "l'intention"]
+  },
+  "actions_can_must": {
+    "A1": ["venir", "manger", "dormir", "parler", "le faire", "aller", "voir"],
+    "A2": ["comprendre", "aider", "partir", "travailler", "étudier", "finir ça"],
+    "B1": ["faire un choix", "patienter", "répondre", "se préparer"]
+  },
+  "topics": {
+    "A1": ["français", "anglais", "avec toi", "beaucoup", "un peu"],
+    "A2": ["de ça", "trop fort", "bien", "mal", "de la météo", "du film"],
+    "B1": ["de politique", "d'un sujet important", "rapidement", "à voix basse"]
+  },
+  "hygiene": {
+    "A1": ["les mains", "le visage", "les dents", "souvent", "vite"],
+    "A2": ["les cheveux", "le soir", "le matin", "avec du savon"],
+    "B1": ["soigneusement", "à l'eau froide", "après le sport"]
+  }
+}
