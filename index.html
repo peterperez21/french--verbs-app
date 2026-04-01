@@ -46,10 +46,22 @@
           </div>
           <div class="col">
             <strong>Vocabulaire (Par Fréquence)</strong>
-            <div id="type-filters" class="filter-button-group">
-              <button class="filter-btn" data-id="tier_1" onclick="toggleFilter('tier_1')">Tier 1: Survival<span class="mastery-badge">--%</span></button>
-              <button class="filter-btn" data-id="tier_2" onclick="toggleFilter('tier_2')">Tier 2: Everyday<span class="mastery-badge">--%</span></button>
-              <button class="filter-btn" data-id="tier_3_all" onclick="toggleFilter('tier_3_all')">Tier 3: All Verbs<span class="mastery-badge">--%</span></button>
+            <div id="type-filters" class="filter-button-group detailed-buttons">
+              <button class="filter-btn" data-id="tier_1" onclick="toggleFilter('tier_1')">
+                <div class="tier-title">Tier 1: Survival<span class="mastery-badge">--%</span></div>
+                <div class="tier-stats">0/40 verbs</div>
+                <div class="tier-milestone">Milestone: </div>
+              </button>
+              <button class="filter-btn" data-id="tier_2" onclick="toggleFilter('tier_2')">
+                <div class="tier-title">Tier 2: Everyday<span class="mastery-badge">--%</span></div>
+                <div class="tier-stats">0/80 verbs</div>
+                <div class="tier-milestone">Milestone: </div>
+              </button>
+              <button class="filter-btn" data-id="tier_3_all" onclick="toggleFilter('tier_3_all')">
+                <div class="tier-title">Tier 3: All Verbs<span class="mastery-badge">--%</span></div>
+                <div class="tier-stats">0/150 verbs</div>
+                <div class="tier-milestone">Milestone: </div>
+              </button>
             </div>
           </div>
           <div class="col">
@@ -104,7 +116,10 @@
       </div>
 
       <div id="drill" class="hidden">
-        <div id="scenario-display" class="scenario-badge">📍 Situation générale</div>
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+          <div id="scenario-display" class="scenario-badge">📍 Situation générale</div>
+          <div id="session-progress" class="session-badge">Question 1 / 20</div>
+        </div>
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
           <h2 id="verb-info" style="margin: 0;">Verb (Tense)</h2>
           <div id="audio-warning" class="hidden" onclick="document.getElementById('audio-modal').classList.remove('hidden')" title="Audio non disponible - Cliquez pour réparer" style="cursor: pointer; color: var(--error);">
@@ -158,6 +173,20 @@
           </div>
         </div>
 
+      </div>
+
+      <!-- Session Summary Screen -->
+      <div id="summary" class="hidden">
+        <h1 style="text-align: center; margin-bottom: 30px;">🎉 Session Complète !</h1>
+        
+        <div id="summary-stats-container" class="config-grid" style="margin-bottom: 30px;">
+          <!-- JS fills this with the delta logic -->
+        </div>
+
+        <div style="text-align: center;">
+          <button class="btn" style="margin-bottom: 10px;" onclick="startAnotherSession()">Continuer (20 de plus)</button>
+          <button class="btn alt-btn" onclick="returnToMenu()">Retour au menu</button>
+        </div>
       </div>
     </div>
 

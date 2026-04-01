@@ -35,6 +35,14 @@ let timerEndTime = 0;
 let timeIsUp = false;
 let isAdvancing = false;
 let typingLeniencyAdded = false;
+
+let sessionState = {
+  currentQ: 0,
+  totalQ: 20,
+  startMastery: {},
+  memoriesStrengthened: 0
+};
+
 const CEFR_LEVELS = ["A1", "A2", "B1", "B2"];
 const SCENARIO_MAP = {
   "food": "📍 À TABLE / NOURRITURE",
@@ -187,44 +195,83 @@ function toggleFilter(category) {
   saveSettings();
 }
 
+function getTierMilestone(tierId, percentage) {
+  if (tierId === "tier_1") {
+    if (percentage < 20) return "Milestone: Apprentissage des bases 🌱";
+    if (percentage < 40) return "Milestone: Vous pouvez commander un café ☕";
+    if (percentage < 60) return "Milestone: Survie d'un week-end à Paris 🥖";
+    if (percentage < 80) return "Milestone: Conversations de base 🗣️";
+    return "Milestone: Maîtrise de la survie 🏆";
+  } else if (tierId === "tier_2") {
+    if (percentage < 20) return "Milestone: Élargissement du vocabulaire 🌱";
+    if (percentage < 40) return "Milestone: Gestions des imprévus 📞";
+    if (percentage < 60) return "Milestone: Raconter des histoires 📖";
+    if (percentage < 80) return "Milestone: Indépendance linguistique 🌍";
+    return "Milestone: Maîtrise du quotidien 🏆";
+  } else {
+    // tier_3_all
+    if (percentage < 20) return "Milestone: Défi linguistique 🌱";
+    if (percentage < 40) return "Milestone: Compréhension intermédiaire 📚";
+    if (percentage < 60) return "Milestone: Discussions complexes 💡";
+    if (percentage < 80) return "Milestone: Polyvalence totale 🎭";
+    return "Milestone: Maîtrise absolue 👑";
+  }
+}
+
 function calculateTierMastery(tierId) {
   const tier = globalData.functionalSchema.verb_functional_schema.curriculum_tiers[tierId];
-  if (!tier) return 0;
+  if (!tier) return { percentage: 0, verbsEncountered: 0, totalVerbs: 0 };
   let verbList = tier.verbs === "ALL_VERBS" ? Object.keys(globalData.verbs) : tier.verbs;
   
   let totalStability = 0;
   let count = 0;
+  let encounteredVerbs = new Set();
   
   for (const progressId in globalData.progress) {
     const baseVerb = Object.keys(globalData.verbs).find(v => progressId.startsWith(v));
     if (baseVerb && verbList.includes(baseVerb)) {
        totalStability += globalData.progress[progressId].stability;
        count++;
+       encounteredVerbs.add(baseVerb);
     }
   }
   
-  if (count === 0) return 0;
-  const avgStability = totalStability / count;
-  return Math.min(100, Math.round((avgStability / 30) * 100)) || 0;
+  let percent = 0;
+  if (count > 0) {
+    const avgStability = totalStability / count;
+    percent = Math.min(100, Math.round((avgStability / 30) * 100)) || 0;
+  }
+  return { percentage: percent, verbsEncountered: encounteredVerbs.size, totalVerbs: verbList.length };
 }
 
 function renderFilters() {
-  // 1. Tier Buttons - Update Mastery Badges natively without destroying the DOM
   const tiers = globalData.functionalSchema.verb_functional_schema.curriculum_tiers || {};
   
   Object.keys(tiers).forEach(cat => {
-    const mastery = calculateTierMastery(cat);
+    const masteryData = calculateTierMastery(cat);
+    const mastery = masteryData.percentage;
+    const encountered = masteryData.verbsEncountered;
+    const total = masteryData.totalVerbs;
+    
     globalData.settings.cached_mastery[cat] = mastery > 0 ? mastery : "--";
     
-    // Target the specific button's badge to update the text silently
     const badge = document.querySelector(`button[data-id="${cat}"] .mastery-badge`);
     if (badge) {
       badge.innerText = mastery > 0 ? `${mastery}%` : "--%";
     }
+    
+    const statsElem = document.querySelector(`button[data-id="${cat}"] .tier-stats`);
+    if (statsElem) {
+      statsElem.innerText = `${encountered}/${total} verbs`;
+    }
+    
+    const titleElem = document.querySelector(`button[data-id="${cat}"] .tier-milestone`);
+    if (titleElem) {
+      titleElem.innerText = getTierMilestone(cat, mastery);
+    }
   });
-  saveSettings();
 
-  // 2. Safely apply the active classes to BOTH button groups
+  saveSettings();
   updateFilterUI("type-filters", globalData.filters.curriculumTiers);
   updateFilterUI("question-type-filters", globalData.filters.sentenceTypes);
 }
@@ -254,11 +301,18 @@ function updateFilterUI(containerId, activeList) {
 }
 
 function startDrill() {
-  // Hide the setup screen and show the drill screen
   document.getElementById("setup").classList.add("hidden");
+  document.getElementById("summary").classList.add("hidden");
   document.getElementById("drill").classList.remove("hidden");
 
-  // Start the first question
+  // Snapshot starting mastery
+  sessionState.currentQ = 0;
+  sessionState.memoriesStrengthened = 0;
+  const tiers = globalData.functionalSchema.verb_functional_schema.curriculum_tiers || {};
+  Object.keys(tiers).forEach(cat => {
+    sessionState.startMastery[cat] = calculateTierMastery(cat);
+  });
+
   showNextQuestion();
 }
 
@@ -400,6 +454,12 @@ function conjugate(verbKey, subjectKey, tense) {
 }
 
 function showNextQuestion() {
+  sessionState.currentQ++;
+  const sessionProgress = document.getElementById("session-progress");
+  if (sessionProgress) {
+    sessionProgress.innerText = `Question ${sessionState.currentQ} / ${sessionState.totalQ}`;
+  }
+
   clearInterval(timerInterval);
   timeIsUp = false;
   typingLeniencyAdded = false;
@@ -699,7 +759,11 @@ function processCorrectCorrection() {
   setTimeout(() => {
     isAdvancing = false;
     inputField.disabled = false;
-    showNextQuestion();
+    if (sessionState.currentQ >= sessionState.totalQ) {
+      showSessionSummary();
+    } else {
+      showNextQuestion();
+    }
   }, 1000);
 }
 
@@ -742,7 +806,11 @@ function setupEventListeners() {
       processCorrectCorrection();
       return;
     }
-    showNextQuestion();
+    if (sessionState.currentQ >= sessionState.totalQ) {
+      showSessionSummary();
+    } else {
+      showNextQuestion();
+    }
   });
 
   const pressureToggle = document.getElementById("pressure-toggle");
@@ -790,7 +858,11 @@ function setupEventListeners() {
             setTimeout(() => inputField.classList.remove("shake"), 300);
           }
         } else {
-          showNextQuestion();
+          if (sessionState.currentQ >= sessionState.totalQ) {
+            showSessionSummary();
+          } else {
+            showNextQuestion();
+          }
         }
       }
       // Only allow 'Check' if there is at least 1 character
@@ -847,13 +919,18 @@ function checkAnswer() {
   console.log(`--- Progress Update for: ${currentQ.verbId} ---`);
   console.log(`Raw Stability: ${stabilityValue.toFixed(2)}`);
   console.log(`Memory Strength: ${strengthPercent}%`);
+  const intervalDays = Math.max(1, Math.round(stabilityValue));
+  let etat = intervalDays < 2 ? "À revoir" : (intervalDays < 7 ? "Familier" : "Solide");
+
+  if (isCorrect) sessionState.memoriesStrengthened++;
+
   feedback.innerHTML = `
   <div style="margin-bottom: 8px;">
     ${isCorrect ? "Correct! 🎉" : `Incorrect. Answer: <strong>${currentQ.answer}</strong>`}
   </div>
   <div class="memory-meter-container">
     <div style="display: flex; justify-content: space-between;">
-      <span>Solidité de la mémoire</span>
+      <span>État : ${etat} (Rappel : ${intervalDays} j)</span>
       <span>${strengthPercent}%</span>
     </div>
     <div class="memory-bar-bg">
@@ -901,6 +978,57 @@ function toggleDarkMode() {
   // Toggle class on <html> to match the 'Theme Guard' logic
   const isDark = document.documentElement.classList.toggle("dark-mode");
   localStorage.setItem("french_theme", isDark ? "dark" : "light");
+}
+
+function showSessionSummary() {
+  document.getElementById("drill").classList.add("hidden");
+  document.getElementById("summary").classList.remove("hidden");
+  
+  const container = document.getElementById("summary-stats-container");
+  container.innerHTML = "";
+  
+  container.innerHTML += `
+    <div class="stat-card">
+      <h3>Mémoires Renforcées</h3>
+      <div class="main-stat">${sessionState.memoriesStrengthened}</div>
+      <div class="delta">+${sessionState.memoriesStrengthened} connexions consolidées</div>
+    </div>
+  `;
+  
+  const activeTiers = globalData.filters.curriculumTiers;
+  activeTiers.forEach(cat => {
+    const endMastery = calculateTierMastery(cat);
+    const startMastery = sessionState.startMastery[cat] || { percentage: 0, verbsEncountered: 0 };
+    
+    let percentDelta = endMastery.percentage - startMastery.percentage;
+    let verbsDelta = endMastery.verbsEncountered - startMastery.verbsEncountered;
+    
+    const baseBtn = document.querySelector(`button[data-id="${cat}"]`);
+    if (!baseBtn) return;
+    const tierNameElement = baseBtn.querySelector('.tier-title');
+    let tierName = "Niveau";
+    if (tierNameElement) {
+        tierName = tierNameElement.textContent.split("%")[0].trim();
+    }
+    
+    container.innerHTML += `
+      <div class="stat-card">
+        <h3>${tierName}</h3>
+        <div class="main-stat">${endMastery.percentage}%</div>
+        <div class="delta">${percentDelta > 0 ? '+' : ''}${percentDelta}% (+${verbsDelta} nouveaux verbes)</div>
+      </div>
+    `;
+  });
+}
+
+function startAnotherSession() {
+  startDrill();
+}
+
+function returnToMenu() {
+  document.getElementById("summary").classList.add("hidden");
+  document.getElementById("setup").classList.remove("hidden");
+  renderFilters();
 }
 
 // Start the app
