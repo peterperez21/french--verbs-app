@@ -99,16 +99,20 @@ function syncImmediateUIState() {
   
   const timerSlider = document.getElementById("timer-slider");
   if (timerSlider) {
-    timerSlider.value = globalData.settings.timer_duration / 1000;
-    document.getElementById("timer-val").innerText = timerSlider.value;
+    const currentDur = globalData.settings.timer_duration / 1000;
+    // Invert for display: dur of 10s -> slider value 2 (Left)
+    timerSlider.value = 12 - currentDur;
+    document.getElementById("timer-val").innerText = currentDur;
   }
   
   const intensitySlider = document.getElementById("intensity-slider");
   if (intensitySlider) {
-    const val = 10 - Math.round(globalData.settings.fsrs_penalty * 10);
+    // fsrs_penalty: 0.9 (Very Gentle) to 0.1 (Strict)
+    // val = 1 (Gentle) to 9 (Strict)
+    const val = Math.round((1.0 - globalData.settings.fsrs_penalty) * 10);
     intensitySlider.value = val;
-    const labels = ["", "Very Gentle", "Gentle", "Relaxed", "Moderate", "Balanced", "Firm", "Strict", "Hard", "Vicious"];
-    document.getElementById("intensity-val").innerText = labels[val];
+    const labels = ["", "Très Doux", "Doux", "Relâché", "Modéré", "Équilibré", "Ferme", "Strict", "Défi", "Intensif"];
+    document.getElementById("intensity-val").innerText = labels[val] || "Doux";
   }
 
   // Pre-fill button badges with cached percentages to prevent pop-in
@@ -565,12 +569,17 @@ function showNextQuestion() {
   const tenseName = tenseInfo.tense.replace("_", " ");
   const verbName = verbKey.charAt(0).toUpperCase() + verbKey.slice(1);
 
-  let headerText = `${verbName} (${tenseName})`;
+  document.getElementById("verb-info").innerText = verbName;
+  
+  let tenseText = tenseName;
   if (tenseInfo.tense === "impératif_present") {
-    headerText += ` — (${currentQ.subject})`;
+    tenseText += ` — (${currentQ.subject})`;
   }
-
-  document.getElementById("verb-info").innerText = headerText;
+  
+  let tenseElem = document.getElementById("tense-info");
+  if(tenseElem) {
+      tenseElem.innerText = `(${tenseText})`;
+  }
 
   const scenarioBadge = document.getElementById("scenario-display");
   if (scenarioBadge) {
@@ -826,8 +835,22 @@ function setupEventListeners() {
   if (timerSlider) {
     timerSlider.addEventListener("input", (e) => {
       const val = parseInt(e.target.value);
-      globalData.settings.timer_duration = val * 1000;
-      document.getElementById("timer-val").innerText = val;
+      // Invert: Left(2) -> 10s, Right(10) -> 2s
+      const actualSeconds = 12 - val;
+      globalData.settings.timer_duration = actualSeconds * 1000;
+      document.getElementById("timer-val").innerText = actualSeconds;
+      saveSettings();
+    });
+  }
+
+  const intensitySlider = document.getElementById("intensity-slider");
+  if (intensitySlider) {
+    intensitySlider.addEventListener("input", (e) => {
+      const val = parseInt(e.target.value);
+      // 1 -> 0.9 penalty, 9 -> 0.1 penalty
+      globalData.settings.fsrs_penalty = 1.0 - (val / 10);
+      const labels = ["", "Très Doux", "Doux", "Relâché", "Modéré", "Équilibré", "Ferme", "Strict", "Défi", "Intensif"];
+      document.getElementById("intensity-val").innerText = labels[val] || "Doux";
       saveSettings();
     });
   }
