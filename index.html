@@ -76,41 +76,77 @@
               </div>
               <div class="col">
                 <strong>Mode de phrases</strong>
-                <div id="question-type-filters" class="filter-button-group">
-                  <button class="filter-btn" data-id="affirmative" onclick="toggleSentenceType('affirmative')">Affirmatif</button>
-                  <button class="filter-btn" data-id="negative" onclick="toggleSentenceType('negative')">Négatif</button>
-                  <button class="filter-btn" data-id="question" onclick="toggleSentenceType('question')">Questions</button>
+                <div id="question-type-filters" class="filter-button-group detailed-buttons">
+                  <button class="filter-btn" data-id="affirmative" onclick="toggleSentenceType('affirmative')">
+                    <div class="tier-title">Affirmatif <span class="mastery-badge" style="background: rgba(255,255,255,0.2);">Actif</span></div>
+                    <div class="tier-stats">Style de phrase standard</div>
+                    <div class="tier-milestone">Phrases simples et déclaratives</div>
+                  </button>
+                  <button class="filter-btn" data-id="negative" onclick="toggleSentenceType('negative')">
+                    <div class="tier-title">Négatif <span class="mastery-badge" style="background: rgba(255,255,255,0.2);">Actif</span></div>
+                    <div class="tier-stats">Pratique des négations</div>
+                    <div class="tier-milestone">Structures en 'ne... pas/jamais'</div>
+                  </button>
+                  <button class="filter-btn" data-id="question" onclick="toggleSentenceType('question')">
+                    <div class="tier-title">Questions <span class="mastery-badge" style="background: rgba(255,255,255,0.2);">Actif</span></div>
+                    <div class="tier-stats">Maîtrise de l'interrogation</div>
+                    <div class="tier-milestone">Inversion et structures curieuses</div>
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- 3. Session Config Card -->
+        <div class="card-row">
+          <!-- 3a. Révision Card -->
           <div class="setup-card">
-            <h3>3. Configuration de la session</h3>
-            <div class="card-row">
-              <div class="setting-item">
-                <label>Fréquence de révision</label>
-                <input type="range" id="intensity-slider" min="1" max="9" value="2" step="1" />
-                <span id="intensity-val">Adaptatif</span>
+            <h3>3a. Révision</h3>
+            <div class="setting-item">
+              <div class="toggle-header">
+                <label for="revision-toggle">Mode Adaptatif (FSRS)</label>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="revision-toggle" checked />
+                  <span class="slider"></span>
+                </label>
               </div>
-              <div class="setting-item">
-                <label>Mode Pression</label>
-                <input type="checkbox" id="pressure-toggle" checked />
-              </div>
-              <div class="setting-item" id="timer-setting">
-                <label>Vitesse (Timer)</label>
-                <div style="display: flex; align-items: center; gap: 10px;">
-                  <span style="font-size: 0.8rem; opacity: 0.6">Lent</span>
-                  <input type="range" id="timer-slider" min="2" max="10" value="4" step="1" style="flex: 1" />
-                  <span style="font-size: 0.8rem; opacity: 0.6">Rapide</span>
-                </div>
-                <div style="text-align: center; margin-top: 5px;">
-                  <span id="timer-val" style="font-weight: 600">4</span> secondes
+              
+              <div class="timer-nested-box">
+                <label class="sub-label">Intelligence de répétition</label>
+                <div class="value-display" style="margin-top: 0; font-size: 0.9rem; opacity: 0.8; font-weight: normal; text-align: left;">
+                  Le système ajuste automatiquement les délais en fonction de vos erreurs.
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- 3b. Chrono Card -->
+          <div class="setup-card">
+            <h3>3b. Chrono</h3>
+            <div class="setting-item">
+              <div class="toggle-header">
+                <label for="pressure-toggle">Mode Pression</label>
+                <label class="toggle-switch">
+                  <input type="checkbox" id="pressure-toggle" checked />
+                  <span class="slider"></span>
+                </label>
+              </div>
+              
+              <div id="timer-setting" class="timer-nested-box">
+                <label class="sub-label">Vitesse</label>
+                <div class="slider-wrapper">
+                  <div style="display: flex; align-items: center; gap: 12px; width: 100%;">
+                    <span class="slider-label">Lent</span>
+                    <input type="range" id="timer-slider" min="2" max="10" value="4" step="1" style="flex: 1" />
+                    <span class="slider-label">Rapide</span>
+                  </div>
+                  <div class="value-display">
+                    <span id="timer-val">4</span>s
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         </div>
 
         <button class="btn" style="margin-top: 2rem; padding: 20px;" onclick="startDrill()">Commencer la session de 20 questions</button>

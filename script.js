@@ -20,7 +20,7 @@ let globalData = {
     sentenceTypes: savedSettings.sentenceTypes || ["affirmative"],
   },
   settings: {
-    fsrs_penalty: savedSettings.fsrs_penalty !== undefined ? savedSettings.fsrs_penalty : 0.8,
+    adaptive_mode: savedSettings.adaptive_mode !== undefined ? savedSettings.adaptive_mode : true,
     new_verb_ratio: savedSettings.new_verb_ratio !== undefined ? savedSettings.new_verb_ratio : 0.3,
     pressure_mode: savedSettings.pressure_mode !== undefined ? savedSettings.pressure_mode : true,
     timer_duration: savedSettings.timer_duration !== undefined ? savedSettings.timer_duration : 4000,
@@ -105,14 +105,9 @@ function syncImmediateUIState() {
     document.getElementById("timer-val").innerText = currentDur;
   }
   
-  const intensitySlider = document.getElementById("intensity-slider");
-  if (intensitySlider) {
-    // fsrs_penalty: 0.9 (Very Gentle) to 0.1 (Strict)
-    // val = 1 (Gentle) to 9 (Strict)
-    const val = Math.round((1.0 - globalData.settings.fsrs_penalty) * 10);
-    intensitySlider.value = val;
-    const labels = ["", "Très Doux", "Doux", "Relâché", "Modéré", "Équilibré", "Ferme", "Strict", "Défi", "Intensif"];
-    document.getElementById("intensity-val").innerText = labels[val] || "Doux";
+  const revisionToggle = document.getElementById("revision-toggle");
+  if (revisionToggle) {
+    revisionToggle.checked = globalData.settings.adaptive_mode;
   }
 
   // Pre-fill button badges with cached percentages to prevent pop-in
@@ -843,14 +838,10 @@ function setupEventListeners() {
     });
   }
 
-  const intensitySlider = document.getElementById("intensity-slider");
-  if (intensitySlider) {
-    intensitySlider.addEventListener("input", (e) => {
-      const val = parseInt(e.target.value);
-      // 1 -> 0.9 penalty, 9 -> 0.1 penalty
-      globalData.settings.fsrs_penalty = 1.0 - (val / 10);
-      const labels = ["", "Très Doux", "Doux", "Relâché", "Modéré", "Équilibré", "Ferme", "Strict", "Défi", "Intensif"];
-      document.getElementById("intensity-val").innerText = labels[val] || "Doux";
+  const revisionToggle = document.getElementById("revision-toggle");
+  if (revisionToggle) {
+    revisionToggle.addEventListener("change", (e) => {
+      globalData.settings.adaptive_mode = e.target.checked;
       saveSettings();
     });
   }
@@ -984,7 +975,9 @@ function recordProgress(verb_id, isCorrect) {
     record.stability = record.stability * (1 + recallFactor * daysSinceLast);
     record.difficulty = Math.max(1, record.difficulty - 0.1);
   } else {
-    record.stability = record.stability * globalData.settings.fsrs_penalty;
+    // Binary Penalty logic: 0.2 for science, 0.8 for gentle
+    const penalty = globalData.settings.adaptive_mode ? 0.2 : 0.8;
+    record.stability = record.stability * penalty;
     record.difficulty = Math.min(10, record.difficulty + 0.5);
   }
 
