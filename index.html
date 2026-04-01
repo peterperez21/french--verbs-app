@@ -12,6 +12,9 @@
         }
       })();
     </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 
     <title>Maîtrise des Verbes Français</title>
@@ -19,100 +22,98 @@
   <body class="preload">
     <div class="container">
       <div id="setup">
-        <h1>Maîtrise des Verbes</h1>
-        <div class="config-grid">
-          <div class="col" data-purpose="cefr-level-selection">
-            <input type="range" id="cefr-level-slider" min="0" max="3" step="1" value="0" />
-            <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-top: 5px">
-              <span>A1</span>
-              <span>A2</span>
-              <span>B1</span>
-              <span>B2</span>
-            </div>
-          </div>
-          <div class="setting-item">
-            <label>Review Intensity (Gentle ↔ Aggressive)</label>
-            <input type="range" id="intensity-slider" min="1" max="9" value="2" step="1" />
-            <span id="intensity-val">Gentle</span>
-          </div>
-          <div class="setting-item">
-            <label>Mode Pression (Timer)</label>
-            <input type="checkbox" id="pressure-toggle" checked />
-          </div>
-          <div class="setting-item" id="timer-setting">
-            <label>Durée du Timer (s)</label>
-            <input type="range" id="timer-slider" min="2" max="10" value="4" step="1" />
-            <span id="timer-val">4</span>
-          </div>
-          <div class="col">
-            <strong>Vocabulaire (Par Fréquence)</strong>
-            <div id="type-filters" class="filter-button-group detailed-buttons">
-              <button class="filter-btn" data-id="tier_1" onclick="toggleFilter('tier_1')">
-                <div class="tier-title">Tier 1: Survival<span class="mastery-badge">--%</span></div>
-                <div class="tier-stats">0/40 verbs</div>
-                <div class="tier-milestone">Milestone: </div>
-              </button>
-              <button class="filter-btn" data-id="tier_2" onclick="toggleFilter('tier_2')">
-                <div class="tier-title">Tier 2: Everyday<span class="mastery-badge">--%</span></div>
-                <div class="tier-stats">0/80 verbs</div>
-                <div class="tier-milestone">Milestone: </div>
-              </button>
-              <button class="filter-btn" data-id="tier_3_all" onclick="toggleFilter('tier_3_all')">
-                <div class="tier-title">Tier 3: All Verbs<span class="mastery-badge">--%</span></div>
-                <div class="tier-stats">0/150 verbs</div>
-                <div class="tier-milestone">Milestone: </div>
-              </button>
-            </div>
-          </div>
-          <div class="col">
-            <strong>Type de Questions</strong>
-            <div id="question-type-filters" class="filter-button-group">
-              <button class="filter-btn" data-id="affirmative" onclick="toggleSentenceType('affirmative')">Affirmatif</button>
-              <button class="filter-btn" data-id="negative" onclick="toggleSentenceType('negative')">Négatif</button>
-              <button class="filter-btn" data-id="question" onclick="toggleSentenceType('question')">Questions</button>
-            </div>
-          </div>
+        <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 2rem;">
+          <h1>Maîtrise des Verbes</h1>
           <div class="theme-switch">
             <input type="checkbox" id="toggle" onclick="toggleDarkMode()" />
             <label for="toggle">
               <div class="icons">
-                <svg
-                  class="sun"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <circle cx="12" cy="12" r="5"></circle>
-                  <line x1="12" y1="1" x2="12" y2="3"></line>
-                  <line x1="12" y1="21" x2="12" y2="23"></line>
-                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                  <line x1="1" y1="12" x2="3" y2="12"></line>
-                  <line x1="21" y1="12" x2="23" y2="12"></line>
-                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                </svg>
-                <svg
-                  class="moon"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                </svg>
+                <svg class="sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                <svg class="moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
               </div>
             </label>
           </div>
         </div>
-        <button class="btn" onclick="startDrill()">Commencer</button>
+
+        <div class="setup-layout">
+          <!-- 1. Curriculum Card -->
+          <div class="setup-card">
+            <h3>1. Niveau (CEFR)</h3>
+            <div data-purpose="cefr-level-selection">
+              <input type="range" id="cefr-level-slider" min="0" max="3" step="1" value="0" />
+              <div style="display: flex; justify-content: space-between; font-size: 0.8rem; margin-top: 5px">
+                <span>A1</span>
+                <span>A2</span>
+                <span>B1</span>
+                <span>B2</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Content Card -->
+          <div class="setup-card">
+            <h3>2. Contenu d'apprentissage</h3>
+            <div class="card-row">
+              <div class="col">
+                <strong>Vocabulaire</strong>
+                <div id="type-filters" class="filter-button-group detailed-buttons">
+                  <button class="filter-btn" data-id="tier_1" onclick="toggleFilter('tier_1')">
+                    <div class="tier-title">Tier 1: Survival<span class="mastery-badge">--%</span></div>
+                    <div class="tier-stats">0/40 verbs</div>
+                    <div class="tier-milestone">Milestone: </div>
+                  </button>
+                  <button class="filter-btn" data-id="tier_2" onclick="toggleFilter('tier_2')">
+                    <div class="tier-title">Tier 2: Everyday<span class="mastery-badge">--%</span></div>
+                    <div class="tier-stats">0/80 verbs</div>
+                    <div class="tier-milestone">Milestone: </div>
+                  </button>
+                  <button class="filter-btn" data-id="tier_3_all" onclick="toggleFilter('tier_3_all')">
+                    <div class="tier-title">Tier 3: All Verbs<span class="mastery-badge">--%</span></div>
+                    <div class="tier-stats">0/150 verbs</div>
+                    <div class="tier-milestone">Milestone: </div>
+                  </button>
+                </div>
+              </div>
+              <div class="col">
+                <strong>Mode de phrases</strong>
+                <div id="question-type-filters" class="filter-button-group">
+                  <button class="filter-btn" data-id="affirmative" onclick="toggleSentenceType('affirmative')">Affirmatif</button>
+                  <button class="filter-btn" data-id="negative" onclick="toggleSentenceType('negative')">Négatif</button>
+                  <button class="filter-btn" data-id="question" onclick="toggleSentenceType('question')">Questions</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Session Config Card -->
+          <div class="setup-card">
+            <h3>3. Configuration de la session</h3>
+            <div class="card-row">
+              <div class="setting-item">
+                <label>Fréquence de révision</label>
+                <input type="range" id="intensity-slider" min="1" max="9" value="2" step="1" />
+                <span id="intensity-val">Adaptatif</span>
+              </div>
+              <div class="setting-item">
+                <label>Mode Pression</label>
+                <input type="checkbox" id="pressure-toggle" checked />
+              </div>
+              <div class="setting-item" id="timer-setting">
+                <label>Vitesse (Timer)</label>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                  <span style="font-size: 0.8rem; opacity: 0.6">Lent</span>
+                  <input type="range" id="timer-slider" min="2" max="10" value="4" step="1" style="flex: 1" />
+                  <span style="font-size: 0.8rem; opacity: 0.6">Rapide</span>
+                </div>
+                <div style="text-align: center; margin-top: 5px;">
+                  <span id="timer-val" style="font-weight: 600">4</span> secondes
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn" style="margin-top: 2rem; padding: 20px;" onclick="startDrill()">Commencer la session de 20 questions</button>
       </div>
 
       <div id="drill" class="hidden">
@@ -120,15 +121,18 @@
           <div id="scenario-display" class="scenario-badge">📍 Situation générale</div>
           <div id="session-progress" class="session-badge">Question 1 / 20</div>
         </div>
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-          <h2 id="verb-info" style="margin: 0;">Verb (Tense)</h2>
+        <div style="margin-bottom: 5px;">
+          <h2 id="verb-info" style="margin: 0;">Verb</h2>
+          <p id="tense-info" style="margin-bottom: 10px; opacity: 0.8; font-size: 0.9rem; font-weight: 500;" class="text-muted">(Tense)</p>
           <div id="audio-warning" class="hidden" onclick="document.getElementById('audio-modal').classList.remove('hidden')" title="Audio non disponible - Cliquez pour réparer" style="cursor: pointer; color: var(--error);">
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5L6 9H2v6h4l5 4V5z"></path><line x1="23" y1="9" x2="17" y2="15"></line><line x1="17" y1="9" x2="23" y2="15"></line></svg>
           </div>
         </div>
-        <p id="sentence-display">Sentence goes here...</p>
 
-        <p id="translation-display" class="hidden" style="font-style: italic; opacity: 0.8">Translation goes here...</p>
+        <div class="sentence-box">
+          <p id="sentence-display">Sentence goes here...</p>
+          <p id="translation-display" class="hidden" style="font-family: var(--font-sans); font-size: 1rem; font-style: italic; opacity: 0.5; margin-top: 10px;">Translation goes here...</p>
+        </div>
 
         <div id="timer-container" class="timer-bar-container hidden">
           <div id="timer-fill" class="timer-bar-fill"></div>
